@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fff4e6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+<title>往期简报 · X 情报站</title>
+<script>try{var t=localStorage.getItem('brief-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+:root{--bg:#f4f5f8;--card:#fff;--text:#1b1d22;--muted:#5d6470;--faint:#8a909b;--line:#e8eaef;--accent:#e8590c;--accent2:#d6336c;
+--hero1:#fff4e6;--hero2:#ffe3ec;--shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1014;--card:#171a20;--text:#e8eaee;--muted:#a3a9b4;--faint:#7c8390;--line:#272b34;
+--accent:#ff922b;--accent2:#f06595;--hero1:#2a1d10;--hero2:#2a1420;--shadow:0 1px 2px rgba(0,0,0,.3),0 4px 18px rgba(0,0,0,.25)}}
+:root[data-theme=dark]{--bg:#0e1014;--card:#171a20;--text:#e8eaee;--muted:#a3a9b4;--faint:#7c8390;--line:#272b34;
+--accent:#ff922b;--accent2:#f06595;--hero1:#2a1d10;--hero2:#2a1420;--shadow:0 1px 2px rgba(0,0,0,.3),0 4px 18px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 14px}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top)}
+.hero .wrap{padding-top:18px;padding-bottom:18px;position:relative}
+.kicker{display:inline-flex;font-size:12.5px;font-weight:600;color:var(--accent);background:var(--card);border:1px solid var(--line);padding:1px 10px;border-radius:999px}
+h1{margin:6px 0 2px;font-size:24px;line-height:1.3}.subt{margin:0;color:var(--muted);font-size:13.5px}
+.theme{position:absolute;top:16px;right:14px;width:36px;height:36px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:17px;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow);color:var(--text)}
+.latest{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:7px 14px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600;font-size:14px;box-shadow:var(--shadow)}
+h2{font-size:13.5px;color:var(--faint);font-weight:600;margin:22px 4px 8px;letter-spacing:.04em}
+ul{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+li+li{border-top:1px solid var(--line)}
+li a{display:flex;align-items:center;gap:14px;padding:12px 14px;text-decoration:none;color:inherit;-webkit-tap-highlight-color:transparent}
+li a:hover,li a:active{background:color-mix(in srgb,var(--accent) 6%,var(--card))}
+.d{flex:none;width:48px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--hero1),var(--hero2));border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1}
+.d b{font-size:20px;color:var(--accent)}.d span{font-size:11px;color:var(--muted)}
+.m{flex:1;min-width:0}.t{font-weight:600;font-size:15.5px}.s{color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.new{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:0 7px;border-radius:999px;vertical-align:2px}
+.go{color:var(--faint);font-size:22px}
+footer{color:var(--faint);font-size:12px;text-align:center;padding:28px 0 calc(28px + env(safe-area-inset-bottom))}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<span class="kicker">🗞 X 情报站</span>
+<h1>往期简报</h1>
+<p class="subt">共 1 期 · 按日期倒序</p>
+<a class="latest" href="./">📰 阅读最新一期 →</a>
+<button class="theme" id="th" aria-label="切换主题">🌓</button>
+</div></header>
+<div class="wrap">
+<h2>2026年10月</h2><ul>
+<li><a href="briefs/2026-10-10.html"><div class="d"><b>10</b><span>10月</span></div><div class="m"><div class="t">2026年10月10日 · 周六<span class="new">最新</span></div><div class="s">X 每日简报</div></div><span class="go">›</span></a></li>
+</ul>
+<footer>X 每日简报 · 更新于 2026-10-11 16:03 (UTC+8)</footer>
+</div>
+<script>(function(){var b=document.getElementById('th'),r=document.documentElement;
+function cur(){var a=r.getAttribute('data-theme');if(a)return a;return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('brief-theme',n)}catch(e){}});})();</script>
+</body>
+</html>
