@@ -48,6 +48,18 @@
   ],
   "shortcuts": [
     {
+      "name": "我的收藏",
+      "short_name": "收藏",
+      "url": "./favorites.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
       "name": "往期简报",
       "short_name": "往期",
       "url": "./archive.html",

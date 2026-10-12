@@ -23,7 +23,8 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system
 .kicker{display:inline-flex;font-size:12.5px;font-weight:600;color:var(--accent);background:var(--card);border:1px solid var(--line);padding:1px 10px;border-radius:999px}
 h1{margin:6px 0 2px;font-size:24px;line-height:1.3}.subt{margin:0;color:var(--muted);font-size:13.5px}
 .theme{position:absolute;top:16px;right:14px;width:36px;height:36px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:17px;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow);color:var(--text)}
-.latest{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:7px 14px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600;font-size:14px;box-shadow:var(--shadow)}
+.latest.fav{background:var(--card);color:var(--text);border:1px solid var(--line);margin-left:8px}
+.latest{display:inline-flex;align-items:center;gap:6px;margin-top:12px;min-height:40px;padding:7px 14px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600;font-size:14px;box-shadow:var(--shadow)}
 h2{font-size:13.5px;color:var(--faint);font-weight:600;margin:22px 4px 8px;letter-spacing:.04em}
 ul{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
 li+li{border-top:1px solid var(--line)}
@@ -37,13 +38,23 @@ li a:hover,li a:active{background:color-mix(in srgb,var(--accent) 6%,var(--card)
 footer{color:var(--faint);font-size:12px;text-align:center;padding:28px 0 calc(28px + env(safe-area-inset-bottom))}
 .empty{color:var(--muted);text-align:center;padding:40px 0}
 </style>
+<!--xb-head-->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="X情报站">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="X情报站">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<!--/xb-head-->
 </head>
 <body>
 <header class="hero"><div class="wrap">
 <span class="kicker">🗞 X 情报站</span>
 <h1>往期简报</h1>
 <p class="subt">共 2 期 · 按日期倒序</p>
-<a class="latest" href="./">📰 阅读最新一期 →</a>
+<a class="latest" href="./">📰 阅读最新一期 →</a><a class="latest fav" href="favorites.html">⭐ 我的收藏</a>
 <button class="theme" id="th" aria-label="切换主题">🌓</button>
 </div></header>
 <div class="wrap">
@@ -56,5 +67,8 @@ footer{color:var(--faint);font-size:12px;text-align:center;padding:28px 0 calc(2
 <script>(function(){var b=document.getElementById('th'),r=document.documentElement;
 function cur(){var a=r.getAttribute('data-theme');if(a)return a;return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
 b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('brief-theme',n)}catch(e){}});})();</script>
+<!--xb-body-->
+<script>window.XB_ROOT='';(function(){var n=document.getElementById('xbFavN');if(!n)return;function u(){var c=0;try{var o=JSON.parse(localStorage.getItem('xbrief-favs-v1')||'null');c=o&&o.items?Object.keys(o.items).length:0}catch(e){}n.textContent=c>99?'99+':String(c);n.hidden=!c;}u();addEventListener('storage',u);addEventListener('xbrief:favs',u);addEventListener('pageshow',u);})();if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{scope:''}).catch(function(){});});}</script>
+<!--/xb-body-->
 </body>
 </html>
