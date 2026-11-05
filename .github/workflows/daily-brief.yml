@@ -1,10 +1,8 @@
 name: Daily Brief（X 情报站每日简报）
 
-# 北京时间每天 07:00 自动生成一期简报并提交到 main（GitHub Pages 随之发布）。
-# cron 用 UTC：0 23 * * * = 北京时间次日 07:00。
+# 备份通道：仅手动触发（Run workflow）。日常 07:00 定时生产由 Muse 侧任务
+# 经 SSH Deploy Key 直接推送承担（2026-11-05 用户定版），避免双通道同时发布互相覆盖。
 on:
-  schedule:
-    - cron: "0 23 * * *"
   workflow_dispatch:
     inputs:
       backfill_date:
