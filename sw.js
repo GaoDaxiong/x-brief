@@ -1,7 +1,7 @@
 // X 情报站 service worker
 // HTML: network-first (newest brief when online), fallback to cache offline.
 // Icons / manifest: cache-first.
-const VERSION = 'bd7d5617';
+const VERSION = '18c08c0e';
 const CACHE = 'xbrief-' + VERSION;
 const PRECACHE = ['./', './index.html', './archive.html', './favorites.html', './manifest.webmanifest',
   './icons/icon-180.png', './icons/icon-192.png', './icons/icon-512.png',
