@@ -1,0 +1,22 @@
+# X 中文圈关注名单（每日简报「关注账号动态」巡查用）
+# 格式：handle | 显示名 | 定位（一句话）
+# 以 # 开头的行与空行会被忽略。名单来源：用户确认版（2026-11-05，共 19 人）
+dotey | 宝玉 | AI/软件工程知识翻译与科普
+op7418 | 歸藏 | AI、LLM、AI 图像视频与设计，AIGC 周刊作者
+HiTw93 | Tw93 | 开源作者（Pake 等），开发工具与实践
+gefei55 | 哥飞 | 出海、SEO、AI 工具创业，教程型
+lijigang | 李继刚 | 提示词与 AI 协作方法论
+DIYgod | DIYgod | RSSHub、Folo 作者
+huxpro | 黄玄 | 前端与编程语言技术
+KKKKhazix | 数字生命卡兹克 | AI 内容创作者、AIHOT 创始人
+vista8 | 向阳乔木 | AI 工具与 Agent 实践
+imxiaohu | 小互 | AI 资讯高频号，xiaohu.ai 日报
+Gorden_Sun | Gorden Sun | AI 与开源工具推介
+oran_ge | 橘子 Orange AI | 前 MiniMax 产品经理，Personal Agent 与产品经验
+ruanyf | 阮一峰 | 科技周刊主理人
+lifesinger | 玉伯 | YouMind 创始人，产品与创业思考
+VincentWei93 | Vincent文森特 | AWS AI 应用科学家，AI 前沿应用与技术分享
+berryxia | Berryxia.AI | AI 工具与 Vibe Coding，AI 视频与数字人创作
+yetone | yetone | avante.nvim 作者，多个 AI 产品在建
+Saccc_c | Sac | 小王子游戏原创作者，探索 AI 能力边界
+nima2qisi2 | Dmiao豆苗啊 | 设计师，AIGC 摄影视觉与低门槛 AI 玩法
