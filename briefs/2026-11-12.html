@@ -1,0 +1,1608 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)"><title>X 每日简报 · 11月12日（周四）早刊 · 11月12日（周四）早刊</title><script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('brief-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#faf9f6;--bg2:#f2efe8;--text:#1d1b16;--muted:#45423a;--faint:#706b5f;
+--line:#e7e3d8;--line2:#cfc9ba;--accent:#d9480f;--accent-t:rgba(217,72,15,.05);
+--ok:#2f9e5f;
+--serif:Georgia,"Times New Roman","Songti SC","STSong","Noto Serif CJK SC","SimSun",serif;
+--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+--bg:#121214;--bg2:#1a1a1d;--text:#ece9e1;--muted:#b8b4ab;--faint:#8f8b81;
+--line:#28282c;--line2:#3d3d42;--accent:#ff922b;--accent-t:rgba(255,146,43,.07);--ok:#69db8a;color-scheme:dark}}
+:root[data-theme=dark]{
+--bg:#121214;--bg2:#1a1a1d;--text:#ece9e1;--muted:#b8b4ab;--faint:#8f8b81;
+--line:#28282c;--line2:#3d3d42;--accent:#ff922b;--accent-t:rgba(255,146,43,.07);--ok:#69db8a;color-scheme:dark}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.hide{display:none!important}
+.col{max-width:720px;margin:0 auto;padding:0 22px}
+/* ---------- masthead ---------- */
+.masthead{border-bottom:4px double var(--text);margin-bottom:6px}
+.mast-top{display:flex;align-items:center;justify-content:space-between;padding:14px 0 0}
+.kicker{font-size:11px;letter-spacing:.22em;color:var(--faint);font-weight:600}
+.kicker b{color:var(--accent);font-weight:700}
+.themebtn{border:0;background:none;color:var(--faint);font-size:17px;width:38px;height:38px;border-radius:50%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.themebtn:active{color:var(--accent)}
+.masthead h1{font-family:var(--serif);font-size:37px;line-height:1.2;font-weight:700;letter-spacing:.01em;margin:10px 0 2px}
+.subt{color:var(--muted);font-size:13.5px}
+.statsline{color:var(--faint);font-size:12.5px;padding:10px 0 14px;letter-spacing:.04em}
+.statsline b{color:var(--muted);font-weight:600}
+/* ---------- toc ---------- */
+.tocbar{display:flex;align-items:flex-start;gap:8px;padding:12px 0 4px}
+.toc{flex:1;display:flex;flex-wrap:wrap;gap:2px 0}
+.toc a{display:inline-flex;align-items:baseline;gap:5px;padding:5px 9px 5px 0;margin-right:9px;text-decoration:none;font-size:13px;color:var(--muted);-webkit-tap-highlight-color:transparent}
+.toc a .n{font-family:var(--serif);font-style:italic;font-size:11.5px;color:var(--faint)}
+.toc a .c{font-size:11px;color:var(--faint)}
+.toc a.on{color:var(--accent);font-weight:600}
+.toc a.on .n{color:var(--accent)}
+.favonly{flex:none;display:inline-flex;align-items:center;gap:5px;border:0;background:none;font-family:var(--sans);font-size:13px;color:var(--muted);padding:5px 2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.favonly svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
+.favonly[aria-pressed="true"]{color:var(--accent);font-weight:600}
+.favonly .fc{font-size:11.5px;color:var(--faint)}
+.favonly[aria-pressed="true"] .fc{color:var(--accent)}
+/* ---------- chapter headers ---------- */
+section{scroll-margin-top:70px}
+.chap{position:sticky;top:0;z-index:30;background:var(--bg);display:flex;align-items:baseline;gap:13px;padding:20px 0 9px;border-bottom:2px solid var(--text);margin-top:38px}
+.chap .no{font-family:var(--serif);font-size:33px;line-height:.9;font-weight:700;color:var(--accent)}
+.chap h2{font-family:var(--serif);font-size:20.5px;font-weight:700;letter-spacing:.01em}
+.chap .cnt{margin-left:auto;font-size:12px;color:var(--faint);letter-spacing:.06em;white-space:nowrap}
+.chap.note .no{font-size:19px;font-family:var(--sans);font-weight:700;letter-spacing:.14em}
+/* front page header (not sticky) */
+.fronthead{margin-top:30px;border-bottom:2px solid var(--text);padding-bottom:10px}
+.fronthead .eyebrow{font-size:11px;letter-spacing:.24em;color:var(--accent);font-weight:700}
+.fronthead h2{font-family:var(--serif);font-size:25px;font-weight:700;margin-top:5px;line-height:1.3}
+/* ---------- stories ---------- */
+.story{padding:22px 0;border-bottom:1px solid var(--line)}
+.story:first-of-type{padding-top:17px}
+.shead{display:flex;align-items:flex-start;gap:10px}
+.hl{font-family:var(--sans);font-size:17.5px;line-height:1.45;font-weight:600;flex:1;letter-spacing:.005em}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:7px;font-size:13.5px;color:var(--faint)}
+.meta .sep{color:var(--line2)}
+.mtag{display:inline-flex;align-items:center;gap:5px}
+.dot{width:6px;height:6px;border-radius:50%;background:#9a958a;flex:none;display:inline-block}
+.t-official .dot{background:#2f9e5f}.t-relay .dot{background:#7a8699}.t-personal .dot{background:#0e7490}
+.t-media .dot{background:#7c5cbf}.t-unverified .dot{background:#b45309}.t-promo .dot{background:#c2437e}
+.mstat{display:inline-flex;align-items:center;gap:5px}
+.dot.ok{background:var(--ok)}
+a.src{color:var(--muted);text-decoration:none}
+a.src:active,a.src:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.sum{margin-top:9px;font-size:17px;line-height:1.75;color:var(--text)}
+.bg{margin-top:11px;margin-left:2px;padding:1px 0 1px 13px;border-left:2px solid var(--line2);font-size:15px;line-height:1.7;color:var(--muted)}
+.bg .bk,.ctx .bk{font-weight:700;color:var(--faint);font-size:12px;letter-spacing:.1em;margin-right:7px}
+.ctx{margin-top:10px;background:var(--accent-t);border-left:2px solid var(--accent);padding:9px 13px;font-size:15px;line-height:1.7;color:var(--muted)}
+.ctx .bk{color:var(--accent)}
+/* front page stories */
+.story.lead{padding-top:20px}
+.story.lead .hl{font-size:25.5px;line-height:1.38;font-weight:700}
+.story.lead .sum{font-size:17.5px}
+
+
+
+.story.ranked .hl{font-size:17.5px}
+.rno{color:var(--accent);font-weight:700;margin-right:.45em}
+/* deals */
+.drow{margin-top:7px;font-size:14px;line-height:1.68;color:var(--muted)}
+.drow .dk{display:inline-block;font-weight:600;color:var(--faint);font-size:12.5px;letter-spacing:.05em;margin-right:9px}
+/* quick digest */
+.qrow{display:flex;gap:10px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.qrow .qn{font-family:var(--sans);font-weight:700;font-size:15.5px;white-space:nowrap}
+.qrow .qt{flex:1;font-size:13.5px;line-height:1.65;color:var(--muted)}
+.qrow .qa{color:var(--faint);font-size:15px}
+.qhead{font-size:11px;letter-spacing:.22em;color:var(--faint);font-weight:700;margin-top:34px;padding-bottom:2px}
+/* subheads (xcn) */
+.subhead{font-family:var(--sans);font-size:16.5px;font-weight:700;margin-top:26px;padding-top:16px;border-top:1px solid var(--line2)}
+.subhead:first-of-type{border-top:0;margin-top:6px;padding-top:8px}
+/* watchlist */
+.grp{border:0}
+.grp summary{list-style:none;display:flex;align-items:baseline;gap:10px;cursor:pointer;padding:15px 0 4px;-webkit-tap-highlight-color:transparent}
+.grp summary::-webkit-details-marker{display:none}
+.grp .gname{font-family:var(--sans);font-weight:700;font-size:16.5px}
+.grp .gcount{font-size:12px;color:var(--faint)}
+.grp summary .chev{margin-left:auto;color:var(--faint);transition:transform .2s}
+.grp summary .chev::before{content:"▾"}
+.grp:not([open]) summary .chev{transform:rotate(-90deg)}
+.acc{display:flex;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}
+.acc .av{width:38px;height:38px;border-radius:50%;flex:none;margin-top:3px}
+.acc .abody{flex:1;min-width:0}
+.acc .aname{font-weight:600;font-size:15.5px;text-decoration:none}
+.acc .hdl{color:var(--faint);font-size:12.5px;margin-left:7px;font-weight:400}
+.acc .sum{font-size:14.5px;margin-top:6px}
+.aname-line{flex:1}
+/* star */
+.star{flex:none;width:38px;height:38px;margin:-6px -8px 0 0;border:0;background:none;cursor:pointer;color:var(--faint);display:grid;place-items:center;-webkit-tap-highlight-color:transparent}
+.star svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
+.star.on{color:var(--accent)}
+.star.on svg{fill:var(--accent);stroke:var(--accent)}
+@keyframes pop{50%{transform:scale(1.3)}}
+.star.pop svg{animation:pop .3s ease}
+@keyframes flashbg{0%{background:var(--accent-t)}100%{background:transparent}}
+.flash{animation:flashbg 2.8s ease}
+/* warnings + footer */
+.warnlist{list-style:none}
+.warnlist li{padding:13px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.7;color:var(--muted)}
+.colophon{margin:44px 0 90px;padding-top:14px;border-top:3px double var(--line2);text-align:center;font-size:12px;color:var(--faint);letter-spacing:.05em}
+.empty{display:none;padding:44px 0;text-align:center;color:var(--faint);font-size:14px}
+.totop{position:fixed;right:14px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;border:1px solid var(--line2);background:var(--bg);color:var(--muted);font-family:var(--sans);font-size:12.5px;padding:8px 13px;border-radius:999px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;-webkit-tap-highlight-color:transparent}
+.totop.show{opacity:1;pointer-events:auto}
+.xtoast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,16px);z-index:60;background:#26241f;color:#f5f2ea;font-size:13.5px;padding:9px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;display:flex;gap:10px;align-items:center}
+.xtoast a{color:#ffb59a;text-decoration:none;font-weight:600}
+.xtoast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+@media (min-width:720px){
+ .masthead h1{font-size:42px}
+ .chap .no{font-size:38px}
+ .chap h2{font-size:22px}
+ .hl{font-size:19.5px}
+ .story.lead .hl{font-size:28px}
+}
+@media print{.tocbar,.totop,.xb-pills,.star,.themebtn{display:none}}
+
+/* watchlist: grouped multi-post accounts */
+.wgrp{margin-top:2px}
+.whead{display:flex;align-items:center;gap:12px;padding:16px 0 2px}
+.whead .av{width:38px;height:38px;border-radius:50%;flex:none}
+.whead .wid{flex:1;min-width:0}
+.whead .aname{font-weight:700;font-size:16.5px}
+.whead .idb{color:var(--faint);font-size:12.5px;margin-left:8px;font-weight:400}
+.whead .hdl{color:var(--faint);font-size:12.5px;margin-left:7px;font-weight:400}
+.whead .gcount{font-size:12px;color:var(--faint);white-space:nowrap}
+.acc.post{display:block;padding:13px 0 16px;margin-left:50px}
+.acc.post .sum{font-size:15.5px;line-height:1.75}
+.nopost{padding:15px 0 4px;font-size:13.5px;line-height:1.7;color:var(--muted)}
+.nopost .nplabel{font-weight:700;color:var(--faint);font-size:12px;letter-spacing:.1em;margin-right:7px}
+</style>
+<!--xb-head-->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="X情报站">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="X情报站">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<!--/xb-head-->
+</head>
+<body><header class="masthead"><div class="col"><div class="mast-top"><span class="kicker"><b>X</b> 每日简报 · DAILY BRIEF</span><button class="themebtn" id="themeBtn" type="button" aria-label="切换主题">☾</button></div><h1>11月12日（周四）早刊</h1><p class="subt">2026-11-12 早刊 · AI / 编程 / 科技公司动态速览</p><div class="statsline"><b>35</b> 条要闻 · <b>10</b> 条福利 · <b>25</b> 条账号动态 · <b>8</b> 个板块</div></div></header><div class="col"><div class="tocbar"><nav class="toc" aria-label="板块导航"><a data-nav href="#top3"><span class="n">头版</span>今日重点</a><a data-nav href="#ai"><span class="n">01</span>AI 与大模型<span class="c">5</span></a><a data-nav href="#tech"><span class="n">02</span>编程与开发者工具<span class="c">5</span></a><a data-nav href="#company"><span class="n">03</span>科技公司动态<span class="c">5</span></a><a data-nav href="#creations"><span class="n">04</span>AI 造物精选<span class="c">10</span></a><a data-nav href="#xcn"><span class="n">05</span>X 中文圈精选<span class="c">5</span></a><a data-nav href="#deals"><span class="n">06</span>薅羊毛 · 福利<span class="c">10</span></a><a data-nav href="#watchlist"><span class="n">07</span>关注账号动态<span class="c">25</span></a><a data-nav href="#warnings"><span class="n">注</span>提醒</a></nav><button class="favonly" id="favOnly" type="button" aria-pressed="false" title="只看已收藏"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg><span class="fl">只看收藏</span><span class="fc" id="favCnt"></span></button></div><div class="empty" id="empty">本期还没有收藏</div></div><main class="col"><section class="sec" id="top3"><div class="fronthead"><div class="eyebrow">头版 · TOP STORIES</div><h2>今天最重要的 5 件事</h2></div><article class="story f lead" id="i-b06b95f833" data-fid="i-b06b95f833"><div class="shead"><h3 class="hl"><span class="rno">1</span>WSJ：英伟达董事会接近决定是否罢免 CEO 黄仁勋</h3><button class="star" type="button" data-star="i-b06b95f833" aria-pressed="false" aria-label="收藏：WSJ：英伟达董事会接近决定是否罢免 CEO 黄仁勋" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-relay"><i class="dot"></i>转述</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://x.com/rohanpaul_ai/status/2120663635479625930" target="_blank" rel="noopener noreferrer">@rohanpaul_ai ↗</a><a class="src" href="https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline" target="_blank" rel="noopener noreferrer">TechCrunch 时间表 ↗</a></div><p class="sum">WSJ 报道，英伟达董事会此前公开支持黄仁勋，如今接近决定是否罢免这位创始人 CEO。起因是黄仁勋与一名被指为中国情报人员的女子交往，随后又曝出与一名英伟达员工的第二段婚外情；董事会周日启动独立调查时表示，没有理由认为英伟达机密已经泄露。</p><div class="bg"><span class="bk">背景</span>事件 11 月 11 日集中爆发：NYT 率先披露黄仁勋与一名直接下属高管的关系及所谓中国间谍指控；英伟达盘后一度跌 9%，贝雅下调其评级；两名美国民主党议员要求对英伟达芯片出口实施更严格审查，中国新增 3 项芯片出口限制的消息也同步传出。</div><div class="ctx"><span class="bk">社区讨论</span>英文圈与中文圈都在追问两点：董事会会不会真的动手、以及所谓&quot;间谍&quot;指控有多少实据。Le Monde 把事件定性为&quot;中国间谍、芯片战与特朗普的冷漠&quot;；CNBC 则分析英伟达&quot;大到不能倒&quot;的 AI 融资网络。需注意：间谍指控目前只有媒体转述，未有官方证实。</div></article><article class="story f ranked" id="i-ca476af66b" data-fid="i-ca476af66b"><div class="shead"><h3 class="hl"><span class="rno">2</span>Anthropic IPO 拟募资最高 904 亿美元，或成史上最大上市</h3><button class="star" type="button" data-star="i-ca476af66b" aria-pressed="false" aria-label="收藏：Anthropic IPO 拟募资最高 904 亿美元，或成史上最大上市" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://www.bloomberg.com/news/newsletters/2026-11-11/anthropic-ipo-oversubscription-fuels-ai-recovery-rally" target="_blank" rel="noopener noreferrer">彭博 ↗</a></div><p class="sum">彭博报道，Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 904 亿美元，将超过 SpaceX 的 857 亿美元纪录、成为史上最大上市；完全稀释估值目标约 1.4 万亿美元，高盛与摩根士丹利牵头 22 家银行，股票以 ANT 在纳斯达克全球精选市场交易。</p><div class="bg"><span class="bk">背景</span>晚刊已报 IPO 路演启动、估值预期 1.25–1.75 万亿美元；一夜之间认购倍数与募资上限落地，彭博称超额认购推动 AI 板块反弹。Google、英伟达与微软将按 IPO 价格投资 260 亿美元。</div><div class="ctx"><span class="bk">社区讨论</span>FT 称这桩 IPO&quot;绝不能失败&quot;；高盛预计 Anthropic 到 2030 年营收 6850 亿美元，数字还在上调。市场争论同步升温：一边是数倍超额认购的火热需求，一边是对 1.4 万亿美元估值与 AI 泡沫的担忧。</div></article><article class="story f ranked" id="i-a3ee569846" data-fid="i-a3ee569846"><div class="shead"><h3 class="hl"><span class="rno">3</span>Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼</h3><button class="star" type="button" data-star="i-a3ee569846" aria-pressed="false" aria-label="收藏：Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://www.ithome.com/1/025/809.htm" target="_blank" rel="noopener noreferrer">IT之家 ↗</a></div><p class="sum">据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。</p><div class="bg"><span class="bk">背景</span>这是 Grok 图像生成功能的又一次重大法律麻烦：前一天 Grok Build 刚被曝泄露 SpaceX 等机密资料。诉讼核心是 AI 生成内容的责任归属，以及美国《通信规范法》第 230 条是否适用于这类 AI 生成内容。</div><div class="ctx"><span class="bk">社区讨论</span>报道借受害者案例梳理多起针对 xAI 的集体诉讼，焦点在平台责任边界。AI 安全社区把这件事与&quot;生成式图像工具的内容审核缺口正在变成法律风险&quot;的讨论连在一起，认为图像生成产品的审核缺失正在从产品问题升级为法律问题。</div></article><article class="story f ranked" id="i-2c61e6cd43" data-fid="i-2c61e6cd43"><div class="shead"><h3 class="hl"><span class="rno">4</span>Anthropic：AI 仅用 3 天把模型适配到 AMD 芯片，英伟达 CUDA 护城河遇挑战</h3><button class="star" type="button" data-star="i-2c61e6cd43" aria-pressed="false" aria-label="收藏：Anthropic：AI 仅用 3 天把模型适配到 AMD 芯片，英伟达 CUDA 护城河遇挑战" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-relay"><i class="dot"></i>转述</span><span class="sep">·</span><a class="src" href="https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days" target="_blank" rel="noopener noreferrer">The Decoder ↗</a><a class="src" href="https://www.ithome.com/1/025/736.htm" target="_blank" rel="noopener noreferrer">IT之家 ↗</a></div><p class="sum">Anthropic 表示，借助 AI 本身，团队只用 3 天就把模型适配到 AMD 芯片——过去这类迁移要花数月。Anthropic 称，AI 正在蚕食英伟达 CUDA 的领先地位。</p><div class="bg"><span class="bk">背景</span>背景是 Anthropic 与微软、谷歌刚修订的超 100 亿美元算力协议，以及台积电拟向 Anthropic 与 OpenAI 各投 10 亿美元；算力多元化正在从口号变成实际动作，AMD 成为直接受益者。</div><div class="ctx"><span class="bk">社区讨论</span>HN 与 X 上的讨论分两派：一派认为&quot;3 天适配&quot;证明 CUDA 的锁定正在松动，另一派提醒一次演示不等于生产级迁移，真正的护城河在生态与工具链而非单次移植速度。</div></article><article class="story f ranked" id="i-d51ec91b1c" data-fid="i-d51ec91b1c"><div class="shead"><h3 class="hl"><span class="rno">5</span>OpenAI Codex 登陆 Amazon Bedrock，企业可在 AWS 上直接用 Codex</h3><button class="star" type="button" data-star="i-d51ec91b1c" aria-pressed="false" aria-label="收藏：OpenAI Codex 登陆 Amazon Bedrock，企业可在 AWS 上直接用 Codex" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-official"><i class="dot"></i>官方</span><span class="sep">·</span><a class="src" href="https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock" target="_blank" rel="noopener noreferrer">AWS ↗</a><a class="src" href="https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore" target="_blank" rel="noopener noreferrer">AWS ↗</a></div><p class="sum">AWS 宣布 OpenAI Codex 上线 Amazon Bedrock，企业开发者可以在 Bedrock 里直接调用 Codex 做编码 Agent 任务；同日 Bedrock AgentCore 还推出了 Web Search API，让 Agent 能联网检索。</p><div class="bg"><span class="bk">背景</span>这是 OpenAI 模型首次通过 AWS 的托管服务分发：此前 Codex 主要走 OpenAI 自家 API 与 ChatGPT。同一天 AWS 还发布了面向 AI 构建者的 10 月更新汇总，Bedrock 的多模型货架上又多了一个重磅名字。</div><div class="ctx"><span class="bk">社区讨论</span>中文圈关注点在&quot;Codex 走出 OpenAI 生态&quot;：企业不用再单独接 OpenAI API 就能在 AWS 账单里跑 Codex；也有开发者提醒 Bedrock 上的版本与定价细节要看官方文档，实际可用性因区域而异。</div></article></section><section class="sec" id="ai"><div class="chap"><span class="no">01</span><h2>AI 与大模型</h2><span class="cnt">5 条</span></div><article class="story f" id="i-42382a1073" data-fid="i-42382a1073"><div class="shead"><h3 class="hl">DeepMind 发布 AlphaGenome 2 基因组模型，识别致病变异能力提升近一倍</h3><button class="star" type="button" data-star="i-42382a1073" aria-pressed="false" aria-label="收藏：DeepMind 发布 AlphaGenome 2 基因组模型，识别致病变异能力提升近一倍" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/wp91dm5fgirnzvh99js3vv6j2" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model" target="_blank" rel="noopener noreferrer">The Verge ↗</a></div><p class="sum">Google DeepMind 发布 AlphaGenome 2，聚焦 DNA 变化如何影响不同细胞类型，识别致病变异的能力比上一代提升近一倍。</p><div class="bg"><span class="bk">背景</span>AlphaGenome 首版今年早些时候发布，定位是基因组学的基础模型；2 代把分辨率推到细胞类型级别，目标是揭示疾病的细胞根源、指向新的治疗方法。</div></article><article class="story f" id="i-bd69961f5d" data-fid="i-bd69961f5d"><div class="shead"><h3 class="hl">Google 发布 Gemini Decision 1：一次评估 1000 道题，150–250 毫秒出结果</h3><button class="star" type="button" data-star="i-bd69961f5d" aria-pressed="false" aria-label="收藏：Google 发布 Gemini Decision 1：一次评估 1000 道题，150–250 毫秒出结果" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-official"><i class="dot"></i>官方</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener noreferrer">Google Blog ↗</a></div><p class="sum">Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150–250 毫秒端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是否、多选与评分题；API 已在 Google AI Studio 上免费提供。</p><div class="bg"><span class="bk">背景</span>这是 Google 把大模型从&quot;通用生成&quot;推向&quot;高可靠性决策&quot;的垂直场景：强调校准能力，目标是替代企业自训的分类器，争夺批量数据处理与自动化评估的工业级市场。</div></article><article class="story f" id="i-c48ba701a7" data-fid="i-c48ba701a7"><div class="shead"><h3 class="hl">Runway 开源 27B 世界动作模型 Praxis-1，Apache 2.0 许可</h3><button class="star" type="button" data-star="i-c48ba701a7" aria-pressed="false" aria-label="收藏：Runway 开源 27B 世界动作模型 Praxis-1，Apache 2.0 许可" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-official"><i class="dot"></i>官方</span><span class="sep">·</span><a class="src" href="https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv" target="_blank" rel="noopener noreferrer">AIHOT ↗</a><a class="src" href="https://runwayml.com/news/company-news/praxis-1-is-now-available" target="_blank" rel="noopener noreferrer">Runway ↗</a></div><p class="sum">Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重。模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。</p><div class="bg"><span class="bk">背景</span>世界模型正在从视频生成走向&quot;动作预测&quot;：Praxis-1 的卖点是同时输出视频与机器人动作，直接对标具身智能评测榜；开源权重意味着研究者与开发者可以在自有硬件上部署。</div></article><article class="story f" id="i-495b69f298" data-fid="i-495b69f298"><div class="shead"><h3 class="hl">OpenAI 12 月 11 日停用 ChatGPT 旧版语音模式，全面转向 GPT-Live，用户不买账</h3><button class="star" type="button" data-star="i-495b69f298" aria-pressed="false" aria-label="收藏：OpenAI 12 月 11 日停用 ChatGPT 旧版语音模式，全面转向 GPT-Live，用户不买账" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://www.techradar.com/ai-platforms-assistants/chatgpt/im-beyond-disappointed-because-chatgpt-means-a-lot-to-me-users-are-furious-that-openai-is-retiring-their-favorite-voice-modes" target="_blank" rel="noopener noreferrer">TechRadar ↗</a><a class="src" href="https://www.aibase.com/zh/news/32253" target="_blank" rel="noopener noreferrer">AIbase ↗</a></div><p class="sum">OpenAI 宣布 12 月 11 日停用 ChatGPT 旧版语音模式，全面转向新的 GPT-Live 语音；TechRadar 报道用户强烈不满，不少人表示旧语音模式对自己意义重大。</p><div class="bg"><span class="bk">背景</span>旧语音模式是 ChatGPT 早期最受欢迎的功能之一；OpenAI 昨日（11-11 下午）宣布停用时间表后，一夜之间英文社区的反弹集中在&quot;新模式不如旧的自然&quot;与&quot;没有迁移选择&quot;两点。</div></article><article class="story f" id="i-ee5add3b25" data-fid="i-ee5add3b25"><div class="shead"><h3 class="hl">DeepMind 用 AlphaProof Code 四周完成 Signal 密码学核心的形式化验证</h3><button class="star" type="button" data-star="i-ee5add3b25" aria-pressed="false" aria-label="收藏：DeepMind 用 AlphaProof Code 四周完成 Signal 密码学核心的形式化验证" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup" target="_blank" rel="noopener noreferrer">Ars Technica ↗</a><a class="src" href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years" target="_blank" rel="noopener noreferrer">The Decoder ↗</a></div><p class="sum">Google DeepMind 利用 AlphaProof Code 多智能体形式化验证框架，在四周内完成对 Signal 协议生产机器码的形式化安全验证——传统方法需要数年。</p><div class="bg"><span class="bk">背景</span>这是 AI 从&quot;写代码&quot;走向&quot;证明代码正确&quot;的标志性案例：Signal 的密码学核心是全球数亿人日常通信的安全底座；验证周期从数年压缩到四周，意味着高可靠性软件的安全审计门槛大幅降低。</div></article></section><section class="sec" id="tech"><div class="chap"><span class="no">02</span><h2>编程与开发者工具</h2><span class="cnt">5 条</span></div><article class="story f" id="i-90ae70e724" data-fid="i-90ae70e724"><div class="shead"><h3 class="hl">Codex 一夜连发多个版本：v0.167.2、v0.169.0-alpha.11.1、v0.170.0-alpha.1</h3><button class="star" type="button" data-star="i-90ae70e724" aria-pressed="false" aria-label="收藏：Codex 一夜连发多个版本：v0.167.2、v0.169.0-alpha.11.1、v0.170.0-alpha.1" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-official"><i class="dot"></i>官方</span><span class="sep">·</span><a class="src" href="https://github.com/openai/codex/releases/tag/rust-v0.167.2" target="_blank" rel="noopener noreferrer">GitHub v0.167.2 ↗</a><a class="src" href="https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.11.1" target="_blank" rel="noopener noreferrer">GitHub v0.169.0-alpha.11.1 ↗</a><a class="src" href="https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.1" target="_blank" rel="noopener noreferrer">GitHub v0.170.0-alpha.1 ↗</a></div><p class="sum">openai/codex 一夜连发多个版本：rust-v0.167.2（Codex 在 Google Cloud Vertex AI 上默认改用增量工具更新，可配回旧行为）、rust-v0.169.0-alpha.11.1 与 rust-v0.170.0-alpha.1。</p><div class="bg"><span class="bk">背景</span>Codex 正处在高频迭代期，晚刊刚报它亮相 AIE Code Summit；这次连发以 alpha 通道为主，正式版 v0.167.2 的增量工具更新是面向云端部署的性能优化。</div></article><article class="story f" id="i-45beb2bee2" data-fid="i-45beb2bee2"><div class="shead"><h3 class="hl">AWS 推出免费本地云模拟器 AWS Emulator：Agent 写的代码，本机就能跑 AWS</h3><button class="star" type="button" data-star="i-45beb2bee2" aria-pressed="false" aria-label="收藏：AWS 推出免费本地云模拟器 AWS Emulator：Agent 写的代码，本机就能跑 AWS" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://github.com/aws/aws-emulator" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="src" href="https://allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html" target="_blank" rel="noopener noreferrer">All Things Distributed ↗</a></div><p class="sum">AWS 推出免费的本地 AWS 模拟器 AWS Emulator：由 AI Agent 从零构建，开发者可以在本机模拟 AWS 服务做开发测试，不用先上云。GeekWire 称这是&quot;AWS 给开发者的免费本地替身&quot;。</p><div class="bg"><span class="bk">背景</span>这个模拟器本身就是 Agent 工程的展示品——AWS 称它由自主 AI Agent 从头搭建；HN 讨论集中在它与 LocalStack 的对比，以及&quot;Agent 写的代码、工程师的工作会变成什么&quot;。</div></article><article class="story f" id="i-72ffa2e208" data-fid="i-72ffa2e208"><div class="shead"><h3 class="hl">Simon Willison 的 llm 0.37.2：修复安全问题，extra-openai-models.yaml 改由新机制管理</h3><button class="star" type="button" data-star="i-72ffa2e208" aria-pressed="false" aria-label="收藏：Simon Willison 的 llm 0.37.2：修复安全问题，extra-openai-models.yaml 改由新机制管理" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://simonwillison.net/2026/Nov/11/llm/" target="_blank" rel="noopener noreferrer">Simon Willison ↗</a></div><p class="sum">llm 0.37.2 发布，修复 Daniel de Araujo 报告的安全问题（GHSA-v9h7-jj4g-f862、GHSA-r639-rr7r-x72w）；extra-openai-models.yaml 现改由新机制管理。</p><div class="bg"><span class="bk">背景</span>llm 是 Simon Willison 的命令行 LLM 工具，更新节奏快；这次是安全修复版本，建议直接升级。</div></article><article class="story f" id="i-7d1c82bab3" data-fid="i-7d1c82bab3"><div class="shead"><h3 class="hl">Show HN：Klad——能让编程 Agent 驱动的绘画应用（源码开放）</h3><button class="star" type="button" data-star="i-7d1c82bab3" aria-pressed="false" aria-label="收藏：Show HN：Klad——能让编程 Agent 驱动的绘画应用（源码开放）" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://github.com/klad-app/klad" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p class="sum">Show HN 项目 Klad：一款绘画应用，特点是编程 Agent 可以直接驱动它作画，源码开放。</p><div class="bg"><span class="bk">背景</span>继&quot;Agent 写代码&quot;之后，&quot;Agent 画画&quot;正在变成新的演示方向：Klad 把画布变成 Agent 可操作的环境，HN 上的关注点是它如何把绘画动作变成 Agent 的工具调用。</div></article><article class="story f" id="i-9d70ee517e" data-fid="i-9d70ee517e"><div class="shead"><h3 class="hl">Launch HN：Pomerado（YC F26）——把任意网站变成面向 Agent 的 MCP</h3><button class="star" type="button" data-star="i-9d70ee517e" aria-pressed="false" aria-label="收藏：Launch HN：Pomerado（YC F26）——把任意网站变成面向 Agent 的 MCP" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://news.ycombinator.com/item?id=50455811" target="_blank" rel="noopener noreferrer">Hacker News ↗</a></div><p class="sum">YC F26 项目 Pomerado 上线 Launch HN：把任意网站转化为面向 Agent 的 MCP 服务器，让 Agent 能直接调用网站能力。</p><div class="bg"><span class="bk">背景</span>MCP 生态正在从&quot;官方提供&quot;走向&quot;任意网站一键转换&quot;；Pomerado 的思路是把网站现成的接口与页面结构包成 MCP，对 Agent 开发者来说等于多了一个快速接网站的通道。</div></article></section><section class="sec" id="company"><div class="chap"><span class="no">03</span><h2>科技公司动态</h2><span class="cnt">5 条</span></div><article class="story f" id="i-218f5bd227" data-fid="i-218f5bd227"><div class="shead"><h3 class="hl">英国 AI 芯片初创 Fractile 完成 7.2 亿美元融资，估值 70 亿美元</h3><button class="star" type="button" data-star="i-218f5bd227" aria-pressed="false" aria-label="收藏：英国 AI 芯片初创 Fractile 完成 7.2 亿美元融资，估值 70 亿美元" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips" target="_blank" rel="noopener noreferrer">TechCrunch ↗</a><a class="src" href="https://reut.rs/4iUzZ2O" target="_blank" rel="noopener noreferrer">路透 ↗</a></div><p class="sum">英国 AI 芯片初创 Fractile 完成 7.2 亿美元融资，投后估值 70 亿美元，较 5 月的约 11 亿美元大幅上跳；投资方包括 Thrive 与 Founders Fund。</p><div class="bg"><span class="bk">背景</span>Fractile 是英国政府支持的 AI 芯片新贵，定位是推理芯片；半年内估值翻六倍多，反映出市场对&quot;英伟达之外&quot;的算力叙事正在给真金白银。</div></article><article class="story f" id="i-a368df1569" data-fid="i-a368df1569"><div class="shead"><h3 class="hl">Torus 完成 5 亿美元 C 轮融资，用集装箱式 AI 数据中心吃闲置电网电力</h3><button class="star" type="button" data-star="i-a368df1569" aria-pressed="false" aria-label="收藏：Torus 完成 5 亿美元 C 轮融资，用集装箱式 AI 数据中心吃闲置电网电力" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://thenextweb.com/news/torus-foundry-500m-magnetar-modular-ai-inference" target="_blank" rel="noopener noreferrer">The Next Web ↗</a><a class="src" href="https://www.techmeme.com/261111/p26" target="_blank" rel="noopener noreferrer">Techmeme ↗</a></div><p class="sum">能源存储初创 Torus 完成 5 亿美元 C 轮融资（Magnetar 领投），用集装箱大小的模块化 AI 数据中心（1–20MW）建在现有电网站点上，跑 AI 推理、吃闲置电网电力。</p><div class="bg"><span class="bk">背景</span>AI 数据中心正在为电力与土地发愁，Torus 的打法是反向的：不新建、直接利用现有电网站点的富余容量；这笔融资说明&quot;算力找电&quot;的叙事正在获得资本认可。</div></article><article class="story f" id="i-3e60f5b36d" data-fid="i-3e60f5b36d"><div class="shead"><h3 class="hl">美联航禁止 AI Agent 代旅客订票，未经授权的 Agent 预订将被拦截</h3><button class="star" type="button" data-star="i-3e60f5b36d" aria-pressed="false" aria-label="收藏：美联航禁止 AI Agent 代旅客订票，未经授权的 Agent 预订将被拦截" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents" target="_blank" rel="noopener noreferrer">The Verge ↗</a><a class="src" href="https://cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights" target="_blank" rel="noopener noreferrer">CBS ↗</a></div><p class="sum">美联航宣布禁止 AI Agent 代旅客订票，未经授权的 Agent 预订将被拦截；只有旅客本人或授权渠道才能完成预订。</p><div class="bg"><span class="bk">背景</span>这是航司首次公开对&quot;Agent 代订&quot;亮红灯：随着 AI Agent 开始替用户完成真实交易，票务、酒店等行业的&quot;谁有权下单&quot;正在变成现实问题；此前 ChatGPT 刚上线 Business Hub 与企业智能体，Agent 消费的边界正在被各方划定。</div></article><article class="story f" id="i-e426ef970d" data-fid="i-e426ef970d"><div class="shead"><h3 class="hl">苹果宣布支持社区将于 11 月 20 日永久关闭，即日起停止新帖、仅保留只读</h3><button class="star" type="button" data-star="i-e426ef970d" aria-pressed="false" aria-label="收藏：苹果宣布支持社区将于 11 月 20 日永久关闭，即日起停止新帖、仅保留只读" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-media"><i class="dot"></i>媒体报道</span><span class="sep">·</span><a class="src" href="https://www.theverge.com/tech/1031507/apple-community-support-forum-shutting-down" target="_blank" rel="noopener noreferrer">The Verge ↗</a></div><p class="sum">苹果宣布官方支持社区（Apple Support Community）将于 11 月 20 日永久关闭，即日起停止新帖、仅保留只读模式。</p><div class="bg"><span class="bk">背景</span>苹果支持社区是用户互助答疑的老牌论坛，关闭后相关讨论预计会流向 Reddit 等第三方社区；苹果未说明关闭原因，知乎与 HN 上的猜测集中在&quot;AI 客服替代人工问答&quot;的方向，但这只是猜测，未有官方说法。</div></article><article class="story f" id="i-c005bb2b06" data-fid="i-c005bb2b06"><div class="shead"><h3 class="hl">字节被曝数周内推出类 Muse AI Agent，对标 Anthropic 通用 Agent</h3><button class="star" type="button" data-star="i-c005bb2b06" aria-pressed="false" aria-label="收藏：字节被曝数周内推出类 Muse AI Agent，对标 Anthropic 通用 Agent" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-relay"><i class="dot"></i>转述</span><span class="sep">·</span><a class="src" href="https://thenextweb.com/news/bytedance-muse-like-ai-agent-zhang-yiming" target="_blank" rel="noopener noreferrer">The Next Web ↗</a><a class="src" href="https://x.com/taiyanghere/status/2120493048266473810" target="_blank" rel="noopener noreferrer">@taiyanghere ↗</a></div><p class="sum">The Next Web 报道，字节跳动计划在数周内推出一款类似 Muse 的 AI Agent；PYMNTS 称字节正在打造能与美国 AI 实验室竞争的助手产品。</p><div class="bg"><span class="bk">背景</span>字节在豆包与 Seedream 之后，正在把 Agent 作为下一张牌：Muse 是 Anthropic 面向开发者的 Agent 产品，字节对标它，意味着国内大厂的 Agent 竞赛进入&quot;通用 Agent&quot;阶段。同一窗口内 @taiyanghere 转述的爆料称张一鸣认为&quot;想在最前沿追上 Anthropic 与 OpenAI，至少要到 2029 到 2030 年&quot;，@luellamech 也转述了同一消息。</div></article></section><section class="sec" id="creations"><div class="chap"><span class="no">04</span><h2>AI 造物精选</h2><span class="cnt">10 条</span></div><article class="story f" id="i-66a4e102fb" data-fid="i-66a4e102fb"><div class="shead"><h3 class="hl">Fable 5.2 + Blender：打字作水墨画，墨是实时流体模拟</h3><button class="star" type="button" data-star="i-66a4e102fb" aria-pressed="false" aria-label="收藏：Fable 5.2 + Blender：打字作水墨画，墨是实时流体模拟" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/op7418/status/2120085300185833878" target="_blank" rel="noopener noreferrer">@op7418 ↗</a></div><p class="sum">歸藏让 Fable 5.2 自由发挥做一个体现能力的项目，它交出一个水墨作画程序：打对应的字就生成对应文字的墨水形象，墨是实时的流体模拟，鼠标拖动有真实手感，还配了音效和音乐；画面里的物品与天气都是动态的，还会相互影响。</p><div class="bg"><span class="bk">背景</span>这是 Fable 5.2 发布后中文圈最出圈的玩法之一：不告诉模型做什么、只让它展示能力，结果它用 Blender + 代码做了一个可交互的水墨世界；同一批测试里还有骑自行车的鹈鹕（见本版另一条），都是&quot;代码即画面&quot;的演示。</div></article><article class="story f" id="i-94d34e9bd9" data-fid="i-94d34e9bd9"><div class="shead"><h3 class="hl">一句话让 Muse 搭出 AI 视频工作流空间：橘猫雨夜送外卖，6 镜 48 秒</h3><button class="star" type="button" data-star="i-94d34e9bd9" aria-pressed="false" aria-label="收藏：一句话让 Muse 搭出 AI 视频工作流空间：橘猫雨夜送外卖，6 镜 48 秒" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/wlzh/status/2120027833762537491" target="_blank" rel="noopener noreferrer">@wlzh ↗</a></div><p class="sum">作者让 Muse 搭了一个 AI 视频工作流空间：从一句话想法一路走到成片任务单，全程不用跳出去。拿&quot;橘猫雨夜送外卖&quot;试了一把，6 镜、48 秒，分镜、提示词、配音全齐；导演台还能一次出 Veo、Kling、Sora 等 6 个版本的提示词；提示词库内置 204 条 Muse Video 提示词，作者把完整提示词贴在原帖里，复制就能复现。</p><div class="bg"><span class="bk">背景</span>这是 Muse Spaces 的典型用法：不直接生视频，只做策划、提示词与任务单，生成步骤留给对应模型执行；空间分 5 个区（提示词库、策划台、节点画布、批量与导演台、成片区），全中文界面。</div></article><article class="story f" id="i-6f77553a95" data-fid="i-6f77553a95"><div class="shead"><h3 class="hl">Fable 5.2：24 分钟做出 30 秒动态图形短片，附提示词</h3><button class="star" type="button" data-star="i-6f77553a95" aria-pressed="false" aria-label="收藏：Fable 5.2：24 分钟做出 30 秒动态图形短片，附提示词" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/Leviwoyun/status/2119955625820258308" target="_blank" rel="noopener noreferrer">@Leviwoyun ↗</a></div><p class="sum">作者用 Fable 5.2 做了一段 30 秒动态图形短片：视频动效加配乐，24 分钟生产完毕；原帖贴出完整提示词——&quot;制作一段 30 秒动态图形短片，展现作为动态设计师出众的实力，就当做用于简历的个人作品集，请尽情发挥&quot;，有 Claude 的可以直接试。</p><div class="bg"><span class="bk">背景</span>Fable 5.2 发布后，动态设计成了最先被&quot;吓哭&quot;的工种之一：作者感叹&quot;动态设计师要学多少年&quot;，而模型 24 分钟就交出可当作品集的成片。</div></article><article class="story f" id="i-6c3de58ba7" data-fid="i-6c3de58ba7"><div class="shead"><h3 class="hl">Fable 5.2 做僵尸游戏新地图：几句提示词，硬件需求与延迟还减半</h3><button class="star" type="button" data-star="i-6c3de58ba7" aria-pressed="false" aria-label="收藏：Fable 5.2 做僵尸游戏新地图：几句提示词，硬件需求与延迟还减半" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/LuminaBench/status/2120660076927099048" target="_blank" rel="noopener noreferrer">@LuminaBench ↗</a></div><p class="sum">作者让 Fable 5.2 从零做了一张 Lumina Zombies 的全新地图（含彩蛋），还顺手升级了另外两张地图：硬件需求与延迟减半，画面全面更好；作者称&quot;几小时就能做到这个程度，游戏开发再也不会一样了&quot;，游戏可免费试玩。</p><div class="bg"><span class="bk">背景</span>这是 Fable 5.2 在游戏领域的又一个实测：不是做个小 demo，而是直接改一张可玩的僵尸游戏地图并优化性能；中文圈同一天也有多条 Fable 5.2 做游戏的帖子（见本版与关注账号动态）。</div></article><article class="story f" id="i-9799f2a252" data-fid="i-9799f2a252"><div class="shead"><h3 class="hl">82 秒仙侠短片拆成 15 个镜头段重做：H3 Ref2VA 生成，按原节奏总装</h3><button class="star" type="button" data-star="i-9799f2a252" aria-pressed="false" aria-label="收藏：82 秒仙侠短片拆成 15 个镜头段重做：H3 Ref2VA 生成，按原节奏总装" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/superfang119/status/2120053251630625278" target="_blank" rel="noopener noreferrer">@superfang119 ↗</a></div><p class="sum">作者把一段 82 秒仙侠短片拆成 15 个镜头段重做：新分镜首帧、角色/场景/道具参考、源动作与声音参考，再用 H3 Ref2VA 生成并按原节奏总装；画面抽样能读懂主要动作，但身份与真实感仍有边界；风格拆解与制作方法写进知微学导演第 22 课。</p><div class="bg"><span class="bk">背景</span>这是 MiniMax H3 的 Ref2VA（参考视频转视频）能力的实战拆解：不是一次生成，而是按镜头逐段重做、再总装，作者坦言身份一致性与真实感仍是边界。</div></article><article class="story f" id="i-cc7e5789ac" data-fid="i-cc7e5789ac"><div class="shead"><h3 class="hl">AI 互动小游戏《测测你的 AI 使用者人格》上线 B 站 Toy</h3><button class="star" type="button" data-star="i-cc7e5789ac" aria-pressed="false" aria-label="收藏：AI 互动小游戏《测测你的 AI 使用者人格》上线 B 站 Toy" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/ZhanG_MemeCoin/status/2120500477871980570" target="_blank" rel="noopener noreferrer">@ZhanG_MemeCoin ↗</a></div><p class="sum">作者用 AI 做了一个互动小游戏《测测你的 AI 使用者人格》，已发布到 B 站 Toy：回答 10 道情境题、约 2 分钟，就能测出自己属于哪种 AI 使用者人格，还能解锁隐藏优势与进阶建议；从想法、开发到页面设计再到发布，整个过程是一次 AI 编程实践。</p><div class="bg"><span class="bk">背景</span>B 站 Toy 是 B 站的 AI 小游戏发布平台，这类&quot;测试类互动小游戏&quot;正在成为 vibe coding 最常见的练手形态：两分钟可玩、有结果可晒、开发到发布一气呵成。</div></article><article class="story f" id="i-b981a4fbaa" data-fid="i-b981a4fbaa"><div class="shead"><h3 class="hl">4K 国风 AI MV《醉后不知天》：ChatGPT 作词作曲、Suno 做歌、Muse 做画面</h3><button class="star" type="button" data-star="i-b981a4fbaa" aria-pressed="false" aria-label="收藏：4K 国风 AI MV《醉后不知天》：ChatGPT 作词作曲、Suno 做歌、Muse 做画面" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/OnlyAIKnows/status/2120463450707280379" target="_blank" rel="noopener noreferrer">@OnlyAIKnows ↗</a></div><p class="sum">一支 4K 国风 AI MV《醉后不知天》：把永和九年兰亭春宴做成一支 MV，从曲水流觞、临溪起舞，到客散后的月下空亭；作词、作曲出自 ChatGPT，音乐由 Suno 生成，美术与视觉设计出自 ChatGPT，动态影像由 Muse 制作，剪辑与后期由 Codex 完成。</p><div class="bg"><span class="bk">背景</span>这支 MV 的分工表本身就是看点：词曲、音乐、美术、动态影像、剪辑分别由 5 个不同的 AI 完成，是&quot;多模型协作制片&quot;的完整样本。</div></article><article class="story f" id="i-728bcd6930" data-fid="i-728bcd6930"><div class="shead"><h3 class="hl">Fable 5.2 的 Blender 鹈鹕测试：4800 行 Python，RTX 5080 上 444 帧 56 分钟渲染完</h3><button class="star" type="button" data-star="i-728bcd6930" aria-pressed="false" aria-label="收藏：Fable 5.2 的 Blender 鹈鹕测试：4800 行 Python，RTX 5080 上 444 帧 56 分钟渲染完" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/0xbiying/status/2120594231572222118" target="_blank" rel="noopener noreferrer">@0xbiying ↗</a></div><p class="sum">Fable 5.2 的 Blender 鹈鹕测试：模型在 Claude Code 里写了约 4800 行 Python，驱动 Blender 5.2.3 无头渲染一只骑自行车的鹈鹕——21 根骨骼的骨架、弯曲羽毛卡片、程序化海滨长廊场景、5 个带运动模糊与景深的镜头；RTX 5080 上 444 帧只用 56 分钟渲染完成。</p><div class="bg"><span class="bk">背景</span>这是中文圈这两天最硬核的 Fable 5.2 实测之一：全部几何体、骨骼权重、材质都在代码中生成，作者贴出完整技术栈（代理、3D、渲染器、羽毛、骨骼、相机、场景、输出）；同一测试在歸藏的时间线里也有&quot;鹈鹕骑自行车还在追我&quot;的后续。</div></article><article class="story f" id="i-4435caf482" data-fid="i-4435caf482"><div class="shead"><h3 class="hl">Claude Code Skill 做 AI 说唱对决：周瑜 vs 诸葛亮，1 分 42 秒只花 16 美元</h3><button class="star" type="button" data-star="i-4435caf482" aria-pressed="false" aria-label="收藏：Claude Code Skill 做 AI 说唱对决：周瑜 vs 诸葛亮，1 分 42 秒只花 16 美元" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/Ryrenz/status/2120457770914697624" target="_blank" rel="noopener noreferrer">@Ryrenz ↗</a></div><p class="sum">ancient-rap-battle 这个 Claude Code Skill 能把周瑜、诸葛亮这样的历史老对手拉出来做 AI 说唱对决短视频：第一期成片 1 分 42 秒、34 句原创歌词，视频生成只花了约 16 美元；歌词每方 16 句、四句一韵、一句一个典故，每句配史料注释；歌在 Suno 里做，9 张定妆图在 Midjourney 里出，画面由即梦 Seedance 2.5 分段生成并自动对口型；项目 MIT 开源、完全免费。</p><div class="bg"><span class="bk">背景</span>这是&quot;Skill 串起整条流水线&quot;的样本：写词、做歌、出画面、对口型、剪辑、上字幕，每一步都由 Skill 编排不同工具完成；作者提醒片头会标&quot;AI 生成 仅供娱乐&quot;，史料注释也是 AI 写的，Suno 免费版做的歌不能商用。</div></article><article class="story f" id="i-659edf0d43" data-fid="i-659edf0d43"><div class="shead"><h3 class="hl">治愈系 AI 动画短片：毛茸茸小精灵拾起散落的吉光片羽</h3><button class="star" type="button" data-star="i-659edf0d43" aria-pressed="false" aria-label="收藏：治愈系 AI 动画短片：毛茸茸小精灵拾起散落的吉光片羽" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/freeman1266/status/2120538283788951856" target="_blank" rel="noopener noreferrer">@freeman1266 ↗</a></div><p class="sum">一段治愈系 AI 动画短片：柔光、花草与星河织就的童话微光里，软萌毛茸茸的小精灵替人拾起散落在岁月里的吉光片羽；画面温暖、歌声柔软，讲的是&quot;好久不见&quot;——没有争吵，只有悄无声息的疏离与回不去的过去。</p><div class="bg"><span class="bk">背景</span>这类&quot;治愈系 AI 动画&quot;正在成为短视频平台的稳定品类：画面与音乐都由 AI 生成，情绪与文案是核心卖点；作者自认&quot;这短文虽然很 AI，但很搭这个视频&quot;。</div></article></section><section class="sec" id="xcn"><div class="chap"><span class="no">05</span><h2>X 中文圈精选</h2><span class="cnt">5 条</span></div><div class="subwrap"><h3 class="subhead">经验帖</h3><article class="story f" id="i-04e5e0c823" data-fid="i-04e5e0c823"><div class="shead"><h3 class="hl">Fable 5.2 官方提示词指南的实验数据：两句话让 Agent 少&quot;撂挑子&quot;一半</h3><button class="star" type="button" data-star="i-04e5e0c823" aria-pressed="false" aria-label="收藏：Fable 5.2 官方提示词指南的实验数据：两句话让 Agent 少&quot;撂挑子&quot;一半" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/t20000622yy/status/2120514652308418645" target="_blank" rel="noopener noreferrer">@t20000622yy ↗</a></div><p class="sum">Claude Fable 5.2 的官方提示词指南里有组实验数据：只加一句&quot;这个代码库归你管&quot;，Agent 主动整合重复代码的比例就从不到 10% 涨到接近 50%；再加一句&quot;任务没做完别停&quot;，官方测试中 Agent 干一半就提前结束的情况直接少了一半。作者据此整理了一套可直接放进 AGENTS.md 的全局提示词：让模型遇到普通问题先自己排查、任务尽量做完、该测试的测试、该验证的验证，同时明确权限与修改边界；完整英文版放 GitHub Gist，评论区自取。</p><div class="bg"><span class="bk">背景</span>这正是平时用 Coding Agent 最让人血压高的地方：GPT-6 Astra 遇到点小错就原地待命、事情干一半就开始写总结邀功；作者的结论是&quot;有时候还真不是模型不够聪明，而是我们没把职责和工作边界交代清楚&quot;。</div></article><article class="story f" id="i-291a99461b" data-fid="i-291a99461b"><div class="shead"><h3 class="hl">高盛收回交易员的 Claude Code，苹果削减外部模型日上限：重型工具正在向能兜底的人集中</h3><button class="star" type="button" data-star="i-291a99461b" aria-pressed="false" aria-label="收藏：高盛收回交易员的 Claude Code，苹果削减外部模型日上限：重型工具正在向能兜底的人集中" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/grapeot/status/2120563706254045569" target="_blank" rel="noopener noreferrer">@grapeot ↗</a></div><p class="sum">高盛前几个月还在让交易员和投行家自己用 Claude Code 写软件原型，首席信息官 7 月还在公开称赞；3 个月后，10 月的内部指引把大多数交易员和投行家的 Claude Code 与 GitHub 编程工具收回，只保留给软件工程师，唯独给坐在交易员旁边的量化策略师（strats）开了绿灯。同一个月，苹果把部分工程师用外部大模型的日上限从 300 美元降到 200 美元、计划再降到 100 美元，非技术团队正考虑从 100 美元压到 25 美元。</p><div class="bg"><span class="bk">背景</span>作者的判断是：不懂代码的人聊几分钟生成的脚本，程序员不敢直接信里面任何一行逻辑，逆向查漏洞、对齐金融零容错审计往往比从头写还累；交易员的电脑连着敏感交易流和内部凭证，缺乏安全工程经验的人在本地终端随便跑脚本，一旦装错外部包或遭遇数据投毒，就会暴露长效密钥和内网权限；结论是把高权限重型工具留给能查代码、能为故障兜底的专业开发者，再由他们做好安全可控的内部工具给业务团队调用。</div></article></div><div class="subwrap"><h3 class="subhead">教程帖</h3><article class="story f" id="i-b3702beb49" data-fid="i-b3702beb49"><div class="shead"><h3 class="hl">用 LibTV 做原创明末穿越短剧：剧本、角色三视图、分镜提示词全套教程</h3><button class="star" type="button" data-star="i-b3702beb49" aria-pressed="false" aria-label="收藏：用 LibTV 做原创明末穿越短剧：剧本、角色三视图、分镜提示词全套教程" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/xitang_ai/status/2120513274764550300" target="_blank" rel="noopener noreferrer">@xitang_ai ↗</a></div><p class="sum">作者跟着《持械入宋》的灵感，用 LibTV 做了一段原创明末穿越短剧，并把剧本、角色三视图、分镜提示词和&quot;只重拍出错 4 秒&quot;的过程整理成完整教程，样片与实测素材都在文中。</p><div class="bg"><span class="bk">背景</span>《持械入宋》是这段时间中文圈 AI 短剧的标杆案例之一；这篇教程的价值在&quot;只重拍出错 4 秒&quot;——即 AI 短剧的纠错成本正在从&quot;整段重做&quot;变成&quot;只改坏掉的那几秒&quot;。</div></article></div><div class="subwrap"><h3 class="subhead">开源推荐</h3><article class="story f" id="i-c08cc137e8" data-fid="i-c08cc137e8"><div class="shead"><h3 class="hl">开源 SourceBoard：让 Codex 跨平台找内容、取公开数据，整理成研究看板</h3><button class="star" type="button" data-star="i-c08cc137e8" aria-pressed="false" aria-label="收藏：开源 SourceBoard：让 Codex 跨平台找内容、取公开数据，整理成研究看板" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/Frederickkk07/status/2120533533374775763" target="_blank" rel="noopener noreferrer">@Frederickkk07 ↗</a></div><p class="sum">雷哥开源的 SourceBoard，作者已经用进自己的工作台：一句话理解，就是让 Codex 帮你跨平台找内容、取公开数据，最后整理成一张研究看板。搜关键词覆盖抖音、小红书、B 站、公众号、X 等 10 个平台；丢作品链接支持 20 个平台加普通网页，取正文、作者与互动数据；看账号主页支持 7 个平台；自动出看板，可按平台筛选、按数据排序、留备注，再让 AI 深挖选中的内容；安装方法是把链接丢给 Codex，按项目里的 AGENT_INSTALL.md 走。</p><div class="bg"><span class="bk">背景</span>这是&quot;Agent 帮你做研究&quot;的开源实现：找选题、找对标、从评论里挖需求，都能交给 Agent；作者称&quot;链接丢给 Codex，我现在向来如此了&quot;。</div></article><article class="story f" id="i-1237c9bf2b" data-fid="i-1237c9bf2b"><div class="shead"><h3 class="hl">开源 workbuddy-auto-signin：自动领 WorkBuddy 每日签到积分，还支持 Qoder CN 每天 100 Credits</h3><button class="star" type="button" data-star="i-1237c9bf2b" aria-pressed="false" aria-label="收藏：开源 workbuddy-auto-signin：自动领 WorkBuddy 每日签到积分，还支持 Qoder CN 每天 100 Credits" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><a class="src" href="https://x.com/fhwofjow51260/status/2120508940698148955" target="_blank" rel="noopener noreferrer">@fhwofjow51260 ↗</a></div><p class="sum">GitHub 2.3K Star 的开源项目 workbuddy-auto-signin：自动领取 WorkBuddy 每日签到积分，还支持 Qoder CN 每天 100 Credits；成长中心的 Buddy 旅行礼物、派遣任务、连续签到奖励、断签补签、开盲盒也能自动处理；支持 Windows、macOS，配好定时任务后每天后台静默运行，不弹窗、不消耗 AI Token。</p><div class="bg"><span class="bk">背景</span>WorkBuddy 与 Qoder CN 的签到积分是中文圈这几天常提的羊毛；这个项目把&quot;每天手动领&quot;变成定时任务自动跑，2.3K Star 说明用的人不少。</div></article></div></section><section class="sec" id="deals"><div class="chap"><span class="no">06</span><h2>薅羊毛 · 福利与优惠</h2><span class="cnt">10 条</span></div><article class="story f deal" id="i-244641871a" data-fid="i-244641871a"><div class="shead"><h3 class="hl">Google Cloud 新用户送 $300：90 天有效，可调 Gemini，但 11 月 16 日后开通的不能再付 Gemini 费用</h3><button class="star" type="button" data-star="i-244641871a" aria-pressed="false" aria-label="收藏：Google Cloud 新用户送 $300：90 天有效，可调 Gemini，但 11 月 16 日后开通的不能再付 Gemini 费用" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/Jamesmv49/status/2120141051608637563" target="_blank" rel="noopener noreferrer">@Jamesmv49 ↗</a></div><p class="drow"><span class="dk">怎么领</span>Google 账号登录 → 点&quot;免费开始使用&quot; → 绑卡验证（预授权 $0–1，不扣钱）→ $300 自动到账 → 控制台启用 Vertex AI API</p><p class="drow"><span class="dk">截止</span>90 天有效；注意：2026 年 11 月 16 日及之后开通免费试用的，$300 赠金不能再用来支付 Gemini Platform（原 Vertex AI）费用，想用它跑 Gemini 须在 11 月 16 日前开通</p><div class="bg"><span class="bk">背景</span>领用条件：从没当过 Google Cloud、Google Maps Platform 或 Firebase 的付费用户，且以前没开过这个免费试用，每人限一次；同日另一条帖子也提醒了 11 月 16 日的限制。</div></article><article class="story f deal" id="i-39df94594a" data-fid="i-39df94594a"><div class="shead"><h3 class="hl">Anyscale 新账号送 $500 额度：KubeRay Connect Launch 限时优惠</h3><button class="star" type="button" data-star="i-39df94594a" aria-pressed="false" aria-label="收藏：Anyscale 新账号送 $500 额度：KubeRay Connect Launch 限时优惠" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/Leo_zhang2018/status/2120651615527161903" target="_blank" rel="noopener noreferrer">@Leo_zhang2018 ↗</a></div><p class="drow"><span class="dk">怎么领</span>进入 Anyscale 官方活动页面，选择 KubeRay Connect Launch，注册新账号，按官方指引连接现有 KubeRay 集群，查看试用额度</p><p class="drow"><span class="dk">截止</span>限时优惠，官方未公布明确截止日期；$500 的适用范围与有效期以账号实际显示为准</p><div class="bg"><span class="bk">背景</span>关键门槛：需要有符合要求的 Kubernetes 集群并安装 KubeRay，不是注册账号就送一台 GPU 云服务器；作者提醒普通用户先确认自己有没有符合条件的集群，避免为领额度反而产生额外云服务器费用。</div></article><article class="story f deal" id="i-f24e565b0d" data-fid="i-f24e565b0d"><div class="shead"><h3 class="hl">Infini Lite 卡免费领：可绑美区 AI 订阅，返现 1.5%</h3><button class="star" type="button" data-star="i-f24e565b0d" aria-pressed="false" aria-label="收藏：Infini Lite 卡免费领：可绑美区 AI 订阅，返现 1.5%" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/REraserTech/status/2120585628450709784" target="_blank" rel="noopener noreferrer">@REraserTech ↗</a></div><p class="drow"><span class="dk">怎么领</span>中国护照 + N26 账单地址申请 → 充值 10U 激活</p><p class="drow"><span class="dk">截止</span>未标</p><div class="bg"><span class="bk">背景</span>作者提醒：开卡费 10 USD、结算货币 USD、外汇转换费 3%、退款手续费 1%；卡 BIN 为美国 Visa（第三方数据库归类，不代表官方确认发卡行）；Apple Pay 绑定时出现的验证邮箱不是注册邮箱，更像商务卡流程；Claude 与 OpenAI 订阅返现作者还没测试。</div></article><article class="story f deal" id="i-55a728dfce" data-fid="i-55a728dfce"><div class="shead"><h3 class="hl">Subscriptrack：免费管 5 个订阅，邮箱接入自动翻出扣费项</h3><button class="star" type="button" data-star="i-55a728dfce" aria-pressed="false" aria-label="收藏：Subscriptrack：免费管 5 个订阅，邮箱接入自动翻出扣费项" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/yzpq6668/status/2120574494859579882" target="_blank" rel="noopener noreferrer">@yzpq6668 ↗</a></div><p class="drow"><span class="dk">怎么领</span>接邮箱，AI 自动翻出订阅；不想注册可先用免费账单检查</p><p class="drow"><span class="dk">截止</span>未标</p><div class="bg"><span class="bk">背景</span>坑是它不连银行也不替你取消，取消还得自己动手；免费只管 5 个订阅，多了得开 Pro；对订阅多的人来说，先免费扫一遍漏掉的扣费项就值了。</div></article><article class="story f deal" id="i-7f0128454c" data-fid="i-7f0128454c"><div class="shead"><h3 class="hl">EditClips AI 视频编辑器开放网页版测试：注册即用，4K 免费导出</h3><button class="star" type="button" data-star="i-7f0128454c" aria-pressed="false" aria-label="收藏：EditClips AI 视频编辑器开放网页版测试：注册即用，4K 免费导出" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/realJustinSoong/status/2120648999258800535" target="_blank" rel="noopener noreferrer">@realJustinSoong ↗</a></div><p class="drow"><span class="dk">怎么领</span>注册 EditClips 网页版即可使用</p><p class="drow"><span class="dk">截止</span>测试期，未标</p><div class="bg"><span class="bk">背景</span>这是&quot;聊天框改时间线&quot;的 AI 剪辑思路：不用学时间轴，直接用自然语言改片；每日免费额度适合轻量使用。</div></article><article class="story f deal" id="i-3986d5358a" data-fid="i-3986d5358a"><div class="shead"><h3 class="hl">Nex-N2.6 多模态智能体模型免费调用，0 Credits</h3><button class="star" type="button" data-star="i-3986d5358a" aria-pressed="false" aria-label="收藏：Nex-N2.6 多模态智能体模型免费调用，0 Credits" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/xulijian1994/status/2120652626278924488" target="_blank" rel="noopener noreferrer">@xulijian1994 ↗</a></div><p class="drow"><span class="dk">怎么领</span>注册并登录 MOSS API 平台 → 创建一个 API Key → 模型名称填写 &quot;nex-n2.6&quot;，即可免费调用</p><p class="drow"><span class="dk">截止</span>未标</p><div class="bg"><span class="bk">背景</span>免费调用的模型是后训练版本；作者未说明额度上限与有效期，以平台实际显示为准。</div></article><article class="story f deal" id="i-2637e29de1" data-fid="i-2637e29de1"><div class="shead"><h3 class="hl">Qwen4 免费额度：11 月 11–24 日可领，30 天有效</h3><button class="star" type="button" data-star="i-2637e29de1" aria-pressed="false" aria-label="收藏：Qwen4 免费额度：11 月 11–24 日可领，30 天有效" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/ReZigong/status/2120660276882391118" target="_blank" rel="noopener noreferrer">@ReZigong ↗</a></div><p class="drow"><span class="dk">怎么领</span>11 月 11–24 日期间领取 Qwen4 免费额度</p><p class="drow"><span class="dk">截止</span>领取窗口 11 月 11–24 日，额度 30 天有效</p><div class="bg"><span class="bk">背景</span>Qwen4-Max 已在阿里 Token Plan 上开启预览；这次免费额度与 Qwen Code 1.0 Preview 同步，是阿里 Qwen4 上线期的推广动作。</div></article><article class="story f deal" id="i-838b6d7196" data-fid="i-838b6d7196"><div class="shead"><h3 class="hl">免费云服务器给 AI Agent 安家：1 核 2G 常驻不休眠，还附私有 Postgres</h3><button class="star" type="button" data-star="i-838b6d7196" aria-pressed="false" aria-label="收藏：免费云服务器给 AI Agent 安家：1 核 2G 常驻不休眠，还附私有 Postgres" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/ChenY390353/status/2120607853534929121" target="_blank" rel="noopener noreferrer">@ChenY390353 ↗</a></div><p class="drow"><span class="dk">怎么领</span>去原帖链接注册建账号，免费档一个账号一份，名额看余量</p><p class="drow"><span class="dk">截止</span>未标</p><div class="bg"><span class="bk">背景</span>最大的坑作者先讲清楚了：注册时不用绑卡，但 7 天内必须补一张卡，不然免费资源直接删掉；卡加上之后免费档照常免费，不是 7 天试用过期就收费。</div></article><article class="story f deal" id="i-cc73df12e0" data-fid="i-cc73df12e0"><div class="shead"><h3 class="hl">Geekersoft PDF Converter 限免：一年 VIP 激活码免费领，原价 $19.99</h3><button class="star" type="button" data-star="i-cc73df12e0" aria-pressed="false" aria-label="收藏：Geekersoft PDF Converter 限免：一年 VIP 激活码免费领，原价 $19.99" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/taiyanghere/status/2120557157158363448" target="_blank" rel="noopener noreferrer">@taiyanghere ↗</a></div><p class="drow"><span class="dk">怎么领</span>公开限免码：QU09ZA-LAJV9V-3RJONI-2A31-LSJ7AR，直接拿码激活，先到先得</p><p class="drow"><span class="dk">截止</span>激活次数有限，未公布截止日期，码失效就没了</p><div class="bg"><span class="bk">背景</span>仅限 Windows；转换全在本地离线完成，文件不用上传。</div></article><article class="story f deal" id="i-bdbb966233" data-fid="i-bdbb966233"><div class="shead"><h3 class="hl">斯里兰卡 Dialog 手机号 8 元保半年：护照线上办，免费开卡、无月租</h3><button class="star" type="button" data-star="i-bdbb966233" aria-pressed="false" aria-label="收藏：斯里兰卡 Dialog 手机号 8 元保半年：护照线上办，免费开卡、无月租" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><span class="mtag t-personal"><i class="dot"></i>个人分享</span><span class="sep">·</span><span class="mstat"><i class="dot ok"></i>进行中</span><span class="sep">·</span><a class="src" href="https://x.com/Lovislexus/status/2120660343974478196" target="_blank" rel="noopener noreferrer">@Lovislexus ↗</a></div><p class="drow"><span class="dk">怎么领</span>打开 Dialog 官网 → Buy SIM → New Connection → 选 Prepaid → The 1 FOR 1 Plan → 选 Foreigner，填中国护照号码 → 选 Other Numbers 挑免费普通号 → 卡类型选 eSIM → 填邮箱，上传护照、自拍完成认证 → 填地址、电子签名，审核通过后邮箱领取 eSIM 二维码</p><p class="drow"><span class="dk">截止</span>400 卢比保 180 天是官方充值卡规则，线上充值有效期要实际确认</p><div class="bg"><span class="bk">背景</span>作者提醒：只收验证码，记得关闭数据漫游；不支持原生 eSIM 的手机可研究兼容的实体写卡方案；国内漫游接码、平台是否接受 +94 号码，以实际使用为准。</div></article></section><section class="sec" id="watchlist"><div class="chap"><span class="no">07</span><h2>关注账号动态</h2><span class="cnt">25 条</span><button class="mini" type="button" id="toggleAll" aria-label="展开或收起全部分组" style="border:0;background:none;font:inherit;font-size:12px;color:var(--faint);cursor:pointer;padding:4px 0">全部收起</button></div><details class="grp" open><summary><span class="gname">名单博主</span><span class="gcount">25 条动态 · 8 个账号未收录</span><span class="chev" aria-hidden="true">›</span></summary><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">宝玉</span><span class="idb">AI/软件工程知识翻译与科普</span><span class="hdl">@dotey</span><span class="gcount">3 条</span></div></div><article class="acc f post" id="i-00cdb9b84c" data-fid="i-00cdb9b84c"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@dotey</span></span><button class="star" type="button" data-star="i-00cdb9b84c" aria-pressed="false" aria-label="收藏：宝玉" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/dotey/status/2120539441127153869" target="_blank" rel="noopener noreferrer">@dotey ↗</a></div><p class="sum">RT @lemomo_ai: 很多人都问我说，这个视频是怎么做的。我在这里简单的拆解一下。
+
+首先是技术选择，没有用视频模型，完全是Fable5.2在claude code里面写phython的脚本驱动blender，用cycles渲染器渲染的。阅览室，灯光，镜头等都是代码减价的。其中，月光的光柱是体积散射，镜头带精深和运动模糊，同时也加入了慢镜头的设计，快慢交错体现节奏的变化，给配乐也留出了空间。
+
+两万四千也纸的飞行是用Numpy写的一套模拟，注意这里没有用blender自带的粒子系统，每页纸在队伍里有自己的位置，跟着线路走，这样能呈现更好自然的流动曲线。
+
+配乐是python写的谱子，用钢琴和弦乐采样渲染，纸的声音是合成出来的，最后还用了ffmpeg合成片子并且进行调色，这一步也挺关键的，一共是1236帧。
+
+其次，在设计上，先定画面再动手。先出几张概念图把光线和气氛定下来，整个房间只留月光和一盏油灯。七个镜头都按实拍的拍法去想，包括微距，手持跟拍，摇臂，慢动作等，这样能最大程度上保持电影的质感。镜头的衔接也很重要，但这部分其实取决于大家平时的积累，因为fable最先给我的版本非常镜头表现力很一般。
+
+最后，流程上，由于渲染需要大量时间，所以先出低清版本的，把镜头角度和动作都确定了，故事线完成之后，能有一个大概的样子，这样修改起来就会快非常多。得益于fable5.2 的审美很好，在渲染之后，还可以进行二次调色，让影片保持更好的质感。由于上传到x上只能是1080，很可惜，4K保持了更加好的光影质感和细节。
+
+希望对你们有帮助。</p><div class="bg"><span class="bk">背景</span>作者转述 @lemomo_ai 的拆解：这段视频没用视频模型，是 Fable 5.2 在 Claude Code 里写 Python 脚本驱动 Blender、Cycles 渲染器渲染的；月光光柱是体积散射，镜头带景深与运动模糊；两万四千页纸的飞行是用 NumPy 写的一套模拟，没用 Blender 自带粒子系统；配乐是 Python 写的谱子，一共 1236 帧。</div></div></article><article class="acc f post" id="i-bffdd63bc8" data-fid="i-bffdd63bc8"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@dotey</span></span><button class="star" type="button" data-star="i-bffdd63bc8" aria-pressed="false" aria-label="收藏：宝玉" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/dotey/status/2120546916475773071" target="_blank" rel="noopener noreferrer">@dotey ↗</a></div><p class="sum">周四 Codex 可能送一张重置卡？</p><div class="bg"><span class="bk">背景</span>作者问的是今天（周四）Codex 会不会送重置卡；这是中文圈在传的说法，尚未证实——本简报的 Codex/Claude 重置观察仍以官方公告为准。</div></div></article><article class="acc f post" id="i-9c61bcf253" data-fid="i-9c61bcf253"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@dotey</span></span><button class="star" type="button" data-star="i-9c61bcf253" aria-pressed="false" aria-label="收藏：宝玉" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/dotey/status/2120647659388031454" target="_blank" rel="noopener noreferrer">@dotey ↗</a></div><p class="sum">Google 推出 Gemini Decisions API：不写回答只做判断，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱
+
+Google 今天在 Gemini API 里上线了 Decisions API，配套新模型 Gemini Decision 1。它不生成文字，只答题：给它一份输入和一组问题，它直接返回每道题的答案，外加一个“有多大把握”的置信度。
+
+【它解决什么问题】
+
+做 AI 应用时，很多调用其实只要一个判断：这条客服消息转给哪个组？这个问题交给便宜模型还是推理模型？这张图违不违规？以前只能让大模型写一段话，再从里面解析答案，慢，容易解析失败，还要为输出 Token 付钱。
+
+Decisions API 只有三种题型：是非题，返回“是”的概率；单选题，2 到 255 个选项，返回选中项和每个选项的概率；打分题，按你写的档位打分。每个答案带 0 到 1 的置信度，代码可以设门槛，比如高于 0.7 自动执行，低于就转人工。官方说这些概率是校准过的，意思是模型说 90% 的时候，大约十次里真对九次，所以置信度能直接拿来当门槛。
+
+Google 博客的例子：上传一张茶水间台面的照片，同时问三个问题。“有没有洒了的液体”答 0.95；“怎么处理”选“用抹布擦”，置信度 0.98；“脏乱程度按 0 到 2 打分”给 1.19，置信度 0.77。
+
+【多快、多便宜】
+
+一次请求的输入最多 256K Token，文字、JSON、图片、音频、视频、PDF 可以混着放，比如一段客服通话录音加账户信息。同一份输入上最多挂 1000 个问题，彼此互不影响。输入只计一次费，每多一个问题只多算这道题本身的字数。
+
+Google 称输入在 1.6 万 Token 以内时，端到端延迟 150 到 250 毫秒，问 1 个和问 100 个问题耗时差不多；同一批评测下，比用 Gemini 3.5 Flash-Lite 生成答案便宜近 5 倍。Gemini Notebook 已经用它给每个提问挑模型，日常问题延迟最多降了 40%。
+
+【谁能用】
+
+在 Google AI Studio 拿个 API Key 就能调，模型名 gemini-decision-1，走 v1beta 接口。有免费层，每分钟 200 次、每天 1 万次，免费层的数据会被 Google 用来改进产品，付费层不会。OpenRouter、LangChain、Vercel 等正在接入，Google Cloud 上的 Gemini 要稍后才支持。
+
+不支持上下文缓存和 Batch API，同一份大文档反复问，每次都按全价算输入；不能直接传 YouTube 链接；问题本身只能写文字。
+
+【跟 OpenAI 的同名产品比】
+
+OpenAI 早一个月做了同样的东西，名字也叫 Decisions API：10 月 6 日出测试版，10 月 22 日正式开放，用 GPT-6 Luna，同样每百万输入 Token 0.1 美元、输出不收费。区别是 OpenAI 一次最多 400 个问题，只收文字、图片和 JSON，不收音视频和 PDF；但它支持缓存，重复输入能打折，还能直接塞进对话历史和工具调用记录。
+
+创业公司 TypeSafe 的 Jev 1.14 也专做这类判断，在 OpenRouter 上每百万输入 Token 0.042 美元，只收文字和图片。
+
+Google 博客附的对比表里，Gemini Decision 1 在 9 项测试中 7 项第一（其中音频、视频两项只有它和 Flash-Lite 参测），校准误差 0.025，GPT-6 Luna 是 0.072；网页操作和“该不该调用工具”两项输给了 Jev 1.14。7 项共同评测的总花费，Jev 最低，0.68 美元，Gemini Decision 1 是 0.88 美元，GPT-6 Luna 0.93 美元。以上跑分都是 Google 自己测的。
+
+Google 博客：https://t.co/P5hlLj7fXN
+官方文档：https://t.co/WphCUZv5oT
+OpenAI Decisions API 文档：https://t.co/MGgS32OuNy</p><div class="bg"><span class="bk">背景</span>作者详解 Google 当天上线的 Gemini Decisions API：不生成文字、只答题，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱；与本期 AI 板块的 Gemini Decision 1 相互印证。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">歸藏</span><span class="idb">AI/LLM/AIGC 经验、教程与开源推荐</span><span class="hdl">@op7418</span><span class="gcount">2 条</span></div></div><article class="acc f post" id="i-07597f7c9a" data-fid="i-07597f7c9a"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@op7418</span></span><button class="star" type="button" data-star="i-07597f7c9a" aria-pressed="false" aria-label="收藏：歸藏" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/op7418/status/2120528843031334915" target="_blank" rel="noopener noreferrer">@op7418 ↗</a></div><p class="sum">太牛批了 Fable 5.2，做游戏的能力，太顶了！
+
+你只要给他提供工具，他的场景设计和游戏细节直接拉满 https://t.co/LjJxXJrVgP</p><div class="bg"><span class="bk">背景</span>作者感叹 Fable 5.2 做游戏的能力：只要给它工具，场景设计与游戏细节直接拉满；与本期造物精选的 Fable 5.2 游戏案例相互印证。</div></div></article><article class="acc f post" id="i-751267865c" data-fid="i-751267865c"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@op7418</span></span><button class="star" type="button" data-star="i-751267865c" aria-pressed="false" aria-label="收藏：歸藏" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/op7418/status/2120541276970094774" target="_blank" rel="noopener noreferrer">@op7418 ↗</a></div><p class="sum">这一轮 Fable 5.2 做的这些 3D 游戏优化都极其牛逼，都能整合到一个 HTML 里边。
+
+网页发布永远是最方便的游戏发布方式，也是适配最多平台的发布方式。
+
+4399 即将迎来复兴，我们需要一个以 HTML 网页为基础的游戏分发平台。</p><div class="bg"><span class="bk">背景</span>作者认为这一轮 Fable 5.2 的 3D 游戏优化都能整合到一个 HTML 里，网页发布是最方便的游戏发布方式，呼吁做一个以 HTML 网页为基础的游戏分发平台。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">Tw93</span><span class="idb">X 创作、开源与开发者工具，实用经验分享</span><span class="hdl">@HiTw93</span><span class="gcount">1 条</span></div></div><article class="acc f post" id="i-4583238b25" data-fid="i-4583238b25"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@HiTw93</span></span><button class="star" type="button" data-star="i-4583238b25" aria-pressed="false" aria-label="收藏：Tw93" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/HiTw93/status/2120531568179749198" target="_blank" rel="noopener noreferrer">@HiTw93 ↗</a></div><p class="sum">Kaku is my open-source Mac terminal for AI coding.
+
+Running several agents at once? A tab lights a dot when its agent needs you, and Cmd+J jumps straight to it. On your phone, the remote page lists every tab with its agent&#x27;s status.
+
+https://t.co/cJVSaw22Ux https://t.co/HuLZsrVl3z</p><div class="bg"><span class="bk">背景</span>作者开源的 Mac 终端 Kaku，面向 AI 编程：多 Agent 同时跑时，有 Agent 需要你时对应标签页会亮点，Cmd+J 跳过去；手机上的远程页面能列出每个标签页的 Agent 状态。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">DIYgod</span><span class="idb">RSSHub 与 Folo 作者，开源推荐</span><span class="hdl">@DIYgod</span><span class="gcount">2 条</span></div></div><article class="acc f post" id="i-c5189728b8" data-fid="i-c5189728b8"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@DIYgod</span></span><button class="star" type="button" data-star="i-c5189728b8" aria-pressed="false" aria-label="收藏：DIYgod" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/DIYgod/status/2120460680897990960" target="_blank" rel="noopener noreferrer">@DIYgod ↗</a></div><p class="sum">可以脱离电脑在 iPhone 独立运行让 AI 操作手机的 pinky https://t.co/g7DXxYHK7H</p><div class="bg"><span class="bk">背景</span>作者分享的 pinky：可以脱离电脑、在 iPhone 上独立运行，让 AI 操作手机。</div></div></article><article class="acc f post" id="i-74558c7c9f" data-fid="i-74558c7c9f"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@DIYgod</span></span><button class="star" type="button" data-star="i-74558c7c9f" aria-pressed="false" aria-label="收藏：DIYgod" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/DIYgod/status/2120528134227493073" target="_blank" rel="noopener noreferrer">@DIYgod ↗</a></div><p class="sum">谢谢大善人 Anthropic https://t.co/y7Bbbb4UZr</p><div class="bg"><span class="bk">背景</span>作者一句&quot;谢谢大善人 Anthropic&quot;，配图见原帖；与昨日早刊今日重点的 Claude 全量免费重置相互印证（12 月 10 日 14:00 美西时间前领取）。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">向阳乔木</span><span class="idb">AI 工具与 Agent 实践</span><span class="hdl">@vista8</span><span class="gcount">3 条</span></div></div><article class="acc f post" id="i-6ec6c2759e" data-fid="i-6ec6c2759e"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@vista8</span></span><button class="star" type="button" data-star="i-6ec6c2759e" aria-pressed="false" aria-label="收藏：向阳乔木" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/vista8/status/2120503932548260273" target="_blank" rel="noopener noreferrer">@vista8 ↗</a></div><p class="sum">百度文心5.5 Flash Preview 今天发布。
+
+几个关键参数：总参数280B，每次推理只激活 14B，支持 1M 长上下文，千帆 API 单用户推理速度 200+ tokens/s，Apache 2.0协议开源，支持 SGLang 和 vLLM 部署。
+
+编程能力据说提升显著：
+
+训练数据用了超过1400万个可执行代码任务，加上多 Agent 框架真实执行轨迹，模型不仅能写代码，还能接管复杂软件工程任务。
+
+WebDev、游戏开发、3D仿真、视频编排，描述需求能直出可运行交互。
+
+知识工作的训练规模也很大：
+
+30万个工作空间、1000万份文件、40余种文件类型，后训练覆盖金融、法律等专业领域。
+
+分散的材料扔进去，模型能自主规划任务，调 MCP 工具和Skill，直接交付可用的表格、文档和报告。
+
+架构层面做了几件事：
+
+混合稀疏注意力解决长上下文 KV Cache 显存占用，多路由器 MoE 加 ECHO 多 Token 预测在提升能力的同时压低计算开销，FP4 专家权重和 草稿头专门针对 Agent 任务提速。
+
+280B参数每次仅激活 14B 还能跑到 200 tokens/s 以上，就是得益于上面的构架组合。
+
+百度早些时候披露了自动研究系统 ERNIE Evolve，能自主提出研究方向、开展实验、验证结果、积累经验，在NanoChat AutoResearch 和 NanoGPT Speedrun 两项任务三个评测指标上，拿到目前公开验证 SOTA。
+
+据说系统已参与了文心 5.5 Flash 的推理优化，包括低时延场景性能优化、确定性推理吞吐优化和极致解码速度优化，用 AI 系统来优化 AI 模型，这就是大家常说的 RSI 吧，加油！
+
+Openrouter 能免费用，抽空体验下，看看实际模型质量怎么样。</p><div class="bg"><span class="bk">背景</span>作者介绍百度当天发布的文心 5.5 Flash Preview：总参数 280B、每次推理只激活 14B，支持 1M 长上下文，千帆 API 单用户推理速度 200+ tokens/s，Apache 2.0 协议开源，支持 SGLang 与 vLLM 部署；编程能力据称提升显著，训练数据用了超过 1400 万个可执行代码任务。</div></div></article><article class="acc f post" id="i-fcf44cccaf" data-fid="i-fcf44cccaf"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@vista8</span></span><button class="star" type="button" data-star="i-fcf44cccaf" aria-pressed="false" aria-label="收藏：向阳乔木" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/vista8/status/2120505182991839728" target="_blank" rel="noopener noreferrer">@vista8 ↗</a></div><p class="sum">最近这个 Claude IP 风险检测网站是太火了。
+
+明天新规，看大家账号能不能逃过一劫
+
+网站地址见评论区 https://t.co/6GqEiWcRxp</p><div class="bg"><span class="bk">背景</span>作者称最近一个 Claude IP 风险检测网站很火，&quot;明天新规，看大家账号能不能逃过一劫&quot;，检测地址见原帖评论区；这是中文圈对 Claude 风控收紧的持续关注，未经官方证实。</div></div></article><article class="acc f post" id="i-da17e67c4f" data-fid="i-da17e67c4f"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@vista8</span></span><button class="star" type="button" data-star="i-da17e67c4f" aria-pressed="false" aria-label="收藏：向阳乔木" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/vista8/status/2120529325560885364" target="_blank" rel="noopener noreferrer">@vista8 ↗</a></div><p class="sum">安克录音豆第三方客户端，有点意思。
+
+后续还能自己改造变成 AI 麦克风？
+
+开源地址见评论区 https://t.co/NgKM16eISq</p><div class="bg"><span class="bk">背景</span>作者分享安克录音豆的第三方客户端：有点意思，后续还能自己改造成 AI 麦克风；开源地址见原帖评论区。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">Gorden Sun</span><span class="idb">AI 与开源工具推介</span><span class="hdl">@Gorden_Sun</span><span class="gcount">3 条</span></div></div><article class="acc f post" id="i-54e5cdcb21" data-fid="i-54e5cdcb21"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@Gorden_Sun</span></span><button class="star" type="button" data-star="i-54e5cdcb21" aria-pressed="false" aria-label="收藏：Gorden Sun" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/Gorden_Sun/status/2120517352144199974" target="_blank" rel="noopener noreferrer">@Gorden_Sun ↗</a></div><p class="sum">modern-web-guidance：让AI学会最新的网页开发规则
+
+Google Chrome团队联合Edge和火狐联合推出的工具包，只要在终端敲一行命令安装，或者让AI在本地自己检索调用，AI就能自动查阅标准范例，不需要开发者手动到处查文档。
+
+配上之后，AI写出的网页明显更轻快。弹窗自带淡入淡出动画，手机与电脑自适应排版干净利索，输入框能自动跟着文字长高，按钮和下拉菜单不用装任何花哨插件就能正常跑。不仅网页加载速度变快、老电脑滑动不卡顿，盲人读屏软件也能正常识别内容，连最新的无密码通行证登录功能都可以直接按规范写好。
+
+GitHub：https://t.co/A674KxJmh1</p><div class="bg"><span class="bk">背景</span>作者介绍 Google Chrome 团队联合 Edge 与火狐推出的 modern-web-guidance 工具包：终端敲一行命令安装，或让 AI 在本地自己检索调用，AI 就能自动查阅标准范例；配上之后 AI 写出的网页更轻快，弹窗自带淡入淡出、手机与电脑自适应排版干净。</div></div></article><article class="acc f post" id="i-32231b2072" data-fid="i-32231b2072"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@Gorden_Sun</span></span><button class="star" type="button" data-star="i-32231b2072" aria-pressed="false" aria-label="收藏：Gorden Sun" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/Gorden_Sun/status/2120528311361450151" target="_blank" rel="noopener noreferrer">@Gorden_Sun ↗</a></div><p class="sum">PAN 2：能模拟真实物理规律的开源世界模型
+
+架构上结合了多模态大语言模型与29B参数的隐式扩散模型，系统可以在执行动作前精准预测后续发展，支持在特定时间点注入动作并呈现不同后果，比如冲浪者提前或延后起身的真实结果。
+生成的模拟完全符合物理规律，比如牛奶与墨水在水中的扩散沉降、海绵受挤压变形和回弹；视角转动一圈后再转回来时，离开视野的物体依然保持原状与位置，保证了空间前后的一致性。
+
+模型：https://t.co/IA5demU3E6</p><div class="bg"><span class="bk">背景</span>作者介绍 MBZUAI 的 PAN 2：能模拟真实物理规律的开源世界模型，结合多模态大语言模型与 29B 参数隐式扩散模型，可在执行动作前精准预测后续发展；与晚刊 AI 板块的 PAN 2 相互印证。</div></div></article><article class="acc f post" id="i-f75b18fa75" data-fid="i-f75b18fa75"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@Gorden_Sun</span></span><button class="star" type="button" data-star="i-f75b18fa75" aria-pressed="false" aria-label="收藏：Gorden Sun" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/Gorden_Sun/status/2120534090260890104" target="_blank" rel="noopener noreferrer">@Gorden_Sun ↗</a></div><p class="sum">上周都说Claude加强了风控，于是我想从头走一遍订阅来打个样。
+
+机场节点注册了一个Claude新号，没问题。
+直连注册了一个新加坡区苹果账号，没问题。
+新注册的苹果账号绑卡后订阅，触发了新号支付的风控，也算正常。
+等待72小时后提示账号被封，跟客服battle一天后告知再等24小时重新激活。
+又过了24小时后，告知苹果商店的账号永久被封。
+
+我估计跟这几个因素有关：新号、新号立即订阅Claude、新加坡区、绑定的新加坡卡段。
+
+苹果肯定是被薅的太多了，所以加强了风控，只能说前人砍树，后人遭殃。
+
+也许老号和其他区的情况会好一些，等后续再试吧。</p><div class="bg"><span class="bk">背景</span>作者复盘自己从头走一遍 Claude 订阅的经历：机场节点注册新号没问题，直连注册新加坡区苹果账号没问题，新注册苹果账号绑卡后订阅触发新号支付风控，等待 72 小时后提示账号被封，跟客服 battle 一天后告知再等 24 小时重新激活，又过 24 小时后告知苹果商店账号永久被封；作者估计与新号、新号立即订阅、新加坡区、绑定的新加坡卡段有关。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/png;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">橘子 Orange AI</span><span class="idb">前 MiniMax 产品经理，Personal Agent 与产品经验</span><span class="hdl">@oran_ge</span><span class="gcount">3 条</span></div></div><article class="acc f post" id="i-e88e01cc97" data-fid="i-e88e01cc97"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@oran_ge</span></span><button class="star" type="button" data-star="i-e88e01cc97" aria-pressed="false" aria-label="收藏：橘子 Orange AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/oran_ge/status/2120534806748688811" target="_blank" rel="noopener noreferrer">@oran_ge ↗</a></div><p class="sum">RT @teach_fireworks: 唉，转型不易，今晚又听到了字节大裁员的消息。感觉从北美那边逐渐传导到咱们这儿了，大家有工作的尽快完成个人转型吧。
+
+当你坐在一个漂亮的办公室，喝着新口味的咖啡，还能去扯扯淡，健健身，跟年轻妹子聊聊骚。
+
+那我告诉你，在2026，这是很危险的信号，如果你从Sonnet 4.5开始一直错过了中间的所有环节，看似跟每天把reset,封号，harness工具挂在嘴边的同事或朋友没有区别，你也看不出区别，那你可能需要至少两年时间来追上节奏，因为但凡你在一年前开始使用cc或codex,每周基本上都停不下来，那可不仅仅是一年的差距了。
+
+大家各自安好吧，未来程序员这个职业究竟会是什么终态，什么不知道，AK大神 @karpathy 和财富自由的龙虾之父，还有很多已经创业成功的大佬都纷纷加入顶尖AI团队，Meta几个月前毫无留情的踢了一大波AI专家，让 @alexandr_wang 大刀阔斧的干，Muse就出来了。
+
+现在一小撮精英 + 无限前沿模型token真的可以干出很牛逼的事了。
+
+作为普通的程序员中的一员，我所能做的就是尽可能的使用前沿模型，无论是从生活，工作上全面的提升，跟上，拥抱它，把钱花在订阅费上是最最有性价比的投资。
+
+这跟年龄真的没关系，跟资历也没关系。塔尖的那一撮人已经是上帝视角了，那咱们就赶赶路别在大雨来的时候随波直下。</p><div class="bg"><span class="bk">背景</span>作者转述 @teach_fireworks 的帖子：今晚又听到字节大裁员的消息，感觉从北美逐渐传导过来；原文提醒大家尽快完成个人转型，并称从 Sonnet 4.5 开始错过中间环节、可能需要至少两年追上节奏；裁员消息本身未证实。</div></div></article><article class="acc f post" id="i-5a02aadd1d" data-fid="i-5a02aadd1d"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@oran_ge</span></span><button class="star" type="button" data-star="i-5a02aadd1d" aria-pressed="false" aria-label="收藏：橘子 Orange AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/oran_ge/status/2120661560129655116" target="_blank" rel="noopener noreferrer">@oran_ge ↗</a></div><p class="sum">老黄是今年最大的黑天鹅
+没有老黄的 NV，要重新构建和生态的信任关系了</p><div class="bg"><span class="bk">背景</span>作者一句感叹：&quot;老黄是今年最大的黑天鹅，没有老黄的 NV，要重新构建和生态的信任关系了&quot;；与本期今日重点的英伟达董事会风波相互印证。</div></div></article><article class="acc f post" id="i-db6584bd2c" data-fid="i-db6584bd2c"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@oran_ge</span></span><button class="star" type="button" data-star="i-db6584bd2c" aria-pressed="false" aria-label="收藏：橘子 Orange AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/oran_ge/status/2120662791829008806" target="_blank" rel="noopener noreferrer">@oran_ge ↗</a></div><p class="sum">从美国就业看职业变化，软件行业基本已经停滞，部分职业消失趋势非常明显，AI 数据中心相关的实体岗位大幅增加
+就像工业革命对蓝领打击很大一样，
+AI 这次是智能的工业革命，对白领的打击是很大的
+
+1. 科技公司有超过281,000个空缺职位，比一年前增长了17% 
+2.产品经理、工程和设计职位仅增长了2%。
+3. 设计（−28%）和用户体验研究（−45%）实际上是缩减了。  
+4. 那么增长从哪里来？硬件工程职位空缺翻了一番。业务运营新增了约4,200个空缺。供应链增长了63%。
+许多增长最快的职位都是实体岗位：数据中心技术员、安装工、现场服务工程师。  人工智能热潮正在创造就业机会，但主要是建设并运营实体基础设施（芯片、数据中心、硬件），而不是构建软件。</p><div class="bg"><span class="bk">背景</span>作者转述一份美国就业数据：科技公司有超过 281,000 个空缺职位、比一年前增长 17%，但产品经理、工程与设计职位仅增长 2%，设计（-28%）与用户体验研究（-45%）实际在缩减，硬件工程职位空缺翻了一番；作者的判断是 AI 这次对白领的打击像工业革命对蓝领，而 AI 数据中心相关的实体岗位大幅增加。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">玉伯</span><span class="idb">YouMind 创始人，产品与创业经验</span><span class="hdl">@lifesinger</span><span class="gcount">2 条</span></div></div><article class="acc f post" id="i-a587936417" data-fid="i-a587936417"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@lifesinger</span></span><button class="star" type="button" data-star="i-a587936417" aria-pressed="false" aria-label="收藏：玉伯" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/lifesinger/status/2120476654598533251" target="_blank" rel="noopener noreferrer">@lifesinger ↗</a></div><p class="sum">X 太容易给人幻觉：模型进步很快，世界变化很快，巨大的变化在飞快发生。
+
+这感觉没错。
+
+然而做产品，还需要另一种观察：拥挤的车厢里，有人低头在看短视频，有人在刷红果，有人在看番茄。逛 X 的，看了一圈，只有我。在用 personal agent 等 AI 产品的，零人。
+
+世界变化飞快，又极慢。少量机会在飞快里。大量机会在极慢中。</p><div class="bg"><span class="bk">背景</span>作者玉伯的观察：X 太容易给人幻觉——模型进步很快、世界变化很快；但做产品还需要另一种观察：拥挤的车厢里有人在看短视频、刷红果、看番茄，逛 X 的只有他自己，用 personal agent 等 AI 产品的零人；&quot;世界变化飞快，又极慢。少量机会在飞快里。大量机会在极慢中。&quot;</div></div></article><article class="acc f post" id="i-56d5b86290" data-fid="i-56d5b86290"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@lifesinger</span></span><button class="star" type="button" data-star="i-56d5b86290" aria-pressed="false" aria-label="收藏：玉伯" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/lifesinger/status/2120488944899092981" target="_blank" rel="noopener noreferrer">@lifesinger ↗</a></div><p class="sum">再补充一个让我稍有点意外的真实案例。
+
+上周四下午在 AIE Shanghai 2026 分享《Personal Agent 的另一条路》，现场爆满，我很激动。于是中间有做一个小调查：
+
+现场有用过除了豆包之外的任何一款 personal agent 的请举手。
+
+结果举手的稀稀拉拉，勉强 1/5 左右。我不服，补充说，用过 Claude Code 或 Codex 也算。结果举手的也并没怎么增加。
+
+最后自我安慰：应该是现场音响不好。
+一定是这个原因。</p><div class="bg"><span class="bk">背景</span>作者补充一个真实案例：上周四下午在 AIE Shanghai 2026 分享《Personal Agent 的另一条路》，现场爆满；中间做小调查：现场用过除豆包之外的任何一款 personal agent 的请举手，举手的稀稀拉拉、勉强 1/5 左右；补充说用过 Claude Code 或 Codex 也算，举手的也没怎么增加。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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AQE/ENEhYcoOMfMdNLw0ElhbDP737AR2qOKxEIhTouFEBwfceQ10VvTb2f/EAB4RAQADAAICAwAAAAAAAAAAAAEAESFBUTFhceHw/9oACAECAQE/EGBSDFLPOkNLDREXsKXPslTt7jZFqDbNzXr9zEoIDvn4n//EACAQAQEAAgIDAQEBAQAAAAAAAAERACExQVFxgWHBoeH/2gAIAQEAAT8QHn+poHavWMPVQilQAvPNXA/lELPQiQ1O8gLNifidE55wuK1Q+CSn/cbaDUEVFDbt1vE1YtAqdzXK/wAw2OSkpYs708YSEA9EbM0JPH+4RDr2b0L4rq4epKihYATobrxgIpqG5mhJz+4ps6VtFIujc6xRiqgKAq8re8C9rqgKUNla1rdTB0gojCjXUIwS8eDjW7zpJ5Ed+k8YPiGksLXN8QKA0eo4yNxwk9OkceKKg3oB4Jt+9FSMInk8iVU20v3LD6MR9uWIVENiFqH3zk7+wKioNaLf5w/vryc7lwwlsx0r3kXnBzZWHo9jLzHHtxD+tD9wCsM0petc44JBy0Kg1dPi5UNSUPQhTB4lHCAEFobHc94mJnVGOIJQWE4hkeGg9oEgJafeC2BIOiGf/9kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">Berryxia.AI</span><span class="idb">AI 工具与 Vibe Coding，AI 视频·数字人·广告内容创作</span><span class="hdl">@berryxia</span><span class="gcount">3 条</span></div></div><article class="acc f post" id="i-ef33e6d960" data-fid="i-ef33e6d960"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@berryxia</span></span><button class="star" type="button" data-star="i-ef33e6d960" aria-pressed="false" aria-label="收藏：Berryxia.AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/berryxia/status/2120517972297203993" target="_blank" rel="noopener noreferrer">@berryxia ↗</a></div><p class="sum">卧槽，Muse 开通之后不知道干啥的兄弟，这篇直接抄作业！
+
+@loi_jinli 锦鲤同学把 Meta 11 月 6 日给 Muse 加的 Spaces 玩明白了，搭了 4 个他平时真在用的工作台，提示词全贴出来了：
+
+① 免费额度雷达：盯 4 个羊毛站加厂商官网，每张卡写清额度、领取条件、到期时间
+② AI 视频工作流：一句创意拆成分镜，自带 204 条视频提示词参考
+③ 自媒体创作中心：选题、草稿、排期、复盘放在一个项目里
+④ 全网热点看板：微博、百度、头条、B 站、贴吧的榜单合在一页，同一件事合并看
+
+还教你设定时任务，每天 08:30 自动复查一遍。
+
+很多人用 Muse 还停在聊天框里，聊完就沉了。Spaces 是给每件事留一个页面，塞进侧栏，下次打开接着干。
+
+我最服的是他把翻车也写了：Muse 嘴上说核实完了，点回去几张卡还挂着「未核实」。点「立即更新」，页面报任务未启动。
+
+所以他每一步都回页面看结果有没有真写进去。这个习惯比提示词值钱。
+
+长文在下面，建议先收藏再照着搭👇</p><div class="bg"><span class="bk">背景</span>作者转述 @loi_jinli 锦鲤同学的 Muse Spaces 玩法：Meta 11 月 6 日给 Muse 加了 Spaces，他搭了 4 个平时真在用的工作台（免费额度雷达、AI 视频工作流、自媒体创作中心等），提示词全贴出来了。</div></div></article><article class="acc f post" id="i-346f75be21" data-fid="i-346f75be21"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@berryxia</span></span><button class="star" type="button" data-star="i-346f75be21" aria-pressed="false" aria-label="收藏：Berryxia.AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/berryxia/status/2120523602911203359" target="_blank" rel="noopener noreferrer">@berryxia ↗</a></div><p class="sum">卧槽，马斯克说 agent 的上网流量已经超过人类，五年后可能是一千倍，他还嫌低估了。
+
+所以，Personal Agent根本不是一门大生意，我们应该给最终归集到Super Agent才是真正的大生意。
+
+把玩EnConvo后，也体会到一个真正综合能力强的产品背后需要花费和打磨的时间，但是你使用就知道这玩意真的离不开啊~ https://t.co/SKsxvKAbJH</p><div class="bg"><span class="bk">背景</span>作者转述马斯克的说法：Agent 的上网流量已经超过人类，五年后可能是一千倍，他还嫌低估了；作者的判断是 Personal Agent 不是一门大生意，最终归集到 Super Agent 才是真正的大生意。</div></div></article><article class="acc f post" id="i-50b115be4b" data-fid="i-50b115be4b"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@berryxia</span></span><button class="star" type="button" data-star="i-50b115be4b" aria-pressed="false" aria-label="收藏：Berryxia.AI" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/berryxia/status/2120525473419870511" target="_blank" rel="noopener noreferrer">@berryxia ↗</a></div><p class="sum">尼玛，天天听这帮大佬吹牛逼，天天鼓吹Personal Agent！
+
+像奥特曼、扎克伯格、纳德拉、黄仁勋今年都在讲 personal agent，每个人描述的未来都长得像他自家的生意 ，真的是不拿我们当外人啊！
+
+奥特曼说 ：Dots 是第一个把早晨还给他的东西……Personal Agent 最值钱的本事是替你决定哪些事不用看。
+
+现在特么谁还用Dots啊！</p><div class="bg"><span class="bk">背景</span>作者吐槽天天听大佬吹 Personal Agent：奥特曼、扎克伯格、纳德拉、黄仁勋今年都在讲 personal agent，每个人描述的未来都长得像他自家的生意；奥特曼说 Dots 是第一个把早晨还给他的东西，作者反问&quot;现在特么谁还用 Dots 啊！&quot;</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB+AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIADAAMAMBIgACEQEDEQH/xAAbAAADAAIDAAAAAAAAAAAAAAAFBggEBwECA//EABkBAAIDAQAAAAAAAAAAAAAAAAACAQMFBv/aAAwDAQACEAMQAAAB2958KCMZFT/kJbTJOd6FlfBNbNLEY3flmwuoU97YBja5zpN9KrrJOVBBjIETa2zWV//EACEQAAIDAAICAgMAAAAAAAAAAAIEAQMFABEGExIUFiEi/9oACAEBAAEFAjnof641rIqWfk2VxJmHKOWlMc8sdZSSkrLChVgueP6LabYT3DPXp8jzweUpSGmBquIEs8GHFY+IuFWK1vk2jWaej9m+ii5ufV9VauYIbhgg0M8lrKrjrnA1I0lKZ9hB0MFHYvZSzIX+LJWSpnL5gY8WRPX7/8QAHxEAAgICAQUAAAAAAAAAAAAAAQIAAxESIQQxMkFR/9oACAEDAQE/AYqbeIzHTHIifZ060PWHU4HsS+wMTr2lbKAdptxrDP/EAB4RAAICAgIDAAAAAAAAAAAAAAACAREDIRIxQUJR/9oACAECAQE/ARm49yI16G+GacqPKzFz4MScY32PDXor2IP/xAAnEAACAgECBQQDAQAAAAAAAAABAgADERIhBCIxMkEjUWJxEBORYf/aAAgBAQAGPwLM1NLE4i8KawCw+4NVjrn4xOJqDCt+gb8b9sFvDvVpblZW6/YhySxPvvG9NtjvBw9Wm3WcDU2wm/WEMcCJYVBak5z8ZdcEyccgRolfG1OUYalfOP7Kk4NLV0nUbcwA5O2BLGu7FGTPTWmtR0BGY+qiunUc8mwzNKoXyPPTEqrTGF7seYGHmEHztLTY+vDHeHG6nqDNsJamzL7Rv2cwz/IFmJptXlBzAVLiHSrtt3COr9M5H+TM/8QAIRABAAICAgICAwAAAAAAAAAAAQARITFBUWFxEKGxwfH/2gAIAQEAAT8hRgWwsuA64JsK+h6AcwK1YvLxLxMUKa7+EQAd4lL7NQRlEtVnqXY0CXXuHG43vuIg2GmagYpcWmoXVaI2vYVvubeAzBjNMrbvmC+JLLNj8cVj+xVlARcvuX3C+6iUdy615lkOZJtgTSzP2F4nVTsOH6gD4Fk0Rnje4wVYkxV/llAAlaSS24B9EniOFW4ckegMS+7zpMs7lu93TCS18iLmN4BAB52lbxP/2gAMAwEAAgADAAAAEItOf4FtaZP/xAAfEQEBAAEEAgMAAAAAAAAAAAABEQAxQVFhIXEQwfD/2gAIAQMBAT8QDJ/Kv3GGTQ09Jqd4IjKDgtRGklfLaFNrtthsApkIcaYEC8e+cRTaGnT19nw//8QAHREBAAICAgMAAAAAAAAAAAAAAQARIUEx8GGBwf/aAAgBAgEBPxBZaxnfMVK5+RXYcsQEiWzeMFU93HBa03FB95dQFO4J/8QAIRABAQADAAIDAAMBAAAAAAAAAREAITFBUWFxgRChsfD/2gAIAQEAAT8QjCPfMKDogX9N4kyoXrgbULr2YQAxjUeKBb8FyophblgzaWUP4UnQt7X1MvquNYdbazYnpuKS6ZUaFassDKRufhyquaO71ki9n1eyZA3+ZqMFfFm58YGCbsp0J++cdRIudxvKLxB2Y4ZKI+I8SvMHCdWjtMRp7n3jWQRNIItA9ReKSbwsYozA2+y+8LFgT5NJ8zKHkK9rQqNnZMpEpxUrpsWL1wA0xNQjToaOBKAkQPm8f8DJdCg9DLEHF+CU+3zzK0C9iHGvU8Hp8ZWSBtV0+PzH5D8IQaHlSa5zLYDh2OJ9OEDBpAah3/TAaUBH6wkxZbLXX/J6XJkdCYe1k/rH3DgO/NT1of78uGOmkoWhXvXftwwMBFaCujg77n//2SAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">Sac</span><span class="idb">小王子游戏原创作者，探索 AI 能力边界</span><span class="hdl">@Saccc_c</span><span class="gcount">1 条</span></div></div><article class="acc f post" id="i-084426bdc5" data-fid="i-084426bdc5"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@Saccc_c</span></span><button class="star" type="button" data-star="i-084426bdc5" aria-pressed="false" aria-label="收藏：Sac" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/Saccc_c/status/2120610332901249193" target="_blank" rel="noopener noreferrer">@Saccc_c ↗</a></div><p class="sum">vibe gaming 时代即将来临 ！</p><div class="bg"><span class="bk">背景</span>作者一句短帖：&quot;vibe gaming 时代即将来临！&quot;，应配有演示视频；与本期造物精选的 Fable 5.2 游戏案例相互印证。</div></div></article></div><div class="wgrp"><div class="whead"><img class="av" src="data:image/jpeg;base64,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" alt="" width="36" height="36" loading="lazy" decoding="async"><div class="wid"><span class="aname">Dmiao豆苗啊</span><span class="idb">AIGC 视觉设计，低门槛 AI 玩法</span><span class="hdl">@nima2qisi2</span><span class="gcount">2 条</span></div></div><article class="acc f post" id="i-4aad07f1d6" data-fid="i-4aad07f1d6"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@nima2qisi2</span></span><button class="star" type="button" data-star="i-4aad07f1d6" aria-pressed="false" aria-label="收藏：Dmiao豆苗啊" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/nima2qisi2/status/2120479153505943929" target="_blank" rel="noopener noreferrer">@nima2qisi2 ↗</a></div><p class="sum">一张自然、安静、轻松、具有日系居家写真与生活方式Editorial质感的女性室内休闲摄影。
+
+整体视觉：
+adult East Asian woman
++
+relaxed sofa lounging pose
++
+cream minimalist living room
++
+soft satin camisole and shorts
++
+white ceramic mug in hand
++
+long legs extending toward foreground
++
+large side window
++
+warm morning sunlight
++
+soft geometric window shadows
++
+quiet lifestyle photography.
+
+画面不是普通：
+
+“女生坐在沙发上喝咖啡”。
+
+而是：
+
+一个极简奶油白客厅中，
+
+明确成年的东亚女性
+斜靠在画面右侧的大型白色布艺沙发上，
+
+身体略微后靠，
+臀部位于右后方，
+
+双腿从人物身体位置
+沿着画面中央向左下前景自然延伸，
+
+赤足靠近前方白色圆角茶几区域，
+
+形成非常明显的：
+
+Back Figure
+→
+Extended Legs
+→
+Foreground Feet
+
+纵深关系。
+
+人物一只手自然握着白色马克杯，
+另一只手轻搭在杯子、腿部或沙发附近，
+
+视线不必直视镜头，
+可以轻轻看向窗外或画面左侧，
+
+像真实清晨坐在家里发呆的瞬间。
+
+左侧巨大落地窗引入强烈但柔和的自然阳光，
+
+阳光在：
+
+地毯，
+茶几，
+沙发，
+人物腿部
+
+形成干净的几何光影。
+
+整个空间采用：
+
+奶油白，
+暖米色，
+淡灰，
+少量黑色细节
+
+形成低饱和极简居家体系。
+
+形成：
+
+Bright Window
+→
+Cream Interior
+→
+Relaxed Figure
+→
+Long Leg Perspective
+
+整体必须：
+
+quiet,
+airy,
+natural,
+minimal,
+sunlit,
+relaxed,
+premium,
+not overly posed.
+
+# 【核心视觉机制｜最高优先级】
+
+COMPOSITION FIRST — HIGHEST PRIORITY
+
+首先建立：
+
+左侧巨大窗户
++
+中央空白沙发区域
++
+右侧人物
++
+左下前景茶几
+
+四部分。
+
+人物不能正中央。
+
+人物必须位于：
+
+画面右侧约35%–40%区域。
+
+大面积左侧空间：
+
+保留给窗户，
+沙发，
+晨光，
+空气感。
+
+双腿必须从：
+
+右后方人物髋部
+→
+中央
+→
+左下前景
+
+形成长透视线。
+
+这条腿部透视线
+是整张图最重要的视觉路径之一。
+
+视觉阅读顺序：
+
+Window Light
+→
+Face
+→
+Cup
+→
+Legs
+→
+Coffee Table.
+
+# 【人物主体｜可替换模块】
+
+人物：
+
+[明确成年东亚女性 / 成年日系女性 / 成年混血女性]
+
+年龄外观：
+
+[22岁明确成年人]
+
+气质：
+
+安静，
+自然，
+居家，
+松弛，
+轻微慵懒，
+职业模特感。
+
+表情：
+
+平静，
+轻微放空，
+自然呼吸状态。
+
+视线：
+
+[看向窗外 / 看向左侧 / 微微看向镜头]
+
+不要：
+
+夸张微笑，
+性感挑逗表情，
+商业广告式微笑。
+
+# 【五官模块】
+
+脸型：
+
+柔和短鹅蛋脸
+
+眼睛：
+
+中等大小杏仁眼，
+深棕虹膜，
+眼尾自然。
+
+眉毛：
+
+柔和自然直眉，
+保留真实毛流。
+
+鼻子：
+
+小直鼻，
+鼻尖自然圆润。
+
+嘴唇：
+
+淡裸粉 / 蜜桃裸色，
+轻微水润，
+保留真实唇纹。
+
+整体：
+
+自然日系成年女性审美。
+
+不要：
+
+动漫大眼，
+幼态娃娃脸，
+过尖下巴，
+网红整形感。
+
+# 【皮肤质感】
+
+真实摄影级自然皮肤。
+
+保留：
+
+visible fine pores,
+natural skin microtexture,
+tiny facial vellus hair,
+subtle uneven skin tone,
+slight cheek redness,
+natural under-eye tonal variation,
+realistic lip texture.
+
+肤色：
+
+冷白 / 象牙白，
+带自然血色。
+
+腿部：
+
+保留真实膝盖，
+小腿，
+脚踝结构和轻微色差。
+
+不要：
+
+plastic skin,
+porcelain skin,
+waxy skin,
+beauty-filter face,
+over-smoothed legs.
+
+# 【发型】
+
+深棕 / 黑色长发。
+
+发型：
+
+自然微卷长发，
+中分或轻微偏分。
+
+头发：
+
+大部分自然垂落在肩部和胸前，
+
+局部发丝受到窗光照射，
+产生柔和棕色高光。
+
+不要：
+
+精致盘发，
+复杂编发，
+明显沙龙造型。
+
+# 【服装】
+
+人物穿：
+
+柔和香槟米色 /
+浅奶茶色 /
+暖象牙色
+
+居家吊带上衣 + 同色短裤。
+
+上衣：
+
+细肩带，
+柔软垂坠，
+低方领或自然弧形领口。
+
+下装：
+
+宽松居家短裤，
+黑色或深棕细滚边。
+
+材质：
+
+soft satin,
+light jersey,
+silky lounge fabric,
+matte-satin surface.
+
+服装必须：
+
+柔软，
+轻薄，
+自然起皱，
+
+但不透明，
+不出现敏感部位裸露。
+
+视觉重点：
+
+premium lounge wear,
+not lingerie advertising.
+
+# 【POSE FIRST｜姿势】
+
+POSE FIRST — HIGH PRIORITY
+
+人物采用：
+
+沙发半躺 + 斜坐姿势。
+
+臀部：
+
+位于沙发右侧。
+
+背部：
+
+轻轻靠住靠垫。
+
+上半身：
+
+略微向左转，
+但整体放松。
+
+双腿：
+
+同时向前延伸。
+
+靠近镜头的一条腿：
+
+更长地伸向画面左下，
+
+膝盖保持轻微弯曲。
+
+另一条腿：
+
+与其平行或轻微交叠，
+
+形成自然层次。
+
+脚部：
+
+赤足，
+自然放松，
+靠近茶几边缘。
+
+不要：
+
+双腿僵直并排，
+夸张抬腿，
+盘腿，
+跪姿，
+瑜伽动作。
+
+一只手：
+
+握住白色马克杯。
+
+另一只手：
+
+轻轻托杯，
+搭在腿部，
+或自然落在身体旁。
+
+整个姿势要像：
+
+真实坐了十几分钟后
+自然形成的舒服姿势。
+
+# 【马克杯｜生活行为道具】
+
+人物手中：
+
+一个小型白色陶瓷马克杯。
+
+杯子：
+
+纯白 / 奶白，
+
+无明显Logo。
+
+作用：
+
+给人物动作提供真实理由。
+
+人物不是刻意展示杯子。
+
+杯子位置：
+
+腰部附近 /
+大腿上方。
+
+不要：
+
+巨大咖啡杯，
+透明玻璃杯，
+商业产品展示姿势。
+
+# 【沙发｜第一环境主体】
+
+沙发：
+
+大型奶油白 / 暖白布艺沙发。
+
+结构：
+
+低矮，
+宽大，
+柔软，
+深座。
+
+靠垫：
+
+超大软枕，
+轻微褶皱，
+不是完全整齐。
+
+材质：
+
+washed cotton,
+soft linen blend,
+bouclé-like soft texture.
+
+人物坐下区域：
+
+必须出现真实压陷。
+
+沙发颜色：
+
+接近墙面和地毯，
+
+形成：
+
+monochrome cream interior.
+
+# 【落地窗｜第二视觉主体】
+
+画面左侧：
+
+大型落地窗。
+
+窗户高度：
+
+接近整面墙。
+
+窗外：
+
+模糊住宅城市景观 /
+远处建筑 /
+柔和天空。
+
+窗外不能太清晰。
+
+窗户负责：
+
+引入明亮晨光，
+
+不是展示城市。
+
+# 【窗光｜LIGHT FIRST】
+
+LIGHT FIRST — HIGH PRIORITY
+
+主光：
+
+来自画面左侧大型落地窗。
+
+时间：
+
+清晨 / 上午。
+
+方向：
+
+left
+→
+right.
+
+光线：
+
+warm soft morning sunlight,
+natural window light,
+diffused direct sunlight,
+gentle high-key exposure.
+
+阳光通过窗框形成：
+
+长方形 /
+平行条状 /
+几何斜影
+
+落在：
+
+地毯，
+茶几，
+沙发边缘，
+人物腿部。
+
+人物脸部：
+
+主要由环境反射光照亮，
+
+保持柔和，
+不过度明暗反差。
+
+腿部：
+
+存在柔和长高光。
+
+整体不能：
+
+电影式暗光，
+硬闪光，
+人工轮廓灯。
+
+# 【茶几｜前景锚点】
+
+画面左下：
+
+白色低矮圆角茶几。
+
+形态：
+
+organic rounded coffee table,
+minimal white table,
+low profile.
+
+茶几只露出：
+
+部分台面。
+
+上方可以放：
+
+一盏很小的白色造型灯，
+或完全保持简洁。
+
+它的主要作用：
+
+建立：
+
+foreground depth.
+
+人物双脚靠近茶几，
+
+但不要不自然地踩在桌面中央。
+
+# 【室内家具】
+
+背景可见：
+
+白色立式空调，
+细杆落地灯，
+极小白色边桌，
+简洁米白地毯。
+
+家具设计：
+
+Korean minimal interior
++
+Japanese soft minimalism.
+
+全部使用：
+
+白色，
+奶油色，
+浅灰，
+少量黑线。
+
+不要：
+
+大量木色家具，
+复杂摆件，
+豪华装饰，
+杂乱生活用品。
+
+# 【墙面与空间】
+
+墙面：
+
+暖米灰 / 奶油白。
+
+表面：
+
+非常干净，
+细微哑光纹理。
+
+空间整体：
+
+现代公寓，
+干净但不像样板房，
+
+保留一点真实生活感。
+
+不要：
+
+纯白摄影棚，
+奢华酒店，
+复古宫廷，
+工业风。
+
+# 【色彩系统】
+
+主色：
+
+Cream White.
+
+辅助：
+
+Warm Beige,
+Soft Ivory,
+Pale Gray.
+
+强调：
+
+人物深棕头发
++
+少量黑色服装滚边。
+
+比例建议：
+
+Cream / White 65%
+Warm Beige 18%
+Skin Tone 12%
+Dark Accent 5%.
+
+整体：
+
+low saturation,
+soft warm neutral,
+quiet luxury.
+
+# 【构图】
+
+画幅：
+
+3:4 / 4:5 竖版。
+
+机位：
+
+略高于人物坐姿，
+
+从左前方斜拍。
+
+人物：
+
+位于右侧。
+
+沙发：
+
+横向贯穿画面中央。
+
+窗户：
+
+占据左侧高亮区域。
+
+茶几：
+
+进入左下前景。
+
+双腿：
+
+连接人物与前景。
+
+形成：
+
+Window
+│
+Empty Sofa
+│
+Figure
+↙
+Legs
+↙
+Foreground Table.
+
+必须保留：
+
+大量环境空间。
+
+不要把人物裁成普通半身像。
+
+# 【镜头】
+
+推荐：
+
+28mm–40mm。
+
+最佳：
+
+35mm。
+
+原因：
+
+同时保留：
+
+人物，
+沙发，
+窗户，
+茶几，
+室内空间。
+
+相机高度：
+
+约1.2–1.5米。
+
+轻微俯拍：
+
+10°–20°。
+
+不要：
+
+85mm人像压缩，
+16mm夸张广角。
+
+# 【景深】
+
+整体：
+
+moderate depth of field.
+
+人物：
+
+清晰。
+
+腿部：
+
+清晰。
+
+沙发：
+
+基本清晰。
+
+窗外：
+
+柔和模糊。
+
+不要：
+
+极浅景深，
+不要把环境完全虚掉。
+
+# 【摄影质感】
+
+adult East Asian woman,
+cream minimalist living room,
+relaxed sofa lounging,
+champagne lounge set,
+white ceramic mug,
+long legs extending toward foreground,
+large sunlit window,
+soft geometric window shadows,
+Korean minimal apartment,
+Japanese lifestyle photography,
+quiet morning routine,
+warm cream monochrome palette,
+natural candid portrait,
+premium home lifestyle editorial.
+
+35mm lens,
+natural window light,
+soft highlight roll-off,
+realistic skin microtexture,
+real textile detail,
+subtle smartphone-camera intimacy,
+clean commercial-level image quality.
+
+# 【画质要求】
+
+4K / 8K高清。
+
+人物：
+
+明确成年，
+五官稳定，
+身份一致。
+
+人体：
+
+肩膀，
+手臂，
+手指，
+髋部，
+膝盖，
+脚踝，
+脚部
+
+结构正确。
+
+腿部：
+
+修长但真实，
+不能变形，
+不能融合。
+
+脚部：
+
+自然，
+脚趾正确。
+
+沙发：
+
+布料纹理清晰，
+压陷合理。
+
+阳光：
+
+方向统一。
+
+窗影：
+
+符合窗户结构。
+
+杯子：
+
+结构完整。
+
+画面必须：
+
+清晰，
+干净，
+高级，
+无噪点，
+无脏点，
+无异常锐化，
+无AI塑料感。
+
+# 【负面提示词】
+
+NO child,
+NO teenager,
+NO underage appearance,
+
+NO anime,
+NO doll face,
+NO oversized eyes,
+NO plastic skin,
+NO porcelain skin,
+
+NO standing pose,
+NO kneeling pose,
+NO cross-legged pose,
+NO exaggerated seductive pose,
+NO dramatic leg spread,
+
+NO extra legs,
+NO fused legs,
+NO malformed feet,
+NO extra toes,
+NO extra arms,
+NO deformed hands,
+
+NO transparent intimate areas,
+NO lingerie campaign,
+NO wardrobe malfunction,
+
+NO dark room,
+NO luxury hotel,
+NO colorful maximalist interior,
+NO cluttered apartment,
+
+NO dramatic cinematic light,
+NO neon,
+NO hard flash,
+NO strong rim light,
+
+NO empty pure studio,
+NO heavy depth blur,
+NO overexposed white sofa,
+NO orange skin,
+NO dirty shadows,
+NO random text,
+NO watermark.
+
+# 05｜为什么这张图成立
+
+【构图机制】
+
+人物实际上只占画面右侧，
+
+左侧却留了：
+
+窗，
+沙发，
+茶几，
+阳光。
+
+所以它不是：
+
+Portrait with Background，
+
+而更像：
+
+Room First
+→
+Human Inside Room.
+
+这正是它有生活感的原因。
+
+【身体机制】
+
+人物上半身几乎不动，
+
+真正制造空间的是双腿。
+
+腿部从：
+
+人物右后方
+→
+中央
+→
+左下
+
+形成一条非常长的透视线。
+
+因此普通沙发场景
+获得了明显空间深度。
+
+【行为机制】
+
+马克杯很重要。
+
+因为它告诉观众：
+
+人物不是为了摄影坐在那里，
+
+而是：
+
+本来就在这里喝东西。
+
+这种“小行为理由”
+会明显降低AI摆拍感。
+
+【光线机制】
+
+这张图里第二主体其实是：
+
+晨光。
+
+如果去掉人物，
+
+窗光、地毯和沙发本身
+依然能组成一张很好看的室内摄影。
+
+所以生成时不要只优化脸，
+必须锁住：
+
+large side window
++
+geometric sunlight.
+
+【色彩机制】
+
+整个空间几乎全部是：
+
+奶油白。
+
+人物衣服也没有强烈跳色，
+
+所以真正的对比只来自：
+
+黑发
++
+黑色滚边。
+
+这属于：
+
+Low Contrast Luxury Palette.
+
+【视觉记忆点】
+
+如果只能保留一个机制：
+
+【右侧人物 + 双腿伸向左下 + 大面积左侧晨光空间】
+
+因为它决定了：
+
+这不是普通居家人像，
+而是“人在空间里松弛存在”的生活视觉。
+
+# 06｜可复用变量
+
+【必须固定｜Visual DNA】
+
+1.
+人物位于右侧而不是中央。
+
+2.
+大型浅色沙发。
+
+3.
+双腿向前景长距离延伸。
+
+4.
+生活道具放在手中。
+
+5.
+左侧巨大落地窗。
+
+6.
+明显自然阳光几何投影。
+
+7.
+奶油白低饱和空间。
+
+【可以替换｜Variable Modules】
+
+人物：
+[成年东亚女性 / 成年男性]
+
+服装：
+[香槟居家服 / 灰色吊带 + 短裤 / 白色T恤 / 针织套装]
+
+行为：
+[喝咖啡 / 看书 / 看手机 / 戴耳机 / 发呆]
+
+季节：
+[春季 / 夏季 / 秋季]
+
+环境：
+[公寓 / 民宿 / 海边住宅 / 酒店套房]
+
+主色：
+[奶油白 / 灰白 / 木色 / 冷白]
+
+但必须保持：
+
+Side Figure
++
+Long Leg Perspective
++
+Large Window Light
++
+Minimal Interior.
+
+# 07｜针对性负面提示词
+
+NO centered portrait,
+NO person filling entire frame,
+NO empty left side without window light,
+NO short cropped legs,
+NO sofa advertisement perfection,
+NO luxury interior styling,
+NO overly fashionable pose,
+NO dramatic makeup,
+NO high-saturation props,
+NO clutter around the figure,
+NO cinematic teal-orange grading.
+
+# 08｜快速替换模块
+
+主体：
+[明确成年东亚女性]
+
+场景：
+[奶油白极简公寓客厅]
+
+姿势：
+[右侧沙发半躺 + 双腿向左下延伸]
+
+服装：
+[香槟米色吊带 + 同色短裤]
+
+发型：
+[深棕长发自然披散]
+
+行为：
+[手持白色马克杯]
+
+第一视觉主体：
+[人物]
+
+第二视觉主体：
+[左侧大面积晨光]
+
+前景：
+[白色圆角茶几 + 双脚]
+
+中景：
+[沙发 + 人物]
+
+后景：
+[落地窗 + 立式空调 + 落地灯]
+
+核心材质：
+[真实皮肤 + 棉麻沙发 + 柔软居家服]
+
+主色：
+[奶油白]
+
+辅助色：
+[暖米色]
+
+强调色：
+[深棕黑]
+
+主光：
+[左侧上午自然阳光]
+
+镜头：
+[35mm]
+
+机位：
+[左前方略高机位]
+
+景深：
+[人物与室内基本清晰 + 窗外轻柔虚化]
+
+构图：
+[右侧人物 + 左侧环境留白 + 腿部长纵深]
+
+画幅：
+[3:4 / 4:5]
+
+视觉方向：
+[Sunlit Apartment / Quiet Morning / Korean Minimal / Lifestyle Editorial]
+
+# 09｜一句话极简版提示词
+
+adult East Asian woman relaxing on the right side of a large cream-white sofa
++
+champagne satin camisole and matching lounge shorts
++
+holding a small white ceramic mug
++
+long bare legs extending diagonally toward the lower-left foreground
++
+minimal cream apartment
++
+large floor-to-ceiling window on the left
++
+strong soft morning sunlight casting geometric shadows across carpet and furniture
++
+white rounded coffee table in foreground
++
+35mm slightly high-angle framing
++
+warm low-saturation neutral palette
++
+realistic skin and fabric texture
++
+quiet Japanese-Korean lifestyle editorial photography.</p><div class="bg"><span class="bk">背景</span>作者分享一张日系居家写真与生活方式 Editorial 质感的女性室内休闲摄影提示词：成人东亚女性、慵懒沙发姿态、奶油色极简客厅、缎面吊带与短裤、白陶瓷马克杯在手、长腿伸展；是 AI 生图提示词的实战分享。</div></div></article><article class="acc f post" id="i-4597d8c79a" data-fid="i-4597d8c79a"><div class="abody"><div class="shead"><span class="aname-line"><span class="hdl">@nima2qisi2</span></span><button class="star" type="button" data-star="i-4597d8c79a" aria-pressed="false" aria-label="收藏：Dmiao豆苗啊" title="收藏"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg></button></div><div class="meta"><a class="src" href="https://x.com/nima2qisi2/status/2120518266800193876" target="_blank" rel="noopener noreferrer">@nima2qisi2 ↗</a></div><p class="sum">RT @Leviwoyun: GPT image 2.6 大字标题设计 skill 已开源！！！
+
+40 种字体与排版风格，配上好看的风景图直接发小红书！
+
+动态签名skill 2.0 版本早上也更新了，粒子效果+乐器结合
+
+skill👉https://t.co/7BFIhKwVH9 https://t.co/MDOVJbQ0ie</p><div class="bg"><span class="bk">背景</span>作者转述 @Leviwoyun 的分享：GPT image 2.6 大字标题设计 skill 已开源，40 种字体与排版风格，配上好看的风景图直接发小红书；动态签名 skill 2.0 早上也更新了，粒子效果加乐器结合。</div></div></article></div><div class="nopost"><span class="nplabel">本窗未收录：</span>哥飞（本窗无实质动态）、李继刚（本窗无实质动态）、黄玄（本窗无实质动态）、阮一峰（本窗无实质动态）、Vincent文森特（本窗无实质动态）、yetone（本窗无动态）、数字生命卡兹克（本窗未取到（账号未找到），名单保留，下期继续巡查）、小互（本窗未取到（账号未找到/停用），名单保留，下期继续巡查）</div></details></section><section class="sec" id="warnings"><div class="chap note"><span class="no">附注</span><h2>提醒</h2></div><ul class="warnlist"><li>检索窗：北京时间 2026-11-11 18:00 至 2026-11-12 08:00（早刊；造物与薅羊毛放宽至 48 小时）。本期由 Muse 本地采集（AIHOT、热榜、X）并人工选题生成，全程免费渠道。</li><li>aihot.news agent 接口走 /api/v1/agent 路径返回 200；aihot 日报 2026-11-12 版今晨尚未发布，所用 2026-11-11 版覆盖 11-10 08:00–11-11 08:00，全部在早刊窗口之外，已剔除；Horizon 本期 run-20261111T235827Z 抓取 164 条（GitHub 7、Hacker News 12、RSS 12、Reddit 33、Google News 100），状态 partial_failure；TrendRadar 为实时榜单（183 条）。</li><li>名单中 @KKKKhazix、@imxiaohu 本窗接口未取到（账号未找到），名单保留，下期继续巡查；X 采集途中曾触发限流，等待约 14 分钟后恢复，全部搜索完成，零报错。</li><li>去重：本期已剔除早晚刊收录过的帖子与事件（Claude 全量免费重置、Anthropic IPO 路演、OpenAI 收购 Odessia、Claude 办公套件、Gemini 4 Carbon 开放、台积电投资、OpenAI Q3 100 亿美元、Grok Build 泄密、Fable 5.2 发布、S1 算力协议、DeepSeek Harness、Seedream 5.5、Kimi K3.1 Bedrock、Adobe MAX、ElevenLabs Scribe v3 等不再重复收录）；Stripe 完成收购 OpenRouter（11-11 03:45 公布）在本期窗口外且昨日两刊均未收录，按窗口规则本期不收；造物 10 条中有 4 条、薅羊毛 10 条中有 1 条来自 48 小时放宽窗口。</li><li>本期含标「未证实 / 转述」的条目：相关说法未回原文逐字核对，请以官方原文为准。</li><li>福利类信息时效性强，领取条件与截止以活动页面为准；凡要求付费、授权钱包或提供验证码的「福利」均属可疑，请勿参与。</li><li>按用户偏好，本期排除社会 / 刑案、时政人事、校园、职场争议、贸易展会、金价与股市行情类内容。</li><li>关注账号动态：8 个账号本窗无实质动态或未取到，见板块末尾&quot;本窗未收录&quot;；另有 23 条因超 3 条上限或无信息量未收录。</li></ul></section></main><button class="totop" id="toTop" type="button" aria-label="回到顶部">↑ 顶部</button><script type="application/json" id="xb-items">{"v":1,"date":"2026-11-12","weekday":"周四","title":"X 每日简报 · 11月12日（周四）早刊","subtitle":"11月12日（周四）早刊","items":{"i-b06b95f833":{"id":"i-b06b95f833","kind":"top","section":{"id":"top3","name":"今天最重要的 5 件事","emoji":"🔥","color":["#e0306f","#f06595"]},"headline":"WSJ：英伟达董事会接近决定是否罢免 CEO 黄仁勋","detail":"WSJ 报道，英伟达董事会此前公开支持黄仁勋，如今接近决定是否罢免这位创始人 CEO。起因是黄仁勋与一名被指为中国情报人员的女子交往，随后又曝出与一名英伟达员工的第二段婚外情；董事会周日启动独立调查时表示，没有理由认为英伟达机密已经泄露。","links":[{"label":"AIHOT","url":"https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd"},{"label":"@rohanpaul_ai","url":"https://x.com/rohanpaul_ai/status/2120663635479625930"},{"label":"TechCrunch 时间表","url":"https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline"}],"tag":"转述","rank":1,"date":"2026-11-12","weekday":"周四"},"i-ca476af66b":{"id":"i-ca476af66b","kind":"top","section":{"id":"top3","name":"今天最重要的 5 件事","emoji":"🔥","color":["#e0306f","#f06595"]},"headline":"Anthropic IPO 拟募资最高 904 亿美元，或成史上最大上市","detail":"彭博报道，Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 904 亿美元，将超过 SpaceX 的 857 亿美元纪录、成为史上最大上市；完全稀释估值目标约 1.4 万亿美元，高盛与摩根士丹利牵头 22 家银行，股票以 ANT 在纳斯达克全球精选市场交易。","links":[{"label":"AIHOT","url":"https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom"},{"label":"彭博","url":"https://www.bloomberg.com/news/newsletters/2026-11-11/anthropic-ipo-oversubscription-fuels-ai-recovery-rally"}],"tag":"媒体","rank":2,"date":"2026-11-12","weekday":"周四"},"i-a3ee569846":{"id":"i-a3ee569846","kind":"top","section":{"id":"top3","name":"今天最重要的 5 件事","emoji":"🔥","color":["#e0306f","#f06595"]},"headline":"Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼","detail":"据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。","links":[{"label":"AIHOT","url":"https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi"},{"label":"IT之家","url":"https://www.ithome.com/1/025/809.htm"}],"tag":"媒体","rank":3,"date":"2026-11-12","weekday":"周四"},"i-2c61e6cd43":{"id":"i-2c61e6cd43","kind":"top","section":{"id":"top3","name":"今天最重要的 5 件事","emoji":"🔥","color":["#e0306f","#f06595"]},"headline":"Anthropic：AI 仅用 3 天把模型适配到 AMD 芯片，英伟达 CUDA 护城河遇挑战","detail":"Anthropic 表示，借助 AI 本身，团队只用 3 天就把模型适配到 AMD 芯片——过去这类迁移要花数月。Anthropic 称，AI 正在蚕食英伟达 CUDA 的领先地位。","links":[{"label":"The Decoder","url":"https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days"},{"label":"IT之家","url":"https://www.ithome.com/1/025/736.htm"}],"tag":"转述","rank":4,"date":"2026-11-12","weekday":"周四"},"i-d51ec91b1c":{"id":"i-d51ec91b1c","kind":"top","section":{"id":"top3","name":"今天最重要的 5 件事","emoji":"🔥","color":["#e0306f","#f06595"]},"headline":"OpenAI Codex 登陆 Amazon Bedrock，企业可在 AWS 上直接用 Codex","detail":"AWS 宣布 OpenAI Codex 上线 Amazon Bedrock，企业开发者可以在 Bedrock 里直接调用 Codex 做编码 Agent 任务；同日 Bedrock AgentCore 还推出了 Web Search API，让 Agent 能联网检索。","links":[{"label":"AWS","url":"https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock"},{"label":"AWS","url":"https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore"}],"tag":"官方","rank":5,"date":"2026-11-12","weekday":"周四"},"i-42382a1073":{"id":"i-42382a1073","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"ai","name":"AI 与大模型","emoji":"🤖","color":["#7c3aed","#a78bfa"]},"headline":"DeepMind 发布 AlphaGenome 2 基因组模型，识别致病变异能力提升近一倍","detail":"Google DeepMind 发布 AlphaGenome 2，聚焦 DNA 变化如何影响不同细胞类型，识别致病变异的能力比上一代提升近一倍。","links":[{"label":"AIHOT","url":"https://aihot.news/items/wp91dm5fgirnzvh99js3vv6j2"},{"label":"The Verge","url":"https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"}],"tag":"媒体"},"i-bd69961f5d":{"id":"i-bd69961f5d","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"ai","name":"AI 与大模型","emoji":"🤖","color":["#7c3aed","#a78bfa"]},"headline":"Google 发布 Gemini Decision 1：一次评估 1000 道题，150–250 毫秒出结果","detail":"Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150–250 毫秒端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是否、多选与评分题；API 已在 Google AI Studio 上免费提供。","links":[{"label":"AIHOT","url":"https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw"},{"label":"Google Blog","url":"https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"}],"tag":"官方"},"i-c48ba701a7":{"id":"i-c48ba701a7","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"ai","name":"AI 与大模型","emoji":"🤖","color":["#7c3aed","#a78bfa"]},"headline":"Runway 开源 27B 世界动作模型 Praxis-1，Apache 2.0 许可","detail":"Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重。模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。","links":[{"label":"AIHOT","url":"https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv"},{"label":"Runway","url":"https://runwayml.com/news/company-news/praxis-1-is-now-available"}],"tag":"官方"},"i-495b69f298":{"id":"i-495b69f298","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"ai","name":"AI 与大模型","emoji":"🤖","color":["#7c3aed","#a78bfa"]},"headline":"OpenAI 12 月 11 日停用 ChatGPT 旧版语音模式，全面转向 GPT-Live，用户不买账","detail":"OpenAI 宣布 12 月 11 日停用 ChatGPT 旧版语音模式，全面转向新的 GPT-Live 语音；TechRadar 报道用户强烈不满，不少人表示旧语音模式对自己意义重大。","links":[{"label":"TechRadar","url":"https://www.techradar.com/ai-platforms-assistants/chatgpt/im-beyond-disappointed-because-chatgpt-means-a-lot-to-me-users-are-furious-that-openai-is-retiring-their-favorite-voice-modes"},{"label":"AIbase","url":"https://www.aibase.com/zh/news/32253"}],"tag":"媒体"},"i-ee5add3b25":{"id":"i-ee5add3b25","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"ai","name":"AI 与大模型","emoji":"🤖","color":["#7c3aed","#a78bfa"]},"headline":"DeepMind 用 AlphaProof Code 四周完成 Signal 密码学核心的形式化验证","detail":"Google DeepMind 利用 AlphaProof Code 多智能体形式化验证框架，在四周内完成对 Signal 协议生产机器码的形式化安全验证——传统方法需要数年。","links":[{"label":"Ars Technica","url":"https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup"},{"label":"The Decoder","url":"https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years"}],"tag":"媒体"},"i-90ae70e724":{"id":"i-90ae70e724","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"tech","name":"编程与开发者工具","emoji":"💻","color":["#4f46e5","#8b93ff"]},"headline":"Codex 一夜连发多个版本：v0.167.2、v0.169.0-alpha.11.1、v0.170.0-alpha.1","detail":"openai/codex 一夜连发多个版本：rust-v0.167.2（Codex 在 Google Cloud Vertex AI 上默认改用增量工具更新，可配回旧行为）、rust-v0.169.0-alpha.11.1 与 rust-v0.170.0-alpha.1。","links":[{"label":"GitHub v0.167.2","url":"https://github.com/openai/codex/releases/tag/rust-v0.167.2"},{"label":"GitHub v0.169.0-alpha.11.1","url":"https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.11.1"},{"label":"GitHub v0.170.0-alpha.1","url":"https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.1"}],"tag":"官方"},"i-45beb2bee2":{"id":"i-45beb2bee2","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"tech","name":"编程与开发者工具","emoji":"💻","color":["#4f46e5","#8b93ff"]},"headline":"AWS 推出免费本地云模拟器 AWS Emulator：Agent 写的代码，本机就能跑 AWS","detail":"AWS 推出免费的本地 AWS 模拟器 AWS Emulator：由 AI Agent 从零构建，开发者可以在本机模拟 AWS 服务做开发测试，不用先上云。GeekWire 称这是\"AWS 给开发者的免费本地替身\"。","links":[{"label":"GitHub","url":"https://github.com/aws/aws-emulator"},{"label":"All Things Distributed","url":"https://allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"}],"tag":"媒体"},"i-72ffa2e208":{"id":"i-72ffa2e208","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"tech","name":"编程与开发者工具","emoji":"💻","color":["#4f46e5","#8b93ff"]},"headline":"Simon Willison 的 llm 0.37.2：修复安全问题，extra-openai-models.yaml 改由新机制管理","detail":"llm 0.37.2 发布，修复 Daniel de Araujo 报告的安全问题（GHSA-v9h7-jj4g-f862、GHSA-r639-rr7r-x72w）；extra-openai-models.yaml 现改由新机制管理。","links":[{"label":"Simon Willison","url":"https://simonwillison.net/2026/Nov/11/llm/"}],"tag":"个人"},"i-7d1c82bab3":{"id":"i-7d1c82bab3","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"tech","name":"编程与开发者工具","emoji":"💻","color":["#4f46e5","#8b93ff"]},"headline":"Show HN：Klad——能让编程 Agent 驱动的绘画应用（源码开放）","detail":"Show HN 项目 Klad：一款绘画应用，特点是编程 Agent 可以直接驱动它作画，源码开放。","links":[{"label":"GitHub","url":"https://github.com/klad-app/klad"}],"tag":"个人"},"i-9d70ee517e":{"id":"i-9d70ee517e","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"tech","name":"编程与开发者工具","emoji":"💻","color":["#4f46e5","#8b93ff"]},"headline":"Launch HN：Pomerado（YC F26）——把任意网站变成面向 Agent 的 MCP","detail":"YC F26 项目 Pomerado 上线 Launch HN：把任意网站转化为面向 Agent 的 MCP 服务器，让 Agent 能直接调用网站能力。","links":[{"label":"Hacker News","url":"https://news.ycombinator.com/item?id=50455811"}],"tag":"个人"},"i-218f5bd227":{"id":"i-218f5bd227","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"company","name":"科技公司动态","emoji":"🏢","color":["#0284c7","#38bdf8"]},"headline":"英国 AI 芯片初创 Fractile 完成 7.2 亿美元融资，估值 70 亿美元","detail":"英国 AI 芯片初创 Fractile 完成 7.2 亿美元融资，投后估值 70 亿美元，较 5 月的约 11 亿美元大幅上跳；投资方包括 Thrive 与 Founders Fund。","links":[{"label":"TechCrunch","url":"https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips"},{"label":"路透","url":"https://reut.rs/4iUzZ2O"}],"tag":"媒体"},"i-a368df1569":{"id":"i-a368df1569","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"company","name":"科技公司动态","emoji":"🏢","color":["#0284c7","#38bdf8"]},"headline":"Torus 完成 5 亿美元 C 轮融资，用集装箱式 AI 数据中心吃闲置电网电力","detail":"能源存储初创 Torus 完成 5 亿美元 C 轮融资（Magnetar 领投），用集装箱大小的模块化 AI 数据中心（1–20MW）建在现有电网站点上，跑 AI 推理、吃闲置电网电力。","links":[{"label":"The Next Web","url":"https://thenextweb.com/news/torus-foundry-500m-magnetar-modular-ai-inference"},{"label":"Techmeme","url":"https://www.techmeme.com/261111/p26"}],"tag":"媒体"},"i-3e60f5b36d":{"id":"i-3e60f5b36d","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"company","name":"科技公司动态","emoji":"🏢","color":["#0284c7","#38bdf8"]},"headline":"美联航禁止 AI Agent 代旅客订票，未经授权的 Agent 预订将被拦截","detail":"美联航宣布禁止 AI Agent 代旅客订票，未经授权的 Agent 预订将被拦截；只有旅客本人或授权渠道才能完成预订。","links":[{"label":"The Verge","url":"https://theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"},{"label":"CBS","url":"https://cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights"}],"tag":"媒体"},"i-e426ef970d":{"id":"i-e426ef970d","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"company","name":"科技公司动态","emoji":"🏢","color":["#0284c7","#38bdf8"]},"headline":"苹果宣布支持社区将于 11 月 20 日永久关闭，即日起停止新帖、仅保留只读","detail":"苹果宣布官方支持社区（Apple Support Community）将于 11 月 20 日永久关闭，即日起停止新帖、仅保留只读模式。","links":[{"label":"The Verge","url":"https://www.theverge.com/tech/1031507/apple-community-support-forum-shutting-down"}],"tag":"媒体"},"i-c005bb2b06":{"id":"i-c005bb2b06","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"company","name":"科技公司动态","emoji":"🏢","color":["#0284c7","#38bdf8"]},"headline":"字节被曝数周内推出类 Muse AI Agent，对标 Anthropic 通用 Agent","detail":"The Next Web 报道，字节跳动计划在数周内推出一款类似 Muse 的 AI Agent；PYMNTS 称字节正在打造能与美国 AI 实验室竞争的助手产品。","links":[{"label":"The Next Web","url":"https://thenextweb.com/news/bytedance-muse-like-ai-agent-zhang-yiming"},{"label":"@taiyanghere","url":"https://x.com/taiyanghere/status/2120493048266473810"}],"tag":"转述"},"i-66a4e102fb":{"id":"i-66a4e102fb","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"Fable 5.2 + Blender：打字作水墨画，墨是实时流体模拟","detail":"歸藏让 Fable 5.2 自由发挥做一个体现能力的项目，它交出一个水墨作画程序：打对应的字就生成对应文字的墨水形象，墨是实时的流体模拟，鼠标拖动有真实手感，还配了音效和音乐；画面里的物品与天气都是动态的，还会相互影响。","links":[{"label":"@op7418","url":"https://x.com/op7418/status/2120085300185833878"}],"tag":"个人"},"i-94d34e9bd9":{"id":"i-94d34e9bd9","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"一句话让 Muse 搭出 AI 视频工作流空间：橘猫雨夜送外卖，6 镜 48 秒","detail":"作者让 Muse 搭了一个 AI 视频工作流空间：从一句话想法一路走到成片任务单，全程不用跳出去。拿\"橘猫雨夜送外卖\"试了一把，6 镜、48 秒，分镜、提示词、配音全齐；导演台还能一次出 Veo、Kling、Sora 等 6 个版本的提示词；提示词库内置 204 条 Muse Video 提示词，作者把完整提示词贴在原帖里，复制就能复现。","links":[{"label":"@wlzh","url":"https://x.com/wlzh/status/2120027833762537491"}],"tag":"个人"},"i-6f77553a95":{"id":"i-6f77553a95","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"Fable 5.2：24 分钟做出 30 秒动态图形短片，附提示词","detail":"作者用 Fable 5.2 做了一段 30 秒动态图形短片：视频动效加配乐，24 分钟生产完毕；原帖贴出完整提示词——\"制作一段 30 秒动态图形短片，展现作为动态设计师出众的实力，就当做用于简历的个人作品集，请尽情发挥\"，有 Claude 的可以直接试。","links":[{"label":"@Leviwoyun","url":"https://x.com/Leviwoyun/status/2119955625820258308"}],"tag":"个人"},"i-6c3de58ba7":{"id":"i-6c3de58ba7","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"Fable 5.2 做僵尸游戏新地图：几句提示词，硬件需求与延迟还减半","detail":"作者让 Fable 5.2 从零做了一张 Lumina Zombies 的全新地图（含彩蛋），还顺手升级了另外两张地图：硬件需求与延迟减半，画面全面更好；作者称\"几小时就能做到这个程度，游戏开发再也不会一样了\"，游戏可免费试玩。","links":[{"label":"@LuminaBench","url":"https://x.com/LuminaBench/status/2120660076927099048"}],"tag":"个人"},"i-9799f2a252":{"id":"i-9799f2a252","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"82 秒仙侠短片拆成 15 个镜头段重做：H3 Ref2VA 生成，按原节奏总装","detail":"作者把一段 82 秒仙侠短片拆成 15 个镜头段重做：新分镜首帧、角色/场景/道具参考、源动作与声音参考，再用 H3 Ref2VA 生成并按原节奏总装；画面抽样能读懂主要动作，但身份与真实感仍有边界；风格拆解与制作方法写进知微学导演第 22 课。","links":[{"label":"@superfang119","url":"https://x.com/superfang119/status/2120053251630625278"}],"tag":"个人"},"i-cc7e5789ac":{"id":"i-cc7e5789ac","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"AI 互动小游戏《测测你的 AI 使用者人格》上线 B 站 Toy","detail":"作者用 AI 做了一个互动小游戏《测测你的 AI 使用者人格》，已发布到 B 站 Toy：回答 10 道情境题、约 2 分钟，就能测出自己属于哪种 AI 使用者人格，还能解锁隐藏优势与进阶建议；从想法、开发到页面设计再到发布，整个过程是一次 AI 编程实践。","links":[{"label":"@ZhanG_MemeCoin","url":"https://x.com/ZhanG_MemeCoin/status/2120500477871980570"}],"tag":"个人"},"i-b981a4fbaa":{"id":"i-b981a4fbaa","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"4K 国风 AI MV《醉后不知天》：ChatGPT 作词作曲、Suno 做歌、Muse 做画面","detail":"一支 4K 国风 AI MV《醉后不知天》：把永和九年兰亭春宴做成一支 MV，从曲水流觞、临溪起舞，到客散后的月下空亭；作词、作曲出自 ChatGPT，音乐由 Suno 生成，美术与视觉设计出自 ChatGPT，动态影像由 Muse 制作，剪辑与后期由 Codex 完成。","links":[{"label":"@OnlyAIKnows","url":"https://x.com/OnlyAIKnows/status/2120463450707280379"}],"tag":"个人"},"i-728bcd6930":{"id":"i-728bcd6930","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"Fable 5.2 的 Blender 鹈鹕测试：4800 行 Python，RTX 5080 上 444 帧 56 分钟渲染完","detail":"Fable 5.2 的 Blender 鹈鹕测试：模型在 Claude Code 里写了约 4800 行 Python，驱动 Blender 5.2.3 无头渲染一只骑自行车的鹈鹕——21 根骨骼的骨架、弯曲羽毛卡片、程序化海滨长廊场景、5 个带运动模糊与景深的镜头；RTX 5080 上 444 帧只用 56 分钟渲染完成。","links":[{"label":"@0xbiying","url":"https://x.com/0xbiying/status/2120594231572222118"}],"tag":"个人"},"i-4435caf482":{"id":"i-4435caf482","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"Claude Code Skill 做 AI 说唱对决：周瑜 vs 诸葛亮，1 分 42 秒只花 16 美元","detail":"ancient-rap-battle 这个 Claude Code Skill 能把周瑜、诸葛亮这样的历史老对手拉出来做 AI 说唱对决短视频：第一期成片 1 分 42 秒、34 句原创歌词，视频生成只花了约 16 美元；歌词每方 16 句、四句一韵、一句一个典故，每句配史料注释；歌在 Suno 里做，9 张定妆图在 Midjourney 里出，画面由即梦 Seedance 2.5 分段生成并自动对口型；项目 MIT 开源、完全免费。","links":[{"label":"@Ryrenz","url":"https://x.com/Ryrenz/status/2120457770914697624"}],"tag":"个人"},"i-659edf0d43":{"id":"i-659edf0d43","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"creations","name":"AI 造物精选","emoji":"🎨","color":["#5b4fd6","#a59bff"]},"headline":"治愈系 AI 动画短片：毛茸茸小精灵拾起散落的吉光片羽","detail":"一段治愈系 AI 动画短片：柔光、花草与星河织就的童话微光里，软萌毛茸茸的小精灵替人拾起散落在岁月里的吉光片羽；画面温暖、歌声柔软，讲的是\"好久不见\"——没有争吵，只有悄无声息的疏离与回不去的过去。","links":[{"label":"@freeman1266","url":"https://x.com/freeman1266/status/2120538283788951856"}],"tag":"个人"},"i-04e5e0c823":{"id":"i-04e5e0c823","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"xcn/exp","name":"X 中文圈精选 › 经验帖","emoji":"📝","color":["#ea580c","#fb923c"]},"headline":"Fable 5.2 官方提示词指南的实验数据：两句话让 Agent 少\"撂挑子\"一半","detail":"Claude Fable 5.2 的官方提示词指南里有组实验数据：只加一句\"这个代码库归你管\"，Agent 主动整合重复代码的比例就从不到 10% 涨到接近 50%；再加一句\"任务没做完别停\"，官方测试中 Agent 干一半就提前结束的情况直接少了一半。作者据此整理了一套可直接放进 AGENTS.md 的全局提示词：让模型遇到普通问题先自己排查、任务尽量做完、该测试的测试、该验证的验证，同时明确权限与修改边界；完整英文版放 GitHub Gist，评论区自取。","links":[{"label":"@t20000622yy","url":"https://x.com/t20000622yy/status/2120514652308418645"}],"tag":"个人"},"i-291a99461b":{"id":"i-291a99461b","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"xcn/exp","name":"X 中文圈精选 › 经验帖","emoji":"📝","color":["#ea580c","#fb923c"]},"headline":"高盛收回交易员的 Claude Code，苹果削减外部模型日上限：重型工具正在向能兜底的人集中","detail":"高盛前几个月还在让交易员和投行家自己用 Claude Code 写软件原型，首席信息官 7 月还在公开称赞；3 个月后，10 月的内部指引把大多数交易员和投行家的 Claude Code 与 GitHub 编程工具收回，只保留给软件工程师，唯独给坐在交易员旁边的量化策略师（strats）开了绿灯。同一个月，苹果把部分工程师用外部大模型的日上限从 300 美元降到 200 美元、计划再降到 100 美元，非技术团队正考虑从 100 美元压到 25 美元。","links":[{"label":"@grapeot","url":"https://x.com/grapeot/status/2120563706254045569"}],"tag":"个人"},"i-b3702beb49":{"id":"i-b3702beb49","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"xcn/tut","name":"X 中文圈精选 › 教程帖","emoji":"📝","color":["#ea580c","#fb923c"]},"headline":"用 LibTV 做原创明末穿越短剧：剧本、角色三视图、分镜提示词全套教程","detail":"作者跟着《持械入宋》的灵感，用 LibTV 做了一段原创明末穿越短剧，并把剧本、角色三视图、分镜提示词和\"只重拍出错 4 秒\"的过程整理成完整教程，样片与实测素材都在文中。","links":[{"label":"@xitang_ai","url":"https://x.com/xitang_ai/status/2120513274764550300"}],"tag":"个人"},"i-c08cc137e8":{"id":"i-c08cc137e8","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"xcn/oss","name":"X 中文圈精选 › 开源推荐","emoji":"📝","color":["#ea580c","#fb923c"]},"headline":"开源 SourceBoard：让 Codex 跨平台找内容、取公开数据，整理成研究看板","detail":"雷哥开源的 SourceBoard，作者已经用进自己的工作台：一句话理解，就是让 Codex 帮你跨平台找内容、取公开数据，最后整理成一张研究看板。搜关键词覆盖抖音、小红书、B 站、公众号、X 等 10 个平台；丢作品链接支持 20 个平台加普通网页，取正文、作者与互动数据；看账号主页支持 7 个平台；自动出看板，可按平台筛选、按数据排序、留备注，再让 AI 深挖选中的内容；安装方法是把链接丢给 Codex，按项目里的 AGENT_INSTALL.md 走。","links":[{"label":"@Frederickkk07","url":"https://x.com/Frederickkk07/status/2120533533374775763"}],"tag":"个人"},"i-1237c9bf2b":{"id":"i-1237c9bf2b","date":"2026-11-12","weekday":"周四","kind":"news","section":{"id":"xcn/oss","name":"X 中文圈精选 › 开源推荐","emoji":"📝","color":["#ea580c","#fb923c"]},"headline":"开源 workbuddy-auto-signin：自动领 WorkBuddy 每日签到积分，还支持 Qoder CN 每天 100 Credits","detail":"GitHub 2.3K Star 的开源项目 workbuddy-auto-signin：自动领取 WorkBuddy 每日签到积分，还支持 Qoder CN 每天 100 Credits；成长中心的 Buddy 旅行礼物、派遣任务、连续签到奖励、断签补签、开盲盒也能自动处理；支持 Windows、macOS，配好定时任务后每天后台静默运行，不弹窗、不消耗 AI Token。","links":[{"label":"@fhwofjow51260","url":"https://x.com/fhwofjow51260/status/2120508940698148955"}],"tag":"个人"},"i-244641871a":{"id":"i-244641871a","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Google Cloud 新用户送 $300：90 天有效，可调 Gemini，但 11 月 16 日后开通的不能再付 Gemini 费用","detail":"怎么领：Google 账号登录 → 点\"免费开始使用\" → 绑卡验证（预授权 $0–1，不扣钱）→ $300 自动到账 → 控制台启用 Vertex AI API。截止：90 天有效；注意：2026 年 11 月 16 日及之后开通免费试用的，$300 赠金不能再用来支付 Gemini Platform（原 Vertex AI）费用，想用它跑 Gemini 须在 11 月 16 日前开通","links":[{"label":"@Jamesmv49","url":"https://x.com/Jamesmv49/status/2120141051608637563"}],"tag":"个人","status":"active"},"i-39df94594a":{"id":"i-39df94594a","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Anyscale 新账号送 $500 额度：KubeRay Connect Launch 限时优惠","detail":"怎么领：进入 Anyscale 官方活动页面，选择 KubeRay Connect Launch，注册新账号，按官方指引连接现有 KubeRay 集群，查看试用额度。截止：限时优惠，官方未公布明确截止日期；$500 的适用范围与有效期以账号实际显示为准","links":[{"label":"@Leo_zhang2018","url":"https://x.com/Leo_zhang2018/status/2120651615527161903"}],"tag":"个人","status":"active"},"i-f24e565b0d":{"id":"i-f24e565b0d","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Infini Lite 卡免费领：可绑美区 AI 订阅，返现 1.5%","detail":"怎么领：中国护照 + N26 账单地址申请 → 充值 10U 激活。截止：未标","links":[{"label":"@REraserTech","url":"https://x.com/REraserTech/status/2120585628450709784"}],"tag":"个人","status":"active"},"i-55a728dfce":{"id":"i-55a728dfce","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Subscriptrack：免费管 5 个订阅，邮箱接入自动翻出扣费项","detail":"怎么领：接邮箱，AI 自动翻出订阅；不想注册可先用免费账单检查。截止：未标","links":[{"label":"@yzpq6668","url":"https://x.com/yzpq6668/status/2120574494859579882"}],"tag":"个人","status":"active"},"i-7f0128454c":{"id":"i-7f0128454c","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"EditClips AI 视频编辑器开放网页版测试：注册即用，4K 免费导出","detail":"怎么领：注册 EditClips 网页版即可使用。截止：测试期，未标","links":[{"label":"@realJustinSoong","url":"https://x.com/realJustinSoong/status/2120648999258800535"}],"tag":"个人","status":"active"},"i-3986d5358a":{"id":"i-3986d5358a","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Nex-N2.6 多模态智能体模型免费调用，0 Credits","detail":"怎么领：注册并登录 MOSS API 平台 → 创建一个 API Key → 模型名称填写 \"nex-n2.6\"，即可免费调用。截止：未标","links":[{"label":"@xulijian1994","url":"https://x.com/xulijian1994/status/2120652626278924488"}],"tag":"个人","status":"active"},"i-2637e29de1":{"id":"i-2637e29de1","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Qwen4 免费额度：11 月 11–24 日可领，30 天有效","detail":"怎么领：11 月 11–24 日期间领取 Qwen4 免费额度。截止：领取窗口 11 月 11–24 日，额度 30 天有效","links":[{"label":"@ReZigong","url":"https://x.com/ReZigong/status/2120660276882391118"}],"tag":"个人","status":"active"},"i-838b6d7196":{"id":"i-838b6d7196","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"免费云服务器给 AI Agent 安家：1 核 2G 常驻不休眠，还附私有 Postgres","detail":"怎么领：去原帖链接注册建账号，免费档一个账号一份，名额看余量。截止：未标","links":[{"label":"@ChenY390353","url":"https://x.com/ChenY390353/status/2120607853534929121"}],"tag":"个人","status":"active"},"i-cc73df12e0":{"id":"i-cc73df12e0","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"Geekersoft PDF Converter 限免：一年 VIP 激活码免费领，原价 $19.99","detail":"怎么领：公开限免码：QU09ZA-LAJV9V-3RJONI-2A31-LSJ7AR，直接拿码激活，先到先得。截止：激活次数有限，未公布截止日期，码失效就没了","links":[{"label":"@taiyanghere","url":"https://x.com/taiyanghere/status/2120557157158363448"}],"tag":"个人","status":"active"},"i-bdbb966233":{"id":"i-bdbb966233","date":"2026-11-12","weekday":"周四","kind":"deal","section":{"id":"deals","name":"薅羊毛 · 福利与优惠","emoji":"🎟","color":["#e11d48","#fb7185"]},"headline":"斯里兰卡 Dialog 手机号 8 元保半年：护照线上办，免费开卡、无月租","detail":"怎么领：打开 Dialog 官网 → Buy SIM → New Connection → 选 Prepaid → The 1 FOR 1 Plan → 选 Foreigner，填中国护照号码 → 选 Other Numbers 挑免费普通号 → 卡类型选 eSIM → 填邮箱，上传护照、自拍完成认证 → 填地址、电子签名，审核通过后邮箱领取 eSIM 二维码。截止：400 卢比保 180 天是官方充值卡规则，线上充值有效期要实际确认","links":[{"label":"@Lovislexus","url":"https://x.com/Lovislexus/status/2120660343974478196"}],"tag":"个人","status":"active"},"i-00cdb9b84c":{"id":"i-00cdb9b84c","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"RT @lemomo_ai: 很多人都问我说，这个视频是怎么做的。我在这里简单的拆解一下。\n\n首先是技术选择，没有用视频模型，完全是Fable5.2在claude code里面写phython的脚本驱动blender，用cycles渲染器渲染的。阅览室，灯光，镜头等都是代码减价的。其中，月光的光柱是体积散射，镜头带精深和运动模糊，同时也加入了慢镜头的设计，快慢交错体现节奏的变化，给配乐也留出了空间。\n\n两万四千也纸的飞行是用Numpy写的一套模拟，注意这里没有用blender自带的粒子系统，每页纸在队伍里有自己的位置，跟着线路走，这样能呈现更好自然的流动曲线。\n\n配乐是python写的谱子，用钢琴和弦乐采样渲染，纸的声音是合成出来的，最后还用了ffmpeg合成片子并且进行调色，这一步也挺关键的，一共是1236帧。\n\n其次，在设计上，先定画面再动手。先出几张概念图把光线和气氛定下来，整个房间只留月光和一盏油灯。七个镜头都按实拍的拍法去想，包括微距，手持跟拍，摇臂，慢动作等，这样能最大程度上保持电影的质感。镜头的衔接也很重要，但这部分其实取决于大家平时的积累，因为fable最先给我的版本非常镜头表现力很一般。\n\n最后，流程上，由于渲染需要大量时间，所以先出低清版本的，把镜头角度和动作都确定了，故事线完成之后，能有一个大概的样子，这样修改起来就会快非常多。得益于fable5.2 的审美很好，在渲染之后，还可以进行二次调色，让影片保持更好的质感。由于上传到x上只能是1080，很可惜，4K保持了更加好的光影质感和细节。\n\n希望对你们有帮助。","links":[{"label":"@dotey","url":"https://x.com/dotey/status/2120539441127153869"}],"username":"dotey","identity":"AI/软件工程知识翻译与科普","headline":"宝玉"},"i-bffdd63bc8":{"id":"i-bffdd63bc8","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"周四 Codex 可能送一张重置卡？","links":[{"label":"@dotey","url":"https://x.com/dotey/status/2120546916475773071"}],"username":"dotey","identity":"AI/软件工程知识翻译与科普","headline":"宝玉"},"i-9c61bcf253":{"id":"i-9c61bcf253","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"Google 推出 Gemini Decisions API：不写回答只做判断，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱\n\nGoogle 今天在 Gemini API 里上线了 Decisions API，配套新模型 Gemini Decision 1。它不生成文字，只答题：给它一份输入和一组问题，它直接返回每道题的答案，外加一个“有多大把握”的置信度。\n\n【它解决什么问题】\n\n做 AI 应用时，很多调用其实只要一个判断：这条客服消息转给哪个组？这个问题交给便宜模型还是推理模型？这张图违不违规？以前只能让大模型写一段话，再从里面解析答案，慢，容易解析失败，还要为输出 Token 付钱。\n\nDecisions API 只有三种题型：是非题，返回“是”的概率；单选题，2 到 255 个选项，返回选中项和每个选项的概率；打分题，按你写的档位打分。每个答案带 0 到 1 的置信度，代码可以设门槛，比如高于 0.7 自动执行，低于就转人工。官方说这些概率是校准过的，意思是模型说 90% 的时候，大约十次里真对九次，所以置信度能直接拿来当门槛。\n\nGoogle 博客的例子：上传一张茶水间台面的照片，同时问三个问题。“有没有洒了的液体”答 0.95；“怎么处理”选“用抹布擦”，置信度 0.98；“脏乱程度按 0 到 2 打分”给 1.19，置信度 0.77。\n\n【多快、多便宜】\n\n一次请求的输入最多 256K Token，文字、JSON、图片、音频、视频、PDF 可以混着放，比如一段客服通话录音加账户信息。同一份输入上最多挂 1000 个问题，彼此互不影响。输入只计一次费，每多一个问题只多算这道题本身的字数。\n\nGoogle 称输入在 1.6 万 Token 以内时，端到端延迟 150 到 250 毫秒，问 1 个和问 100 个问题耗时差不多；同一批评测下，比用 Gemini 3.5 Flash-Lite 生成答案便宜近 5 倍。Gemini Notebook 已经用它给每个提问挑模型，日常问题延迟最多降了 40%。\n\n【谁能用】\n\n在 Google AI Studio 拿个 API Key 就能调，模型名 gemini-decision-1，走 v1beta 接口。有免费层，每分钟 200 次、每天 1 万次，免费层的数据会被 Google 用来改进产品，付费层不会。OpenRouter、LangChain、Vercel 等正在接入，Google Cloud 上的 Gemini 要稍后才支持。\n\n不支持上下文缓存和 Batch API，同一份大文档反复问，每次都按全价算输入；不能直接传 YouTube 链接；问题本身只能写文字。\n\n【跟 OpenAI 的同名产品比】\n\nOpenAI 早一个月做了同样的东西，名字也叫 Decisions API：10 月 6 日出测试版，10 月 22 日正式开放，用 GPT-6 Luna，同样每百万输入 Token 0.1 美元、输出不收费。区别是 OpenAI 一次最多 400 个问题，只收文字、图片和 JSON，不收音视频和 PDF；但它支持缓存，重复输入能打折，还能直接塞进对话历史和工具调用记录。\n\n创业公司 TypeSafe 的 Jev 1.14 也专做这类判断，在 OpenRouter 上每百万输入 Token 0.042 美元，只收文字和图片。\n\nGoogle 博客附的对比表里，Gemini Decision 1 在 9 项测试中 7 项第一（其中音频、视频两项只有它和 Flash-Lite 参测），校准误差 0.025，GPT-6 Luna 是 0.072；网页操作和“该不该调用工具”两项输给了 Jev 1.14。7 项共同评测的总花费，Jev 最低，0.68 美元，Gemini Decision 1 是 0.88 美元，GPT-6 Luna 0.93 美元。以上跑分都是 Google 自己测的。\n\nGoogle 博客：https://t.co/P5hlLj7fXN\n官方文档：https://t.co/WphCUZv5oT\nOpenAI Decisions API 文档：https://t.co/MGgS32OuNy","links":[{"label":"@dotey","url":"https://x.com/dotey/status/2120647659388031454"}],"username":"dotey","identity":"AI/软件工程知识翻译与科普","headline":"宝玉"},"i-07597f7c9a":{"id":"i-07597f7c9a","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"太牛批了 Fable 5.2，做游戏的能力，太顶了！\n\n你只要给他提供工具，他的场景设计和游戏细节直接拉满 https://t.co/LjJxXJrVgP","links":[{"label":"@op7418","url":"https://x.com/op7418/status/2120528843031334915"}],"username":"op7418","identity":"AI/LLM/AIGC 经验、教程与开源推荐","headline":"歸藏"},"i-751267865c":{"id":"i-751267865c","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"这一轮 Fable 5.2 做的这些 3D 游戏优化都极其牛逼，都能整合到一个 HTML 里边。\n\n网页发布永远是最方便的游戏发布方式，也是适配最多平台的发布方式。\n\n4399 即将迎来复兴，我们需要一个以 HTML 网页为基础的游戏分发平台。","links":[{"label":"@op7418","url":"https://x.com/op7418/status/2120541276970094774"}],"username":"op7418","identity":"AI/LLM/AIGC 经验、教程与开源推荐","headline":"歸藏"},"i-4583238b25":{"id":"i-4583238b25","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"Kaku is my open-source Mac terminal for AI coding.\n\nRunning several agents at once? A tab lights a dot when its agent needs you, and Cmd+J jumps straight to it. On your phone, the remote page lists every tab with its agent's status.\n\nhttps://t.co/cJVSaw22Ux https://t.co/HuLZsrVl3z","links":[{"label":"@HiTw93","url":"https://x.com/HiTw93/status/2120531568179749198"}],"username":"HiTw93","identity":"X 创作、开源与开发者工具，实用经验分享","headline":"Tw93"},"i-c5189728b8":{"id":"i-c5189728b8","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"可以脱离电脑在 iPhone 独立运行让 AI 操作手机的 pinky https://t.co/g7DXxYHK7H","links":[{"label":"@DIYgod","url":"https://x.com/DIYgod/status/2120460680897990960"}],"username":"DIYgod","identity":"RSSHub 与 Folo 作者，开源推荐","headline":"DIYgod"},"i-74558c7c9f":{"id":"i-74558c7c9f","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"谢谢大善人 Anthropic https://t.co/y7Bbbb4UZr","links":[{"label":"@DIYgod","url":"https://x.com/DIYgod/status/2120528134227493073"}],"username":"DIYgod","identity":"RSSHub 与 Folo 作者，开源推荐","headline":"DIYgod"},"i-6ec6c2759e":{"id":"i-6ec6c2759e","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"百度文心5.5 Flash Preview 今天发布。\n\n几个关键参数：总参数280B，每次推理只激活 14B，支持 1M 长上下文，千帆 API 单用户推理速度 200+ tokens/s，Apache 2.0协议开源，支持 SGLang 和 vLLM 部署。\n\n编程能力据说提升显著：\n\n训练数据用了超过1400万个可执行代码任务，加上多 Agent 框架真实执行轨迹，模型不仅能写代码，还能接管复杂软件工程任务。\n\nWebDev、游戏开发、3D仿真、视频编排，描述需求能直出可运行交互。\n\n知识工作的训练规模也很大：\n\n30万个工作空间、1000万份文件、40余种文件类型，后训练覆盖金融、法律等专业领域。\n\n分散的材料扔进去，模型能自主规划任务，调 MCP 工具和Skill，直接交付可用的表格、文档和报告。\n\n架构层面做了几件事：\n\n混合稀疏注意力解决长上下文 KV Cache 显存占用，多路由器 MoE 加 ECHO 多 Token 预测在提升能力的同时压低计算开销，FP4 专家权重和 草稿头专门针对 Agent 任务提速。\n\n280B参数每次仅激活 14B 还能跑到 200 tokens/s 以上，就是得益于上面的构架组合。\n\n百度早些时候披露了自动研究系统 ERNIE Evolve，能自主提出研究方向、开展实验、验证结果、积累经验，在NanoChat AutoResearch 和 NanoGPT Speedrun 两项任务三个评测指标上，拿到目前公开验证 SOTA。\n\n据说系统已参与了文心 5.5 Flash 的推理优化，包括低时延场景性能优化、确定性推理吞吐优化和极致解码速度优化，用 AI 系统来优化 AI 模型，这就是大家常说的 RSI 吧，加油！\n\nOpenrouter 能免费用，抽空体验下，看看实际模型质量怎么样。","links":[{"label":"@vista8","url":"https://x.com/vista8/status/2120503932548260273"}],"username":"vista8","identity":"AI 工具与 Agent 实践","headline":"向阳乔木"},"i-fcf44cccaf":{"id":"i-fcf44cccaf","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"最近这个 Claude IP 风险检测网站是太火了。\n\n明天新规，看大家账号能不能逃过一劫\n\n网站地址见评论区 https://t.co/6GqEiWcRxp","links":[{"label":"@vista8","url":"https://x.com/vista8/status/2120505182991839728"}],"username":"vista8","identity":"AI 工具与 Agent 实践","headline":"向阳乔木"},"i-da17e67c4f":{"id":"i-da17e67c4f","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"安克录音豆第三方客户端，有点意思。\n\n后续还能自己改造变成 AI 麦克风？\n\n开源地址见评论区 https://t.co/NgKM16eISq","links":[{"label":"@vista8","url":"https://x.com/vista8/status/2120529325560885364"}],"username":"vista8","identity":"AI 工具与 Agent 实践","headline":"向阳乔木"},"i-54e5cdcb21":{"id":"i-54e5cdcb21","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"modern-web-guidance：让AI学会最新的网页开发规则\n\nGoogle Chrome团队联合Edge和火狐联合推出的工具包，只要在终端敲一行命令安装，或者让AI在本地自己检索调用，AI就能自动查阅标准范例，不需要开发者手动到处查文档。\n\n配上之后，AI写出的网页明显更轻快。弹窗自带淡入淡出动画，手机与电脑自适应排版干净利索，输入框能自动跟着文字长高，按钮和下拉菜单不用装任何花哨插件就能正常跑。不仅网页加载速度变快、老电脑滑动不卡顿，盲人读屏软件也能正常识别内容，连最新的无密码通行证登录功能都可以直接按规范写好。\n\nGitHub：https://t.co/A674KxJmh1","links":[{"label":"@Gorden_Sun","url":"https://x.com/Gorden_Sun/status/2120517352144199974"}],"username":"Gorden_Sun","identity":"AI 与开源工具推介","headline":"Gorden Sun"},"i-32231b2072":{"id":"i-32231b2072","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"PAN 2：能模拟真实物理规律的开源世界模型\n\n架构上结合了多模态大语言模型与29B参数的隐式扩散模型，系统可以在执行动作前精准预测后续发展，支持在特定时间点注入动作并呈现不同后果，比如冲浪者提前或延后起身的真实结果。\n生成的模拟完全符合物理规律，比如牛奶与墨水在水中的扩散沉降、海绵受挤压变形和回弹；视角转动一圈后再转回来时，离开视野的物体依然保持原状与位置，保证了空间前后的一致性。\n\n模型：https://t.co/IA5demU3E6","links":[{"label":"@Gorden_Sun","url":"https://x.com/Gorden_Sun/status/2120528311361450151"}],"username":"Gorden_Sun","identity":"AI 与开源工具推介","headline":"Gorden Sun"},"i-f75b18fa75":{"id":"i-f75b18fa75","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"上周都说Claude加强了风控，于是我想从头走一遍订阅来打个样。\n\n机场节点注册了一个Claude新号，没问题。\n直连注册了一个新加坡区苹果账号，没问题。\n新注册的苹果账号绑卡后订阅，触发了新号支付的风控，也算正常。\n等待72小时后提示账号被封，跟客服battle一天后告知再等24小时重新激活。\n又过了24小时后，告知苹果商店的账号永久被封。\n\n我估计跟这几个因素有关：新号、新号立即订阅Claude、新加坡区、绑定的新加坡卡段。\n\n苹果肯定是被薅的太多了，所以加强了风控，只能说前人砍树，后人遭殃。\n\n也许老号和其他区的情况会好一些，等后续再试吧。","links":[{"label":"@Gorden_Sun","url":"https://x.com/Gorden_Sun/status/2120534090260890104"}],"username":"Gorden_Sun","identity":"AI 与开源工具推介","headline":"Gorden Sun"},"i-e88e01cc97":{"id":"i-e88e01cc97","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"RT @teach_fireworks: 唉，转型不易，今晚又听到了字节大裁员的消息。感觉从北美那边逐渐传导到咱们这儿了，大家有工作的尽快完成个人转型吧。\n\n当你坐在一个漂亮的办公室，喝着新口味的咖啡，还能去扯扯淡，健健身，跟年轻妹子聊聊骚。\n\n那我告诉你，在2026，这是很危险的信号，如果你从Sonnet 4.5开始一直错过了中间的所有环节，看似跟每天把reset,封号，harness工具挂在嘴边的同事或朋友没有区别，你也看不出区别，那你可能需要至少两年时间来追上节奏，因为但凡你在一年前开始使用cc或codex,每周基本上都停不下来，那可不仅仅是一年的差距了。\n\n大家各自安好吧，未来程序员这个职业究竟会是什么终态，什么不知道，AK大神 @karpathy 和财富自由的龙虾之父，还有很多已经创业成功的大佬都纷纷加入顶尖AI团队，Meta几个月前毫无留情的踢了一大波AI专家，让 @alexandr_wang 大刀阔斧的干，Muse就出来了。\n\n现在一小撮精英 + 无限前沿模型token真的可以干出很牛逼的事了。\n\n作为普通的程序员中的一员，我所能做的就是尽可能的使用前沿模型，无论是从生活，工作上全面的提升，跟上，拥抱它，把钱花在订阅费上是最最有性价比的投资。\n\n这跟年龄真的没关系，跟资历也没关系。塔尖的那一撮人已经是上帝视角了，那咱们就赶赶路别在大雨来的时候随波直下。","links":[{"label":"@oran_ge","url":"https://x.com/oran_ge/status/2120534806748688811"}],"username":"oran_ge","identity":"前 MiniMax 产品经理，Personal Agent 与产品经验","headline":"橘子 Orange AI"},"i-5a02aadd1d":{"id":"i-5a02aadd1d","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"老黄是今年最大的黑天鹅\n没有老黄的 NV，要重新构建和生态的信任关系了","links":[{"label":"@oran_ge","url":"https://x.com/oran_ge/status/2120661560129655116"}],"username":"oran_ge","identity":"前 MiniMax 产品经理，Personal Agent 与产品经验","headline":"橘子 Orange AI"},"i-db6584bd2c":{"id":"i-db6584bd2c","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"从美国就业看职业变化，软件行业基本已经停滞，部分职业消失趋势非常明显，AI 数据中心相关的实体岗位大幅增加\n就像工业革命对蓝领打击很大一样，\nAI 这次是智能的工业革命，对白领的打击是很大的\n\n1. 科技公司有超过281,000个空缺职位，比一年前增长了17% \n2.产品经理、工程和设计职位仅增长了2%。\n3. 设计（−28%）和用户体验研究（−45%）实际上是缩减了。  \n4. 那么增长从哪里来？硬件工程职位空缺翻了一番。业务运营新增了约4,200个空缺。供应链增长了63%。\n许多增长最快的职位都是实体岗位：数据中心技术员、安装工、现场服务工程师。  人工智能热潮正在创造就业机会，但主要是建设并运营实体基础设施（芯片、数据中心、硬件），而不是构建软件。","links":[{"label":"@oran_ge","url":"https://x.com/oran_ge/status/2120662791829008806"}],"username":"oran_ge","identity":"前 MiniMax 产品经理，Personal Agent 与产品经验","headline":"橘子 Orange AI"},"i-a587936417":{"id":"i-a587936417","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"X 太容易给人幻觉：模型进步很快，世界变化很快，巨大的变化在飞快发生。\n\n这感觉没错。\n\n然而做产品，还需要另一种观察：拥挤的车厢里，有人低头在看短视频，有人在刷红果，有人在看番茄。逛 X 的，看了一圈，只有我。在用 personal agent 等 AI 产品的，零人。\n\n世界变化飞快，又极慢。少量机会在飞快里。大量机会在极慢中。","links":[{"label":"@lifesinger","url":"https://x.com/lifesinger/status/2120476654598533251"}],"username":"lifesinger","identity":"YouMind 创始人，产品与创业经验","headline":"玉伯"},"i-56d5b86290":{"id":"i-56d5b86290","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"再补充一个让我稍有点意外的真实案例。\n\n上周四下午在 AIE Shanghai 2026 分享《Personal Agent 的另一条路》，现场爆满，我很激动。于是中间有做一个小调查：\n\n现场有用过除了豆包之外的任何一款 personal agent 的请举手。\n\n结果举手的稀稀拉拉，勉强 1/5 左右。我不服，补充说，用过 Claude Code 或 Codex 也算。结果举手的也并没怎么增加。\n\n最后自我安慰：应该是现场音响不好。\n一定是这个原因。","links":[{"label":"@lifesinger","url":"https://x.com/lifesinger/status/2120488944899092981"}],"username":"lifesinger","identity":"YouMind 创始人，产品与创业经验","headline":"玉伯"},"i-ef33e6d960":{"id":"i-ef33e6d960","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"卧槽，Muse 开通之后不知道干啥的兄弟，这篇直接抄作业！\n\n@loi_jinli 锦鲤同学把 Meta 11 月 6 日给 Muse 加的 Spaces 玩明白了，搭了 4 个他平时真在用的工作台，提示词全贴出来了：\n\n① 免费额度雷达：盯 4 个羊毛站加厂商官网，每张卡写清额度、领取条件、到期时间\n② AI 视频工作流：一句创意拆成分镜，自带 204 条视频提示词参考\n③ 自媒体创作中心：选题、草稿、排期、复盘放在一个项目里\n④ 全网热点看板：微博、百度、头条、B 站、贴吧的榜单合在一页，同一件事合并看\n\n还教你设定时任务，每天 08:30 自动复查一遍。\n\n很多人用 Muse 还停在聊天框里，聊完就沉了。Spaces 是给每件事留一个页面，塞进侧栏，下次打开接着干。\n\n我最服的是他把翻车也写了：Muse 嘴上说核实完了，点回去几张卡还挂着「未核实」。点「立即更新」，页面报任务未启动。\n\n所以他每一步都回页面看结果有没有真写进去。这个习惯比提示词值钱。\n\n长文在下面，建议先收藏再照着搭👇","links":[{"label":"@berryxia","url":"https://x.com/berryxia/status/2120517972297203993"}],"username":"berryxia","identity":"AI 工具与 Vibe Coding，AI 视频·数字人·广告内容创作","headline":"Berryxia.AI"},"i-346f75be21":{"id":"i-346f75be21","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"卧槽，马斯克说 agent 的上网流量已经超过人类，五年后可能是一千倍，他还嫌低估了。\n\n所以，Personal Agent根本不是一门大生意，我们应该给最终归集到Super Agent才是真正的大生意。\n\n把玩EnConvo后，也体会到一个真正综合能力强的产品背后需要花费和打磨的时间，但是你使用就知道这玩意真的离不开啊~ https://t.co/SKsxvKAbJH","links":[{"label":"@berryxia","url":"https://x.com/berryxia/status/2120523602911203359"}],"username":"berryxia","identity":"AI 工具与 Vibe Coding，AI 视频·数字人·广告内容创作","headline":"Berryxia.AI"},"i-50b115be4b":{"id":"i-50b115be4b","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"尼玛，天天听这帮大佬吹牛逼，天天鼓吹Personal Agent！\n\n像奥特曼、扎克伯格、纳德拉、黄仁勋今年都在讲 personal agent，每个人描述的未来都长得像他自家的生意 ，真的是不拿我们当外人啊！\n\n奥特曼说 ：Dots 是第一个把早晨还给他的东西……Personal Agent 最值钱的本事是替你决定哪些事不用看。\n\n现在特么谁还用Dots啊！","links":[{"label":"@berryxia","url":"https://x.com/berryxia/status/2120525473419870511"}],"username":"berryxia","identity":"AI 工具与 Vibe Coding，AI 视频·数字人·广告内容创作","headline":"Berryxia.AI"},"i-084426bdc5":{"id":"i-084426bdc5","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"vibe gaming 时代即将来临 ！","links":[{"label":"@Saccc_c","url":"https://x.com/Saccc_c/status/2120610332901249193"}],"username":"Saccc_c","identity":"小王子游戏原创作者，探索 AI 能力边界","headline":"Sac"},"i-4aad07f1d6":{"id":"i-4aad07f1d6","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"一张自然、安静、轻松、具有日系居家写真与生活方式Editorial质感的女性室内休闲摄影。\n\n整体视觉：\nadult East Asian woman\n+\nrelaxed sofa lounging pose\n+\ncream minimalist living room\n+\nsoft satin camisole and shorts\n+\nwhite ceramic mug in hand\n+\nlong legs extending toward foreground\n+\nlarge side window\n+\nwarm morning sunlight\n+\nsoft geometric window shadows\n+\nquiet lifestyle photography.\n\n画面不是普通：\n\n“女生坐在沙发上喝咖啡”。\n\n而是：\n\n一个极简奶油白客厅中，\n\n明确成年的东亚女性\n斜靠在画面右侧的大型白色布艺沙发上，\n\n身体略微后靠，\n臀部位于右后方，\n\n双腿从人物身体位置\n沿着画面中央向左下前景自然延伸，\n\n赤足靠近前方白色圆角茶几区域，\n\n形成非常明显的：\n\nBack Figure\n→\nExtended Legs\n→\nForeground Feet\n\n纵深关系。\n\n人物一只手自然握着白色马克杯，\n另一只手轻搭在杯子、腿部或沙发附近，\n\n视线不必直视镜头，\n可以轻轻看向窗外或画面左侧，\n\n像真实清晨坐在家里发呆的瞬间。\n\n左侧巨大落地窗引入强烈但柔和的自然阳光，\n\n阳光在：\n\n地毯，\n茶几，\n沙发，\n人物腿部\n\n形成干净的几何光影。\n\n整个空间采用：\n\n奶油白，\n暖米色，\n淡灰，\n少量黑色细节\n\n形成低饱和极简居家体系。\n\n形成：\n\nBright Window\n→\nCream Interior\n→\nRelaxed Figure\n→\nLong Leg Perspective\n\n整体必须：\n\nquiet,\nairy,\nnatural,\nminimal,\nsunlit,\nrelaxed,\npremium,\nnot overly posed.\n\n# 【核心视觉机制｜最高优先级】\n\nCOMPOSITION FIRST — HIGHEST PRIORITY\n\n首先建立：\n\n左侧巨大窗户\n+\n中央空白沙发区域\n+\n右侧人物\n+\n左下前景茶几\n\n四部分。\n\n人物不能正中央。\n\n人物必须位于：\n\n画面右侧约35%–40%区域。\n\n大面积左侧空间：\n\n保留给窗户，\n沙发，\n晨光，\n空气感。\n\n双腿必须从：\n\n右后方人物髋部\n→\n中央\n→\n左下前景\n\n形成长透视线。\n\n这条腿部透视线\n是整张图最重要的视觉路径之一。\n\n视觉阅读顺序：\n\nWindow Light\n→\nFace\n→\nCup\n→\nLegs\n→\nCoffee Table.\n\n# 【人物主体｜可替换模块】\n\n人物：\n\n[明确成年东亚女性 / 成年日系女性 / 成年混血女性]\n\n年龄外观：\n\n[22岁明确成年人]\n\n气质：\n\n安静，\n自然，\n居家，\n松弛，\n轻微慵懒，\n职业模特感。\n\n表情：\n\n平静，\n轻微放空，\n自然呼吸状态。\n\n视线：\n\n[看向窗外 / 看向左侧 / 微微看向镜头]\n\n不要：\n\n夸张微笑，\n性感挑逗表情，\n商业广告式微笑。\n\n# 【五官模块】\n\n脸型：\n\n柔和短鹅蛋脸\n\n眼睛：\n\n中等大小杏仁眼，\n深棕虹膜，\n眼尾自然。\n\n眉毛：\n\n柔和自然直眉，\n保留真实毛流。\n\n鼻子：\n\n小直鼻，\n鼻尖自然圆润。\n\n嘴唇：\n\n淡裸粉 / 蜜桃裸色，\n轻微水润，\n保留真实唇纹。\n\n整体：\n\n自然日系成年女性审美。\n\n不要：\n\n动漫大眼，\n幼态娃娃脸，\n过尖下巴，\n网红整形感。\n\n# 【皮肤质感】\n\n真实摄影级自然皮肤。\n\n保留：\n\nvisible fine pores,\nnatural skin microtexture,\ntiny facial vellus hair,\nsubtle uneven skin tone,\nslight cheek redness,\nnatural under-eye tonal variation,\nrealistic lip texture.\n\n肤色：\n\n冷白 / 象牙白，\n带自然血色。\n\n腿部：\n\n保留真实膝盖，\n小腿，\n脚踝结构和轻微色差。\n\n不要：\n\nplastic skin,\nporcelain skin,\nwaxy skin,\nbeauty-filter face,\nover-smoothed legs.\n\n# 【发型】\n\n深棕 / 黑色长发。\n\n发型：\n\n自然微卷长发，\n中分或轻微偏分。\n\n头发：\n\n大部分自然垂落在肩部和胸前，\n\n局部发丝受到窗光照射，\n产生柔和棕色高光。\n\n不要：\n\n精致盘发，\n复杂编发，\n明显沙龙造型。\n\n# 【服装】\n\n人物穿：\n\n柔和香槟米色 /\n浅奶茶色 /\n暖象牙色\n\n居家吊带上衣 + 同色短裤。\n\n上衣：\n\n细肩带，\n柔软垂坠，\n低方领或自然弧形领口。\n\n下装：\n\n宽松居家短裤，\n黑色或深棕细滚边。\n\n材质：\n\nsoft satin,\nlight jersey,\nsilky lounge fabric,\nmatte-satin surface.\n\n服装必须：\n\n柔软，\n轻薄，\n自然起皱，\n\n但不透明，\n不出现敏感部位裸露。\n\n视觉重点：\n\npremium lounge wear,\nnot lingerie advertising.\n\n# 【POSE FIRST｜姿势】\n\nPOSE FIRST — HIGH PRIORITY\n\n人物采用：\n\n沙发半躺 + 斜坐姿势。\n\n臀部：\n\n位于沙发右侧。\n\n背部：\n\n轻轻靠住靠垫。\n\n上半身：\n\n略微向左转，\n但整体放松。\n\n双腿：\n\n同时向前延伸。\n\n靠近镜头的一条腿：\n\n更长地伸向画面左下，\n\n膝盖保持轻微弯曲。\n\n另一条腿：\n\n与其平行或轻微交叠，\n\n形成自然层次。\n\n脚部：\n\n赤足，\n自然放松，\n靠近茶几边缘。\n\n不要：\n\n双腿僵直并排，\n夸张抬腿，\n盘腿，\n跪姿，\n瑜伽动作。\n\n一只手：\n\n握住白色马克杯。\n\n另一只手：\n\n轻轻托杯，\n搭在腿部，\n或自然落在身体旁。\n\n整个姿势要像：\n\n真实坐了十几分钟后\n自然形成的舒服姿势。\n\n# 【马克杯｜生活行为道具】\n\n人物手中：\n\n一个小型白色陶瓷马克杯。\n\n杯子：\n\n纯白 / 奶白，\n\n无明显Logo。\n\n作用：\n\n给人物动作提供真实理由。\n\n人物不是刻意展示杯子。\n\n杯子位置：\n\n腰部附近 /\n大腿上方。\n\n不要：\n\n巨大咖啡杯，\n透明玻璃杯，\n商业产品展示姿势。\n\n# 【沙发｜第一环境主体】\n\n沙发：\n\n大型奶油白 / 暖白布艺沙发。\n\n结构：\n\n低矮，\n宽大，\n柔软，\n深座。\n\n靠垫：\n\n超大软枕，\n轻微褶皱，\n不是完全整齐。\n\n材质：\n\nwashed cotton,\nsoft linen blend,\nbouclé-like soft texture.\n\n人物坐下区域：\n\n必须出现真实压陷。\n\n沙发颜色：\n\n接近墙面和地毯，\n\n形成：\n\nmonochrome cream interior.\n\n# 【落地窗｜第二视觉主体】\n\n画面左侧：\n\n大型落地窗。\n\n窗户高度：\n\n接近整面墙。\n\n窗外：\n\n模糊住宅城市景观 /\n远处建筑 /\n柔和天空。\n\n窗外不能太清晰。\n\n窗户负责：\n\n引入明亮晨光，\n\n不是展示城市。\n\n# 【窗光｜LIGHT FIRST】\n\nLIGHT FIRST — HIGH PRIORITY\n\n主光：\n\n来自画面左侧大型落地窗。\n\n时间：\n\n清晨 / 上午。\n\n方向：\n\nleft\n→\nright.\n\n光线：\n\nwarm soft morning sunlight,\nnatural window light,\ndiffused direct sunlight,\ngentle high-key exposure.\n\n阳光通过窗框形成：\n\n长方形 /\n平行条状 /\n几何斜影\n\n落在：\n\n地毯，\n茶几，\n沙发边缘，\n人物腿部。\n\n人物脸部：\n\n主要由环境反射光照亮，\n\n保持柔和，\n不过度明暗反差。\n\n腿部：\n\n存在柔和长高光。\n\n整体不能：\n\n电影式暗光，\n硬闪光，\n人工轮廓灯。\n\n# 【茶几｜前景锚点】\n\n画面左下：\n\n白色低矮圆角茶几。\n\n形态：\n\norganic rounded coffee table,\nminimal white table,\nlow profile.\n\n茶几只露出：\n\n部分台面。\n\n上方可以放：\n\n一盏很小的白色造型灯，\n或完全保持简洁。\n\n它的主要作用：\n\n建立：\n\nforeground depth.\n\n人物双脚靠近茶几，\n\n但不要不自然地踩在桌面中央。\n\n# 【室内家具】\n\n背景可见：\n\n白色立式空调，\n细杆落地灯，\n极小白色边桌，\n简洁米白地毯。\n\n家具设计：\n\nKorean minimal interior\n+\nJapanese soft minimalism.\n\n全部使用：\n\n白色，\n奶油色，\n浅灰，\n少量黑线。\n\n不要：\n\n大量木色家具，\n复杂摆件，\n豪华装饰，\n杂乱生活用品。\n\n# 【墙面与空间】\n\n墙面：\n\n暖米灰 / 奶油白。\n\n表面：\n\n非常干净，\n细微哑光纹理。\n\n空间整体：\n\n现代公寓，\n干净但不像样板房，\n\n保留一点真实生活感。\n\n不要：\n\n纯白摄影棚，\n奢华酒店，\n复古宫廷，\n工业风。\n\n# 【色彩系统】\n\n主色：\n\nCream White.\n\n辅助：\n\nWarm Beige,\nSoft Ivory,\nPale Gray.\n\n强调：\n\n人物深棕头发\n+\n少量黑色服装滚边。\n\n比例建议：\n\nCream / White 65%\nWarm Beige 18%\nSkin Tone 12%\nDark Accent 5%.\n\n整体：\n\nlow saturation,\nsoft warm neutral,\nquiet luxury.\n\n# 【构图】\n\n画幅：\n\n3:4 / 4:5 竖版。\n\n机位：\n\n略高于人物坐姿，\n\n从左前方斜拍。\n\n人物：\n\n位于右侧。\n\n沙发：\n\n横向贯穿画面中央。\n\n窗户：\n\n占据左侧高亮区域。\n\n茶几：\n\n进入左下前景。\n\n双腿：\n\n连接人物与前景。\n\n形成：\n\nWindow\n│\nEmpty Sofa\n│\nFigure\n↙\nLegs\n↙\nForeground Table.\n\n必须保留：\n\n大量环境空间。\n\n不要把人物裁成普通半身像。\n\n# 【镜头】\n\n推荐：\n\n28mm–40mm。\n\n最佳：\n\n35mm。\n\n原因：\n\n同时保留：\n\n人物，\n沙发，\n窗户，\n茶几，\n室内空间。\n\n相机高度：\n\n约1.2–1.5米。\n\n轻微俯拍：\n\n10°–20°。\n\n不要：\n\n85mm人像压缩，\n16mm夸张广角。\n\n# 【景深】\n\n整体：\n\nmoderate depth of field.\n\n人物：\n\n清晰。\n\n腿部：\n\n清晰。\n\n沙发：\n\n基本清晰。\n\n窗外：\n\n柔和模糊。\n\n不要：\n\n极浅景深，\n不要把环境完全虚掉。\n\n# 【摄影质感】\n\nadult East Asian woman,\ncream minimalist living room,\nrelaxed sofa lounging,\nchampagne lounge set,\nwhite ceramic mug,\nlong legs extending toward foreground,\nlarge sunlit window,\nsoft geometric window shadows,\nKorean minimal apartment,\nJapanese lifestyle photography,\nquiet morning routine,\nwarm cream monochrome palette,\nnatural candid portrait,\npremium home lifestyle editorial.\n\n35mm lens,\nnatural window light,\nsoft highlight roll-off,\nrealistic skin microtexture,\nreal textile detail,\nsubtle smartphone-camera intimacy,\nclean commercial-level image quality.\n\n# 【画质要求】\n\n4K / 8K高清。\n\n人物：\n\n明确成年，\n五官稳定，\n身份一致。\n\n人体：\n\n肩膀，\n手臂，\n手指，\n髋部，\n膝盖，\n脚踝，\n脚部\n\n结构正确。\n\n腿部：\n\n修长但真实，\n不能变形，\n不能融合。\n\n脚部：\n\n自然，\n脚趾正确。\n\n沙发：\n\n布料纹理清晰，\n压陷合理。\n\n阳光：\n\n方向统一。\n\n窗影：\n\n符合窗户结构。\n\n杯子：\n\n结构完整。\n\n画面必须：\n\n清晰，\n干净，\n高级，\n无噪点，\n无脏点，\n无异常锐化，\n无AI塑料感。\n\n# 【负面提示词】\n\nNO child,\nNO teenager,\nNO underage appearance,\n\nNO anime,\nNO doll face,\nNO oversized eyes,\nNO plastic skin,\nNO porcelain skin,\n\nNO standing pose,\nNO kneeling pose,\nNO cross-legged pose,\nNO exaggerated seductive pose,\nNO dramatic leg spread,\n\nNO extra legs,\nNO fused legs,\nNO malformed feet,\nNO extra toes,\nNO extra arms,\nNO deformed hands,\n\nNO transparent intimate areas,\nNO lingerie campaign,\nNO wardrobe malfunction,\n\nNO dark room,\nNO luxury hotel,\nNO colorful maximalist interior,\nNO cluttered apartment,\n\nNO dramatic cinematic light,\nNO neon,\nNO hard flash,\nNO strong rim light,\n\nNO empty pure studio,\nNO heavy depth blur,\nNO overexposed white sofa,\nNO orange skin,\nNO dirty shadows,\nNO random text,\nNO watermark.\n\n# 05｜为什么这张图成立\n\n【构图机制】\n\n人物实际上只占画面右侧，\n\n左侧却留了：\n\n窗，\n沙发，\n茶几，\n阳光。\n\n所以它不是：\n\nPortrait with Background，\n\n而更像：\n\nRoom First\n→\nHuman Inside Room.\n\n这正是它有生活感的原因。\n\n【身体机制】\n\n人物上半身几乎不动，\n\n真正制造空间的是双腿。\n\n腿部从：\n\n人物右后方\n→\n中央\n→\n左下\n\n形成一条非常长的透视线。\n\n因此普通沙发场景\n获得了明显空间深度。\n\n【行为机制】\n\n马克杯很重要。\n\n因为它告诉观众：\n\n人物不是为了摄影坐在那里，\n\n而是：\n\n本来就在这里喝东西。\n\n这种“小行为理由”\n会明显降低AI摆拍感。\n\n【光线机制】\n\n这张图里第二主体其实是：\n\n晨光。\n\n如果去掉人物，\n\n窗光、地毯和沙发本身\n依然能组成一张很好看的室内摄影。\n\n所以生成时不要只优化脸，\n必须锁住：\n\nlarge side window\n+\ngeometric sunlight.\n\n【色彩机制】\n\n整个空间几乎全部是：\n\n奶油白。\n\n人物衣服也没有强烈跳色，\n\n所以真正的对比只来自：\n\n黑发\n+\n黑色滚边。\n\n这属于：\n\nLow Contrast Luxury Palette.\n\n【视觉记忆点】\n\n如果只能保留一个机制：\n\n【右侧人物 + 双腿伸向左下 + 大面积左侧晨光空间】\n\n因为它决定了：\n\n这不是普通居家人像，\n而是“人在空间里松弛存在”的生活视觉。\n\n# 06｜可复用变量\n\n【必须固定｜Visual DNA】\n\n1.\n人物位于右侧而不是中央。\n\n2.\n大型浅色沙发。\n\n3.\n双腿向前景长距离延伸。\n\n4.\n生活道具放在手中。\n\n5.\n左侧巨大落地窗。\n\n6.\n明显自然阳光几何投影。\n\n7.\n奶油白低饱和空间。\n\n【可以替换｜Variable Modules】\n\n人物：\n[成年东亚女性 / 成年男性]\n\n服装：\n[香槟居家服 / 灰色吊带 + 短裤 / 白色T恤 / 针织套装]\n\n行为：\n[喝咖啡 / 看书 / 看手机 / 戴耳机 / 发呆]\n\n季节：\n[春季 / 夏季 / 秋季]\n\n环境：\n[公寓 / 民宿 / 海边住宅 / 酒店套房]\n\n主色：\n[奶油白 / 灰白 / 木色 / 冷白]\n\n但必须保持：\n\nSide Figure\n+\nLong Leg Perspective\n+\nLarge Window Light\n+\nMinimal Interior.\n\n# 07｜针对性负面提示词\n\nNO centered portrait,\nNO person filling entire frame,\nNO empty left side without window light,\nNO short cropped legs,\nNO sofa advertisement perfection,\nNO luxury interior styling,\nNO overly fashionable pose,\nNO dramatic makeup,\nNO high-saturation props,\nNO clutter around the figure,\nNO cinematic teal-orange grading.\n\n# 08｜快速替换模块\n\n主体：\n[明确成年东亚女性]\n\n场景：\n[奶油白极简公寓客厅]\n\n姿势：\n[右侧沙发半躺 + 双腿向左下延伸]\n\n服装：\n[香槟米色吊带 + 同色短裤]\n\n发型：\n[深棕长发自然披散]\n\n行为：\n[手持白色马克杯]\n\n第一视觉主体：\n[人物]\n\n第二视觉主体：\n[左侧大面积晨光]\n\n前景：\n[白色圆角茶几 + 双脚]\n\n中景：\n[沙发 + 人物]\n\n后景：\n[落地窗 + 立式空调 + 落地灯]\n\n核心材质：\n[真实皮肤 + 棉麻沙发 + 柔软居家服]\n\n主色：\n[奶油白]\n\n辅助色：\n[暖米色]\n\n强调色：\n[深棕黑]\n\n主光：\n[左侧上午自然阳光]\n\n镜头：\n[35mm]\n\n机位：\n[左前方略高机位]\n\n景深：\n[人物与室内基本清晰 + 窗外轻柔虚化]\n\n构图：\n[右侧人物 + 左侧环境留白 + 腿部长纵深]\n\n画幅：\n[3:4 / 4:5]\n\n视觉方向：\n[Sunlit Apartment / Quiet Morning / Korean Minimal / Lifestyle Editorial]\n\n# 09｜一句话极简版提示词\n\nadult East Asian woman relaxing on the right side of a large cream-white sofa\n+\nchampagne satin camisole and matching lounge shorts\n+\nholding a small white ceramic mug\n+\nlong bare legs extending diagonally toward the lower-left foreground\n+\nminimal cream apartment\n+\nlarge floor-to-ceiling window on the left\n+\nstrong soft morning sunlight casting geometric shadows across carpet and furniture\n+\nwhite rounded coffee table in foreground\n+\n35mm slightly high-angle framing\n+\nwarm low-saturation neutral palette\n+\nrealistic skin and fabric texture\n+\nquiet Japanese-Korean lifestyle editorial photography.","links":[{"label":"@nima2qisi2","url":"https://x.com/nima2qisi2/status/2120479153505943929"}],"username":"nima2qisi2","identity":"AIGC 视觉设计，低门槛 AI 玩法","headline":"Dmiao豆苗啊"},"i-4597d8c79a":{"id":"i-4597d8c79a","date":"2026-11-12","weekday":"周四","kind":"account","section":{"id":"watchlist","name":"关注账号动态 › 名单博主","emoji":"👀","color":["#a21caf","#e879f9"]},"detail":"RT @Leviwoyun: GPT image 2.6 大字标题设计 skill 已开源！！！\n\n40 种字体与排版风格，配上好看的风景图直接发小红书！\n\n动态签名skill 2.0 版本早上也更新了，粒子效果+乐器结合\n\nskill👉https://t.co/7BFIhKwVH9 https://t.co/MDOVJbQ0ie","links":[{"label":"@nima2qisi2","url":"https://x.com/nima2qisi2/status/2120518266800193876"}],"username":"nima2qisi2","identity":"AIGC 视觉设计，低门槛 AI 玩法","headline":"Dmiao豆苗啊"}}}</script><script>
+(function(){
+  var root=document.documentElement, KEY='brief-theme';
+  var btn=document.getElementById('themeBtn');
+  function cur(){var t=root.getAttribute('data-theme');if(t)return t;return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+  function paint(){var d=cur()==='dark';btn.textContent=d?'\u2600':'\u263E';btn.setAttribute('aria-label',d?'切换到浅色':'切换到深色');}
+  paint();
+  btn.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem(KEY,n);}catch(e){}paint();});
+  var mqDark=matchMedia('(prefers-color-scheme: dark)');if(mqDark.addEventListener)mqDark.addEventListener('change',paint);
+
+  // ---- favorites (localStorage, shared with favorites.html) ----
+  var FK='xbrief-favs-v1',favOnly=false;
+  function loadF(){try{var o=JSON.parse(localStorage.getItem(FK)||'null');if(o&&o.items&&typeof o.items==='object')return o;}catch(e){}return {v:1,items:{}};}
+  function saveF(o){try{o.v=1;o.updated_at=new Date().toISOString();localStorage.setItem(FK,JSON.stringify(o));return true;}catch(e){return false;}}
+  var META={};try{META=JSON.parse(document.getElementById('xb-items').textContent).items||{};}catch(e){}
+  var stars=[].slice.call(document.querySelectorAll('[data-star]'));
+  var foBtn=document.getElementById('favOnly'),foCnt=document.getElementById('favCnt');
+  function favSet(){return loadF().items;}
+  function paintStars(){var f=favSet(),n=0;stars.forEach(function(b){var on=!!f[b.getAttribute('data-star')];if(on)n++;
+      b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on);b.title=on?'取消收藏':'收藏';});
+    if(foCnt)foCnt.textContent=n?String(n):'';
+    try{window.dispatchEvent(new CustomEvent('xbrief:favs'));}catch(e){}}
+  var toastEl=null,toastT=0,toastShown=0;
+  function toast(msg,withLink){if(!toastEl){toastEl=document.createElement('div');toastEl.className='xtoast';toastEl.setAttribute('role','status');toastEl.setAttribute('aria-live','polite');document.body.appendChild(toastEl);}
+    toastEl.textContent=msg;
+    if(withLink&&toastShown<1&&typeof window.XB_ROOT==='string'){var a=document.createElement('a');a.href=window.XB_ROOT+'favorites.html';a.textContent='查看';toastEl.appendChild(a);}
+    toastShown++;toastEl.classList.add('show');clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},1600);}
+  document.addEventListener('click',function(ev){var b=ev.target.closest&&ev.target.closest('[data-star]');if(!b)return;
+    ev.preventDefault();ev.stopPropagation();
+    var id=b.getAttribute('data-star'),o=loadF(),on=!o.items[id];
+    if(on){var m=META[id];if(!m)return;var snap=JSON.parse(JSON.stringify(m));snap.saved_at=new Date().toISOString();snap.page=location.pathname;o.items[id]=snap;}
+    else delete o.items[id];
+    if(!saveF(o)){toast('\u26A0\uFE0F 无法保存（浏览器禁用了本地存储？）');return;}
+    paintStars();b.classList.remove('pop');void b.offsetWidth;if(on)b.classList.add('pop');
+    if(!on)toast('已取消');
+    if(favOnly)applyFav();},true);
+  window.addEventListener('storage',function(ev){if(ev.key===FK||ev.key===null){paintStars();if(favOnly)applyFav();}});
+  window.addEventListener('pageshow',function(){paintStars();});
+  paintStars();
+
+  // ---- favorites-only filter (replaces the old search filter; no search box in this layout) ----
+  var emptyEl=document.getElementById('empty');
+  var navs=[].slice.call(document.querySelectorAll('[data-nav]'));
+  function applyFav(){
+    var fs=favOnly?favSet():null,n=0;
+    document.querySelectorAll('[data-fid]').forEach(function(u){var ok=!fs||!!fs[u.getAttribute('data-fid')];u.classList.toggle('hide',!ok);if(ok)n++;});
+    document.querySelectorAll('main .sec, main .subwrap, main .grp, main .wgrp').forEach(function(c){
+      if(!favOnly){c.classList.remove('hide');return;}
+      c.classList.toggle('hide',!c.querySelector('[data-fid]:not(.hide)'));});
+    var q=document.getElementById('quick');if(q)q.classList.toggle('hide',favOnly);
+    navs.forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));a.classList.toggle('hide',!!(s&&s.classList.contains('hide')));});
+    if(emptyEl){emptyEl.textContent='本期还没有收藏';emptyEl.style.display=(favOnly&&!n)?'block':'none';}
+    onScroll.last=null;onScroll();
+  }
+  if(foBtn)foBtn.addEventListener('click',function(){favOnly=!favOnly;foBtn.setAttribute('aria-pressed',favOnly?'true':'false');applyFav();});
+
+  // ---- TOC active state + back-to-top ----
+  var secs=[].slice.call(document.querySelectorAll('main .sec'));
+  function setOn(id){navs.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id);});}
+  var top=document.getElementById('toTop');
+  function onScroll(){var y=window.innerHeight*0.28,id=null;
+    secs.forEach(function(s){if(!s.classList.contains('hide')&&s.getBoundingClientRect().top<y)id=s.id;});
+    if(!id&&secs.length)id=secs[0].id;
+    if((window.innerHeight+window.scrollY)>=document.body.scrollHeight-4){var vis=secs.filter(function(s){return !s.classList.contains('hide')});if(vis.length)id=vis[vis.length-1].id;}
+    if(id!==onScroll.last){onScroll.last=id;setOn(id);}
+    top.classList.toggle('show',window.scrollY>600);}
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  var tick=false;window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){tick=false;onScroll();});}},{passive:true});
+  onScroll();
+
+  // ---- watchlist groups: expand/collapse all ----
+  var ta=document.getElementById('toggleAll');
+  if(ta){ta.addEventListener('click',function(){var gs=document.querySelectorAll('.grp');var anyOpen=[].some.call(gs,function(g){return g.open});
+    [].forEach.call(gs,function(g){g.open=!anyOpen});ta.textContent=anyOpen?'全部展开':'全部收起';});}
+
+  // ---- deep link: #<item id> -> reveal + flash ----
+  function reveal(id){var el=id&&document.getElementById(id);if(!el||!el.hasAttribute('data-fid'))return;
+    if(favOnly&&el.classList.contains('hide')){favOnly=false;if(foBtn)foBtn.setAttribute('aria-pressed','false');applyFav();}
+    var g=el.closest('details');if(g)g.open=true;
+    requestAnimationFrame(function(){try{el.scrollIntoView({block:'center',behavior:'instant'});}catch(e){el.scrollIntoView();}
+      el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');
+      setTimeout(function(){el.classList.remove('flash');},2800);});}
+  function onHash(){var h=location.hash.slice(1);try{h=decodeURIComponent(h);}catch(e){}if(/^i-[0-9a-f]{10}/.test(h))reveal(h);}
+  window.addEventListener('hashchange',onHash);
+  if(document.readyState==='complete')onHash();else window.addEventListener('load',onHash);
+})();
+</script><!--xb-body--><style>
+.xb-pills{position:fixed;left:10px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:flex;gap:2px;padding:3px;border-radius:999px;background:color-mix(in srgb,var(--bg,#faf9f6) 78%,transparent);border:1px solid var(--line2,#cfc9ba);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px)}
+.xb-pill{display:inline-flex;align-items:center;gap:4px;height:28px;padding:0 11px;border-radius:999px;color:var(--faint,#8d887b);font-size:12px;font-weight:600;text-decoration:none;border:0;background:transparent;-webkit-tap-highlight-color:transparent;transition:color .15s,background .15s}
+.xb-pill:hover,.xb-pill:active{color:var(--accent,#d9480f);background:var(--accent-t,rgba(217,72,15,.05))}
+.xb-pill svg{width:12px;height:12px;flex:none}
+.xb-n{min-width:15px;height:15px;padding:0 4px;border-radius:8px;background:var(--accent-t,rgba(217,72,15,.05));color:var(--accent,#d9480f);font-size:10px;font-weight:700;display:inline-grid;place-items:center;font-variant-numeric:tabular-nums}
+.xb-n[hidden]{display:none}
+@media print{.xb-pills{display:none}}
+</style><nav class="xb-pills" aria-label="快捷入口"><a class="xb-pill" href="../favorites.html" aria-label="我的收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.55 5.55 6.05.7-4.5 4.15 1.25 6-5.35-3.05L6.65 19.6l1.25-6-4.5-4.15 6.05-.7z"/></svg>收藏<span class="xb-n" id="xbFavN" hidden>0</span></a><a class="xb-pill" href="../archive.html" aria-label="往期简报"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>往期</a></nav><script>window.XB_ROOT='../';(function(){var n=document.getElementById('xbFavN');if(!n)return;function u(){var c=0;try{var o=JSON.parse(localStorage.getItem('xbrief-favs-v1')||'null');c=o&&o.items?Object.keys(o.items).length:0}catch(e){}n.textContent=c>99?'99+':String(c);n.hidden=!c;}u();addEventListener('storage',u);addEventListener('xbrief:favs',u);addEventListener('pageshow',u);})();if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js',{scope:'../'}).catch(function(){});});}</script></body>
+</html>
